@@ -7,7 +7,7 @@ level: Beginner
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: aa5c88fb5725a3d1c50d5c6b73fce7add629b08d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%
@@ -35,7 +35,9 @@ In questa esercitazione, scopri le nozioni di base su come eseguire la tua prima
 Utilizza le esercitazioni introduttive riportate di seguito per creare le credenziali API, scaricare file di esempio e configurare l’ambiente.
 
 [Guida introduttiva all’API per servizi PDF e a Java](gettingstartedjava.md)
+
 [Guida introduttiva all’API di PDF Services e a .Net](gettingstartednet.md)
+
 [Guida introduttiva all’API dei servizi PDF e a Node.js](createpdffromhtml.md)
 
 ## Passaggio 2: Eseguire l’operazione di esportazione PDF utilizzando i file di esempio

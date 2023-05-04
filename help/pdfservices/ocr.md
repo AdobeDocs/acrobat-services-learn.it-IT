@@ -8,7 +8,7 @@ thumbnail: KT-6677.jpg
 kt: 6677
 keywords: Eroe
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: c1937561d607f1eabbc1921d6090858abb13f0d3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 4%
@@ -30,7 +30,9 @@ In questa esercitazione sono illustrate le nozioni di base su come eseguire la p
 Utilizza le esercitazioni introduttive riportate di seguito per creare le credenziali API, scaricare file di esempio e configurare l’ambiente.
 
 [Guida introduttiva all’API per servizi PDF e a Java](gettingstartedjava.md)
+
 [Guida introduttiva all’API di PDF Services e a .Net](gettingstartednet.md)
+
 [Guida introduttiva all’API dei servizi PDF e a Node.js](createpdffromhtml.md)
 
 ## Eseguire l&#39;esempio OCR fornito nei file di esempio
