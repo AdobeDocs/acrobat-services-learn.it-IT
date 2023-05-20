@@ -83,7 +83,7 @@ Dal prompt dei comandi, accedi alla directory principale nella cartella adobe-dc
 
 Digita installazione npm:
 
-C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>npm install
+C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>installazione npm
 
 Ora è possibile eseguire i file di esempio.
 

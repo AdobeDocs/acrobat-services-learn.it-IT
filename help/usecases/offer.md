@@ -42,7 +42,7 @@ Questa esercitazione pratica illustra la configurazione di un progetto Node Expr
 
 Per utilizzare l’API di generazione dei documenti di Adobe in Node.js, accedi alla [API per la generazione di documenti](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) per accedere al tuo account o registrarti per ottenerne uno nuovo. Il tuo account è [gratis per sei mesi, poi paghi come sei](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli 0,05 dollari per transazione documentale, così puoi provarla senza rischi e pagare solo per la crescita della tua azienda.
 
-Dopo aver effettuato l&#39;accesso al [Console Adobe Developer](https://console.adobe.io/), fate clic **[!UICONTROL Crea nuovo progetto]**. Per impostazione predefinita, il progetto è denominato &quot;Progetto 1&quot;. Fate clic sul **[!UICONTROL Modifica progetto]** e cambiare il nome in &quot;Offer Letter Generator&quot;. Al centro dello schermo si trova un **[!UICONTROL Introduzione Al Nuovo Progetto]** sezione. Per attivare la protezione del progetto, procedi come segue:
+Dopo aver effettuato l&#39;accesso al [Console Adobe Developer](https://console.adobe.io/), fate clic **[!UICONTROL Crea nuovo progetto]**. Per impostazione predefinita, il progetto è denominato &quot;Progetto 1&quot;. Fate clic sul **[!UICONTROL Modifica progetto]** e cambiare il nome in &quot;Offer Letter Generator&quot;. Al centro dello schermo si trova un **[!UICONTROL Introduzione Al Nuovo Progetto]** sezione. Per abilitare la protezione nel progetto, effettua le seguenti operazioni:
 
 Fai clic su **Aggiungi API**. Sono disponibili diverse API tra cui scegliere. Nel **[!UICONTROL Filtro per prodotto]** seleziona **[!UICONTROL Document Cloud]**, quindi fai clic su **[!UICONTROL Avanti]**.
 

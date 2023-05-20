@@ -400,7 +400,7 @@ Se non disponi di un account Acrobat Sign, registrati per un account sviluppator
 
 1. Seleziona **[!UICONTROL Fai clic qui per firmare]**.
 
-   ![Screenshot di Click here to sign](assets/automatelegal_33.png)
+   ![Screenshot di Clicca qui per firmare](assets/automatelegal_33.png)
 
 1. Digitare la firma.
 
