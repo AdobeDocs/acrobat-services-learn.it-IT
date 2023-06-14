@@ -6,10 +6,10 @@ role: Developer
 skill: Beginner, Intermediate, Experienced
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 0c434db1665d4cb6ce6aff6f329e300f22129df9
+source-git-commit: 744830d00c75c136354ca41893337e6a474d5aed
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 2%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![Banner API di Acrobat Sign](../assets/acrobatsignhero.png)
 
-Le API di Acrobat Sign consentono di creare app e incorporare l&#39;interfaccia utente e le funzionalità di Acrobat Sign nelle applicazioni.
+Le API di Acrobat Sign consentono di creare app e di incorporare l’interfaccia utente e le funzionalità di Acrobat Sign nelle applicazioni.
 
 ## Introduzione
 
@@ -69,7 +69,7 @@ Scoprite come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;ap
   </td>
   <td>
    <a href="creating-your-application.md">
-      <img alt="Creazione dell'applicazione" src="assets/Creatingyourapplication_1280.png" />
+      <img alt="Creazione dell&apos;applicazione" src="assets/Creatingyourapplication_1280.png" />
    </a>
     <div>
    <a href="creating-your-application.md"><strong>Creazione dell'applicazione</strong></a>
