@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8095.jpg
-kt: 8095
+jira: KT-8095
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 1%
@@ -228,7 +228,7 @@ Di seguito è riportato il modulo di caricamento per questo esempio:
 
 ![Screenshot del modulo per caricare i file](assets/searching_3.png)
 
-Ora, per manipolare il PDF caricato ed eseguire alcune operazioni OCR, aggiungi lo snippet di codice riportato di seguito al file controller/makeOCRController.js. Questo codice implementa il processo OCR su un file caricato e quindi salva il file nel file system dell&#39;applicazione.
+A questo punto, per manipolare il PDF caricato ed eseguire alcune operazioni OCR, aggiungete lo snippet di codice seguente al file controllers/makeOCRController.js. Questo codice implementa il processo OCR su un file caricato e quindi salva il file nel file system dell&#39;applicazione.
 
 ```
 const fs = require('fs')
@@ -405,7 +405,7 @@ Ora implementa una funzione di download per abilitare il download dei documenti 
 
 ## Download dei documenti
 
-L’implementazione di una funzione di download è simile a quella già eseguita. Aggiungere il seguente snippet di codice dopo la funzione searchPost nel file controllers/earchController.js:
+L’implementazione di una funzione di download è simile a quella già eseguita. Aggiungere il seguente snippet di codice dopo la funzione searchPost nel file controller/earchController.js:
 
 ```
 /*

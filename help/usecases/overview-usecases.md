@@ -3,11 +3,11 @@ title: "[!DNL Adobe Acrobat Services] Casi di utilizzo API"
 description: Pagina Panoramica per [!DNL Adobe Acrobat Services] Casi di utilizzo API
 type: Tutorial
 role: Developer
-skill: Beginner, Intermediate, Experienced
+level: Beginner, Intermediate, Experienced
 thumbnail: KT-8115.jpg
-kt: 8115
+jira: KT-8115
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Scopri come [!DNL Adobe Acrobat Services] Le API possono cambiare il tuo busines
   </td>
   <td>
       <a href="employeeonboarding.md">
-        <img alt="Modernizzazione dell'inserimento dei dipendenti" src="assets/employee_thumb.png" />
+        <img alt="Modernizzazione dell&apos;inserimento dei dipendenti" src="assets/employee_thumb.png" />
       </a>
       <div>
       <a href="employeeonboarding.md"><strong>Modernizzazione dell'inserimento dei dipendenti</strong></a>
@@ -159,7 +159,7 @@ Scopri come [!DNL Adobe Acrobat Services] Le API possono cambiare il tuo busines
     <div>
     <a href="AgreementWorkflowsNodejs.md"><strong>Flussi di lavoro degli accordi in Node.js</strong></a>
     </div>
-    <em>[!DNL Adobe Acrobat Services] Le API incorporano facilmente funzionalità di PDF nelle applicazioni web</em>
+    <em>[!DNL Adobe Acrobat Services] Le API incorporano facilmente le funzionalità di PDF nelle applicazioni web</em>
     <br>
   </td>
   <td>

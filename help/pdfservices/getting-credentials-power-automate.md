@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-10382.jpg
-kt: 10382
+jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
@@ -29,6 +29,7 @@ Gli utenti esistenti di Microsoft Power Automate possono [ottenere le credenzial
 
 >[!IMPORTANT]
 > Se esegui l’accesso per una versione di prova, devi utilizzare un Adobe ID e non un’Enterprise ID. Se non sei un abbonato corrente all’API dei servizi Adobe PDF e tenti di accedere con l’Enterprise ID, potrebbe verificarsi un errore di autorizzazione perché l’azienda non ha i diritti per utilizzare l’API dei servizi Adobe PDF. Per questo motivo, si consiglia di utilizzare un Adobe ID personale gratuito.
+>
 
 1. Dopo aver effettuato l’accesso, viene richiesto di selezionare un nome per le nuove credenziali. Inserisci il *Nome credenziali*.
 1. Seleziona la casella di controllo per accettare i termini dello sviluppatore.

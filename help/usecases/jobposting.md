@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
-kt: 8092
+jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Non è possibile utilizzare &quot;localhost&quot; come dominio. Specificate un d
 
 ## Aggiunta di un modulo di caricamento e di un gestore
 
-Con un’applicazione Express funzionante e credenziali API, è inoltre necessario un modulo che consenta agli utenti di caricare i propri documenti sul sito Web. Modificare il modello index.jade a questo scopo.
+Con un&#39;applicazione Express funzionante e credenziali API, è inoltre necessario un modulo che consenta agli utenti di caricare i propri documenti sul sito Web. Modificare il modello index.jade a questo scopo.
 
 Creare un campo di input per il nome della pubblicazione dei processi caricati e per un documento contenente ulteriori informazioni.
 
@@ -220,7 +220,7 @@ Per l&#39;API di incorporamento PDF, è necessario anche un endpoint che restitu
 
 ## Incorporamento del PDF
 
-A questo punto, create l&#39;endpoint /job/{id}, che esegue il rendering di un modello contenente il nome della pubblicazione dei processi richiesta e un PDF incorporato.
+A questo punto, create il file /job/{id} endpoint, che esegue il rendering di un modello contenente il nome della pubblicazione dei processi richiesta e un PDF incorporato.
 
 ```
 router.get('/job/:id', async function(req, res, next) {

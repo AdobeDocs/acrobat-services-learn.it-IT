@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8099.jpg
-kt: 8099
+jira: KT-8099
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 2%
@@ -88,7 +88,7 @@ Una volta create le credenziali, potete ottenere alcuni esempi di codice. Selezi
 
 Per iniziare, creare una cartella vuota denominata auto-doc\*\*.\*\* Nella cartella, eseguire il comando seguente per inizializzare un progetto Node.js: `npm init`. Assegnare al progetto il nome di &quot;doc automatico&quot;*.*
 
-Nella cartella ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples, there è un file denominato pdftools-api-credentials.json. Spostare it e private.key nella cartella del doc automatico. Contiene le credenziali API. Inoltre, nella cartella di doc automatico, crea una sottocartella denominata &quot;resources&quot;. Contiene i dati in formato JSON ricevuti dai clienti ogni volta che generate una proposta di vendita. Nella stessa cartella, salva il modello di proposta di vendita da Microsoft Word.
+Nella cartella ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples, esiste un file denominato pdftools-api-credentials.json. Spostare it e private.key nella cartella del doc automatico. Contiene le credenziali API. Inoltre, nella cartella di doc automatico, crea una sottocartella denominata &quot;resources&quot;. Contiene i dati in formato JSON ricevuti dai clienti ogni volta che generate una proposta di vendita. Nella stessa cartella, salva il modello di proposta di vendita da Microsoft Word.
 
 Ora sei pronto a fare un po&#39; di magia! Dato che utilizzi Node.js in questa esercitazione, devi installare Node.js [!DNL Acrobat Services] SDK. A tale scopo, nella cartella auto-doc, esegui yarn add @adobe/documentservices-pdftools-node-sdk.
 
