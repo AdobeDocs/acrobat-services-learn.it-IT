@@ -1,12 +1,13 @@
 ---
-title: Aggiunta di tabelle e tag di elenco
-description: Microsoft Scoprite come aggiungere tabelle e tag di elenco ai modelli di Word utilizzando il tag Adobe generazione documento per aggiungere dinamicamente righe di tabelle o di elenchi in base ai dati mediante l’API Adobe generazione documento
+title: Aggiunta di tabelle ed elenchi
+description: Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando l’Adobe Document Generation Tagger per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l’API di Adobe Document Generation
 type: Tutorial
 role: Developer
 level: Beginner
+feature: Document Generation API
 thumbnail: 332115.jpg
 exl-id: 15cb4016-6f92-401f-bda5-088ffd43588a
-source-git-commit: 49c64965668518fc33539914db1b50132a40ee34
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
@@ -15,6 +16,6 @@ ht-degree: 0%
 
 # Aggiunta di tabelle e tag di elenco
 
-Microsoft Scoprite come aggiungere tabelle e tag di elenco ai modelli di Word utilizzando il tag Adobe generazione documento per aggiungere dinamicamente righe di tabelle o di elenchi in base ai dati mediante l’API Adobe generazione documento.
+Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l’API di Document Generation di Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)

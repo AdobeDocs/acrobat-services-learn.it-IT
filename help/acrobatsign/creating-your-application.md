@@ -1,24 +1,25 @@
 ---
 title: Creazione dell'applicazione
-description: Scoprite come creare un’applicazione in Acrobat Sign
+description: Scopri come creare un’applicazione in Acrobat Sign
 type: Tutorial
 role: Developer
 level: Beginner
+feature: Acrobat Sign API
 thumbnail: KT-11074.jpg
 exl-id: dbd33a24-e6b7-4ec6-84fb-f376a349f863
-source-git-commit: 0c434db1665d4cb6ce6aff6f329e300f22129df9
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%
 
 ---
 
-# Creazione dell&#39;applicazione
+# Creazione dell’applicazione
 
-Scoprite come creare un&#39;applicazione in Acrobat Sign.
+Scopri come creare un’applicazione in Acrobat Sign.
 
 >[!NOTE]
 >
->Questa esercitazione è specificamente progettata per i partner OEM che stanno creando e incorporando un processo di firma all&#39;interno della propria applicazione.
+>Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/347348?hidetitle=true)

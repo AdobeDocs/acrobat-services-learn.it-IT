@@ -1,63 +1,64 @@
 ---
-title: Crea un PDF da HTML o MS Office in pochi minuti con l'API PDF Services e Node.js
-description: Nell'API dei servizi PDF, sono disponibili diversi servizi per creare e manipolare PDF o esportare da PDF a MS Office e altri formati
+title: Crea un PDF da HTML o MS Office in pochi minuti con API di PDF Services e Node.js
+description: All'interno dell'API PDF Services sono disponibili diversi servizi per la creazione e la gestione di PDF o l'esportazione da PDF a MS Office e altri formati
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6673.jpg
 jira: KT-6673
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
 
 ---
 
-# Crea un PDF da HTML o MS Office in pochi minuti con l&#39;API PDF Services e Node.js
+# Crea un PDF da HTML o MS Office in pochi minuti con API di PDF Services e Node.js
 
 ![Crea immagine PDF Hero](assets/createpdffromhtml_hero.jpg)
 
-Con la nuova API di Adobe PDF Services, che offre agli sviluppatori un’ampia scelta di servizi avanzati per la manipolazione delle PDF, la digitalizzazione dei flussi di lavoro basati su documenti non è mai stata così semplice da soddisfare le esigenze di flussi di lavoro complessi. Architetture complicate, strategie di implementazione e accelerazione tecnologica possono essere ottimizzate grazie a questi servizi web basati su cloud.
+La digitalizzazione dei flussi di lavoro dei documenti non è mai stata così semplice con la nuova API di Adobe PDF Services, che offre agli sviluppatori la possibilità di scegliere tra diversi potenti servizi di manipolazione dei PDF per soddisfare le esigenze di flussi di lavoro aziendali complessi. Architetture complicate, strategie di implementazione e potenziamento della tecnologia possono essere semplificati con questi servizi web basati su cloud facilmente disponibili.
 
-All&#39;interno dell&#39;API dei servizi PDF, sono disponibili diversi servizi per creare e manipolare PDF o esportare da PDF a MS Office e altri formati.
+All&#39;interno dell&#39;API PDF Services sono disponibili diversi servizi per la creazione e la gestione di PDF o l&#39;esportazione da PDF a MS Office e altri formati.
 
-* Creare un file PDF da statico o dynamic HTML, MS Word, PowerPoint, Excel e altro ancora
-* Export PDF a MS Word, PowerPoint, Excel e altro ancora
-* OCR per riconoscere il testo nei file PDF e attivare la ricerca nei documenti
-* Protect PDF con password all’apertura dei documenti
-* Combinare pagine di PDF o documenti di PDF in un unico PDF
-* Comprimi i PDF per ridurre le dimensioni della condivisione tramite e-mail o online
-* Linearizzare per ottimizzare un PDF per una visualizzazione rapida sul Web
-* Organizzare le pagine PDF con i servizi di inserimento, sostituzione, riordine, eliminazione e rotazione
+* Crea un file PDF da HTML statico o dinamico, MS Word, PowerPoint, Excel e altro ancora
+* Export PDF a MS Word, PowerPoint, Excel e altro
+* OCR per riconoscere il testo nei file PDF e abilitare la ricerca nei documenti
+* Protect PDF con una password all’apertura dei documenti
+* Combinare pagine PDF o documenti PDF in un unico PDF
+* Comprimi i PDF per ridurre le dimensioni per la condivisione tramite e-mail o online
+* Linearizza per ottimizzare un PDF per una visualizzazione rapida sul Web
+* Organizza le pagine PDF con i servizi Inserisci, Sostituisci, Riordina, Elimina e Ruota
 
 Gli sviluppatori possono iniziare in pochi minuti con i file di esempio pronti per l&#39;esecuzione forniti per accedere a tutti i servizi Web disponibili. Ecco come iniziare.
 
-## Acquisizione delle credenziali e download dei file di esempio
+## Recupero delle credenziali e download dei file di esempio
 
-Il primo passo consiste nell&#39;ottenere una credenziale (chiave API) per sbloccare l&#39;uso. [Registrati per la versione di prova gratuita](https://www.adobe.com/go/dcsdks_credentials) e fai clic su &quot;Inizia&quot; per creare le tue nuove credenziali.
+Il primo passaggio consiste nel ottenere una credenziale (chiave API) per sbloccare l’utilizzo. [Registrati qui per la prova gratuita](https://www.adobe.com/go/dcsdks_credentials) e fai clic su &quot;Inizia&quot; per creare le nuove credenziali.
 
 ![Chiave API](assets/apikey.png)
 
-È importante scegliere un &#39;Account personale&#39; per registrarsi alla versione di prova gratuita:
+È importante scegliere un &quot;Account personale&quot; per registrarsi per la versione di prova gratuita:
 
 ![Account personale](assets/personalaccount.png)
 
-Nel passaggio successivo, scegli il servizio API dei servizi di PDF, quindi aggiungi un nome e una descrizione per le tue credenziali.
+Nel passaggio successivo si sceglierà il servizio API di PDF Services, quindi si aggiungeranno un nome e una descrizione per le credenziali.
 
-È disponibile una casella di controllo per &quot;Creare un esempio di codice personalizzato&quot;. Scegli questa opzione per aggiungere automaticamente le tue nuove credenziali ai file di esempio, saltando il passaggio manuale.
+È presente una casella di controllo per &quot;Creare codice di esempio personalizzato&quot;. Scegliete questa opzione per aggiungere automaticamente le nuove credenziali ai file di esempio, ignorando il passaggio manuale.
 
-Quindi scegli Node.js come lingua per ricevere gli esempi specifici di Node.js e fai clic sul pulsante &quot;Crea credenziali&quot;.
+Quindi, scegli Node.js come lingua per ricevere gli esempi specifici di Node.js e fai clic sul pulsante &quot;Crea credenziali&quot;.
 
 ![Crea credenziali](assets/createcredentials.png)
 
-Riceverai un file .zip da scaricare denominato PDFToolsSDK-Node.jsSamples.zip che può essere salvato nel file system locale.
+Riceverai per il download un file .zip denominato PDFToolsSDK-Node.jsSamples.zip che può essere salvato nel file system locale.
 
 ## Aggiunta delle credenziali agli esempi di codice
 
-Se si sceglie l&#39;opzione &quot;Crea campione di codice personalizzato&quot;, non è necessario aggiungere manualmente l&#39;ID client ai file di esempio di codice e può saltare il passaggio successivo e andare direttamente alla sezione Esempi di codice in esecuzione di seguito.
+Se si sceglie l&#39;opzione &quot;Crea campione di codice personalizzato&quot;, non è necessario aggiungere manualmente l&#39;ID client ai file di esempio del codice e si può saltare il passaggio successivo per passare direttamente alla sezione Esempi di codice in esecuzione riportata di seguito.
 
-Se non hai scelto l&#39;opzione &quot;Crea un esempio di codice personalizzato&quot;, dovrai copiare l&#39;ID client (chiave API) dalla console Adobe.io:
+Se non hai scelto l’opzione per &quot;Crea campione di codice personalizzato&quot;, dovrai copiare l’ID client (chiave API) dalla console Adobe.io:
 
 ![Esempio di codice](assets/codesample.png)
 
@@ -75,21 +76,21 @@ Incolla le credenziali nel campo per l&#39;ID client nel codice:
   "client_id": "abcdefghijklmnopqrstuvwxyz",
 ```
 
-Salvate il file e proseguite con il passaggio successivo per eseguire gli esempi di codice.
+Salvare il file e continuare con il passaggio successivo per eseguire gli esempi di codice.
 
 ## Esecuzione del primo esempio di codice
 
-Dal prompt dei comandi, accedi alla directory principale nella cartella adobe-dc-pdf-tools-sdk-node-samples.
+Utilizzando il prompt dei comandi, accedi alla directory principale nella cartella adobe-dc-pdf-tools-sdk-node-samples.
 
-Digita installazione npm:
+Installazione npm di tipo:
 
 C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>installazione npm
 
-Ora è possibile eseguire i file di esempio.
+Ora sei pronto per eseguire i file di esempio.
 
 Per il primo esempio, create un PDF:
 
-Mentre è ancora nel prompt dei comandi, esegui l&#39;esempio create PDF con il comando seguente:
+Mentre sei ancora nel prompt dei comandi, esegui il comando seguente per creare l&#39;esempio di PDF:
 
 C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>nodo src/createpdf/create-pdf-from-docx.js
 
@@ -97,19 +98,19 @@ Output di esempio:
 
 ![Output di esempio](assets/exampleoutput.png)
 
-Il PDF verrà creato nella posizione specificata nell&#39;output, che per impostazione predefinita è la directory pdfServicesSdkResult.
+Il PDF verrà creato nel percorso indicato nell&#39;output, che per impostazione predefinita è la directory pdfServicesSdkResult.
 
 ## Risorse e passaggi successivi
 
 * Per ulteriore assistenza e supporto, visita l&#39;Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
 
-API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sull’API di PDF Services
+* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
 
 * Articoli correlati:
-  [La nuova API dei servizi PDF offre ulteriori funzionalità per i flussi di lavoro basati su documenti](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Versione di luglio [!DNL Adobe Acrobat Services]: Servizi di incorporazione e PDF per PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Versione di luglio di [!DNL Adobe Acrobat Services]: Servizi PDF Embed e PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

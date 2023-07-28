@@ -1,49 +1,50 @@
 ---
-title: Uso dell’API dei servizi Adobe PDF per i file PDF OCR
-description: Grazie all’OCR (Optical Character Recognition) è possibile sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili
+title: Utilizzo dell’API di Adobe PDF Services per i file OCR PDF
+description: Con OCR (riconoscimento ottico dei caratteri) puoi sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6677.jpg
 jira: KT-6677
 keywords: Eroe
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 4%
 
 ---
 
-# Uso dell’API dei servizi Adobe PDF per i file PDF OCR
+# Utilizzo dell’API di Adobe PDF Services per i file OCR PDF
 
 ![Crea immagine PDF Hero](assets/OCR_hero.jpg)
 
-Con l’OCR (Optical Character Recognition) potete sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili. Grazie alle nostre avanzate API basate su cloud, integra l&#39;OCR in qualsiasi flusso di lavoro basato su documenti per offrire la soluzione perfetta per l&#39;archiviazione, la copia del testo e la creazione di indici di documenti ricercabili. Create archivi ricercabili da archivi di PDF scansionati per sbloccare informazioni importanti e risparmiare tempo grazie alla possibilità di eseguire ricerche rapide. Oppure applica l’OCR ai tuoi PDF dalle scansioni caricate per consentirne la modifica per i flussi di lavoro di onboarding.
+Con l’OCR (riconoscimento ottico dei caratteri) puoi sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili. Utilizzando le nostre potenti API basate sul cloud, integra l’OCR in qualsiasi flusso di lavoro dei documenti per offrire la soluzione perfetta per archiviare, copiare il testo e creare indici di documenti ricercabili. Creazione di archivi ricercabili da archivi di PDF scansionati per sbloccare informazioni importanti e risparmiare tempo grazie alla possibilità di eseguire ricerche rapide. Oppure applica l’OCR ai tuoi PDF dalle scansioni caricate per consentirne la modifica e utilizzarli nei flussi di lavoro di onboarding.
 
 Gli sviluppatori possono iniziare in pochi minuti con i file di esempio pronti per l’esecuzione forniti per l’OCR.
 
-In questa esercitazione sono illustrate le nozioni di base su come eseguire la prima operazione OCR API di PDF Services utilizzando file di esempio per le lingue Node.js, Java e .Net.
+In questo tutorial vengono illustrate le nozioni di base per l&#39;esecuzione della prima operazione OCR dell&#39;API di PDF Services utilizzando file di esempio per i linguaggi Node.js, Java e .Net.
 
-## Passaggio 1: Creare le credenziali e configurare l&#39;ambiente
+## Passaggio 1: crea le tue credenziali e configura il tuo ambiente
 
 Utilizza le esercitazioni introduttive riportate di seguito per creare le credenziali API, scaricare file di esempio e configurare l’ambiente.
 
-[Guida introduttiva all’API per servizi PDF e a Java](gettingstartedjava.md)
+[Guida introduttiva all’API e a Java di PDF Services](gettingstartedjava.md)
 
-[Guida introduttiva all’API di PDF Services e a .Net](gettingstartednet.md)
+[Guida introduttiva all&#39;API di PDF Services e a .Net](gettingstartednet.md)
 
-[Guida introduttiva all’API dei servizi PDF e a Node.js](createpdffromhtml.md)
+[Guida introduttiva all’API di PDF Services e a Node.js](createpdffromhtml.md)
 
-## Eseguire l&#39;esempio OCR fornito nei file di esempio
+## Esegui l’esempio di OCR fornito nei file di esempio
 
-L’operazione OCR consente di utilizzare impostazioni internazionali in inglese per impostazione predefinita, ma fornisce anche supporto per tedesco, francese, danese e [altre lingue](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). L&#39;impostazione predefinita è impostazioni internazionali en-us.
+L’operazione OCR consente la lingua inglese per impostazione predefinita, ma supporta anche il tedesco, il francese, il danese e [altre lingue](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). L’impostazione predefinita è impostazioni internazionali en-us.
 
-Quando si passano le opzioni con l&#39;operazione OCR, comprese impostazioni internazionali specifiche, il metodo accetta anche il parametro &#39;type&#39; che dispone di due opzioni:
+Quando si passano opzioni con operazioni OCR che includono impostazioni internazionali specifiche, il metodo accetta anche il parametro &#39;type&#39; che dispone di due opzioni:
 
-* SEARCHABLE_IMAGE: Consente di modificare l’immagine originale durante il processo di ottimizzazione (ad esempio, di convertirla in desktop) prima di posizionare sopra di essa un livello di testo invisibile. Questo tipo rimuove gli artefatti indesiderati e in alcuni scenari può risultare più leggibile.
+* SEARCHABLE_IMAGE: modifica l&#39;immagine originale durante il processo di pulitura (ad esempio, la disegna sul desktop) prima di posizionare sopra di essa un livello di testo invisibile. Questo tipo rimuove gli artefatti indesiderati e, in alcuni casi, può risultare in un documento più leggibile.
 
-* SEARCHABLE_IMAGE_EXACT: Assicura che il testo sia ricercabile e selezionabile. Questa opzione mantiene l’immagine originale e vi posiziona sopra un livello di testo invisibile. Consigliato per i casi che richiedono la massima fedeltà all’immagine originale.
+* SEARCHABLE_IMAGE_EXACT: assicura che il testo sia ricercabile e selezionabile. Questa opzione mantiene l’immagine originale e posiziona sopra di essa un livello di testo invisibile. Opzione consigliata per i casi che richiedono la massima fedeltà all’immagine originale.
 
 **Java**
 
@@ -73,7 +74,7 @@ Il PDF verrà creato nella directory src/main/resources.
 
    `dotnet run OcrPDF.csproj`
 
-Il PDF verrà creato nella stessa directory.
+Il tuo PDF verrà creato nella stessa directory.
 
 **Node.js**
 
@@ -87,13 +88,13 @@ Il PDF verrà creato nella stessa directory.
 
    `node src/ocr/ocr-pdf.js`
 
-Il PDF verrà creato nella posizione specificata nell&#39;output, che per impostazione predefinita è la directory di output.
+Il PDF verrà creato nella posizione indicata nell’output, che per impostazione predefinita è la directory di output.
 
-## Considerazioni finali
+## Pensieri finali
 
-Con questi semplici passaggi utilizzando i file di esempio, è necessario avere un esempio funzionante su cui basarsi. Oltre all&#39;esempio OCR utilizzato in questa esercitazione, è disponibile un altro esempio di OCR mediante le opzioni di testo e impostazioni internazionali supportate descritte in precedenza.
+Con questi semplici passaggi utilizzando i file di esempio, dovresti avere un esempio di lavoro su cui poter basarti. Oltre all’esempio di OCR utilizzato in questa esercitazione, esiste un altro esempio di OCR che utilizza le opzioni relative al tipo e alle impostazioni internazionali supportate illustrate in precedenza.
 
-Da qui puoi semplicemente sostituire i file di input e di output che si trovano nel campione per utilizzare il tuo PDF e finalizzare la dimostrazione di concetto per il tuo caso d&#39;uso.
+Da qui puoi semplicemente sostituire i file di input e output che si trovano nell&#39;esempio per utilizzare il tuo PDF per finalizzare il tuo proof of concept per il tuo caso d&#39;uso.
 
 ![Proof of Concept](assets/OCR_poc.png)
 
@@ -101,8 +102,8 @@ Da qui puoi semplicemente sostituire i file di input e di output che si trovano 
 
 * Per ulteriore assistenza e supporto, visita l&#39;Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
 
-* API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+* API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sull’API di PDF Services
+* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi

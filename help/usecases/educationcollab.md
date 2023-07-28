@@ -1,78 +1,79 @@
 ---
-title: Collaborazione tra studenti e docenti
-description: Scopri come creare una piattaforma di apprendimento online che consenta a docenti e studenti di condividere facilmente le risorse in PDF
+title: Collaborazione studente-docente
+description: Scopri come creare una piattaforma di apprendimento online che consenta a docenti e studenti di condividere facilmente risorse in PDF
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8091.jpg
 jira: KT-8091
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
 
 ---
 
-# Collaborazione tra studenti e docenti
+# Collaborazione studente-docente
 
-![Usa banner eroe caso](assets/UseCaseStudentHero.jpg)
+![Banner Hero per casi di utilizzo](assets/UseCaseStudentHero.jpg)
 
-Gli istituti didattici utilizzano documenti PDF per condividere materiale didattico con gli studenti. I PDF offrono ai docenti un formato di documento intercambiabile.
+Gli istituti di istruzione utilizzano i documenti PDF per condividere il materiale didattico con gli studenti. I PDF forniscono ai docenti un formato di documento intercambiabile.
 
-Integrazione [API dei servizi Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) e [API di incorporamento di Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) in un&#39;app offre a docenti e studenti un&#39;unica piattaforma su cui insegnare e imparare. Ad esempio, la tua app può consentire agli studenti di porre domande sui loro compiti e sulle schede di report e di collaborare alle assegnazioni di gruppo.
+Integrazione [API dei servizi Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) e [API di Adobe PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) in un&#39;app fornisce a docenti e studenti un&#39;unica piattaforma su cui insegnare e apprendere. Ad esempio, l’app può consentire agli studenti di porre domande sui propri compiti e di creare report sui propri biglietti e di collaborare alle assegnazioni di gruppo.
 
-Esiste un SDK ufficiale per le applicazioni Node.js per accedere alle API di PDF Services. Questo consente di convertire in PDF documenti quali Microsoft Word o Microsoft Excel. Inoltre, puoi eseguire operazioni più avanzate, ad esempio combinando più report, ridisponendo le pagine e proteggendo i PDF. Per ulteriori informazioni, consultate [documentazione del prodotto](https://www.adobe.io/apis/documentcloud/dcsdk/).
+Esiste un SDK ufficiale per le applicazioni Node.js per accedere all&#39;API di PDF Services. Ciò consente di convertire documenti come Microsoft Word o Microsoft Excel in PDF. Inoltre, puoi eseguire operazioni più avanzate, come la combinazione di più report, la ridisposizione delle pagine e la protezione dei PDF. Per ulteriori dettagli, consulta [documentazione del prodotto](https://www.adobe.io/apis/documentcloud/dcsdk/).
 
 ## Cosa puoi imparare
 
-In questa esercitazione pratica, scopri come creare una piattaforma di apprendimento online che [consente a docenti e studenti di condividere facilmente le risorse](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html) in PDF. Questa esercitazione utilizza un metodo [portale di apprendimento](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) creato utilizzando il runtime JavaScript Node.js (Node.js) e i servizi PDF.
+In questo tutorial pratico, scopri come creare una piattaforma di apprendimento online che [consente a docenti e studenti di condividere facilmente le risorse](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html) in PDF. Questo tutorial utilizza un [portale di apprendimento](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) creato utilizzando Node.js JavaScript runtime (Node.js) e PDF Services.
 
-Il portale di apprendimento ha le seguenti caratteristiche:
+Il portale di apprendimento presenta le seguenti funzionalità:
 
-* Consenti ai docenti di caricare risorse
+* Consente ai docenti di caricare risorse
 
 * Consente agli studenti di selezionare più documenti da convertire in PDF
 
-* Consente la conversione di documenti in PDF
+* Conversione dei documenti in PDF
 
-* Fornisce un’anteprima PDF per gli studenti in un browser Web e consente loro di annotare i documenti senza software aggiuntivo
+* Fornisce un&#39;anteprima PDF per gli studenti in un browser Web e consente loro di annotare i documenti senza software aggiuntivo
 
-* Consente agli studenti di lasciare i commenti e scaricarli nei computer
+* Consente agli studenti di lasciare commenti e scaricarli nei computer
 
-Scopri come [!DNL Adobe Acrobat Services] offri ai tuoi studenti un&#39;esperienza ricca di PDF. [!DNL Acrobat Services] Le API si integrano perfettamente nelle applicazioni esistenti, consentendo agli studenti di caricare, convertire e visualizzare i file, quindi di creare e salvare commenti, il tutto all&#39;interno della configurazione corrente.
+Scopri come [!DNL Adobe Acrobat Services] fornisci una ricca esperienza ai tuoi studenti con PDF. [!DNL Acrobat Services] Le API si integrano perfettamente nelle applicazioni esistenti, in modo che gli studenti possano caricare, convertire e visualizzare i file, quindi fare e salvare i commenti, il tutto all’interno della configurazione corrente.
 
 ## API e risorse pertinenti
 
-* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [Codice progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)
 
 ## Caricamento di risorse nel portale di apprendimento
 
-Nella sezione insegnanti del portale di apprendimento, gli insegnanti possono caricare documenti quali compiti e test. I documenti possono essere in qualsiasi formato, ad esempio Microsoft Word, Microsoft Excel, HTML, vari formati di immagine e così via.
+Nella sezione dei docenti del portale di apprendimento, i docenti possono caricare documenti quali compiti e test. I documenti possono essere in qualsiasi formato, ad esempio Microsoft Word, Microsoft Excel, HTML, vari formati di immagine e così via.
 
-![Screenshot della sezione insegnanti del portale di apprendimento](assets/edu_1.png)
+![Schermata della sezione del portale di apprendimento dedicata ai docenti](assets/edu_1.png)
 
-I documenti caricati vengono archiviati e presentati agli studenti quando aprono la pagina Web.
+I documenti caricati vengono archiviati e presentati agli studenti quando aprono la loro pagina Web.
 
-Per informazioni su come l&#39;applicazione carica i file, vedere la [codice progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers).
+Per informazioni su come l’applicazione carica i file, consulta la [codice progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers).
 
 ## Conversione di documenti in PDF
 
-Gli studenti possono convertire uno o più documenti di qualsiasi tipo in PDF, ad esempio Microsoft Word, Excel e PowerPoint, nonché altri tipi di file di testo e immagini più diffusi. Il portale di apprendimento utilizza PDF Services per eseguire la conversione dei file in PDF.
+Gli studenti possono convertire uno o più documenti di qualsiasi tipo in PDF, come Microsoft Word, Excel e PowerPoint, così come altri tipi di file di testo e immagini popolari. Il portale di apprendimento utilizza PDF Services per eseguire la conversione dei file in PDF.
 
-Per creare un portale di apprendimento personalizzato, devi prima creare le tue credenziali. [Registrati](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) per utilizzare gratuitamente le API dei servizi PDF per sei mesi e fino a 1.000 transazioni di documenti. Dopodiché, [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per transazione documento mentre la classe aumenta le assegnazioni.
+Per creare il tuo portale di apprendimento, devi prima creare le tue credenziali. [Registrati](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) per utilizzare gratuitamente API di PDF Services per sei mesi e fino a 1.000 transazioni di documenti. Dopo di che, [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per transazione documento, quando la classe aumenta le proprie assegnazioni.
 
-Quando uno studente seleziona un documento dal dashboard, visualizza quanto segue:
+Quando uno studente seleziona un documento dal dashboard, viene visualizzato quanto segue:
 
-![Screenshot della sezione studenti del portale di apprendimento](assets/edu_2.png)
+![Schermata della sezione Studenti del portale di apprendimento](assets/edu_2.png)
 
-Lo studente seleziona semplicemente i documenti per la conversione e fa clic **Scarica report**.
+Lo studente seleziona semplicemente i documenti per la conversione e fa clic **Ottieni report**.
 
-Il portale di apprendimento converte i documenti in PDF e visualizza una pagina di rapporto, insieme a un’anteprima del file PDF.
+Il portale di apprendimento converte i documenti in PDF e visualizza una pagina di report, insieme a un’anteprima del file PDF.
 
 Di seguito è riportato il codice di esempio per questo passaggio:
 
@@ -102,22 +103,22 @@ async function createPdf(rawFile, outputPdf) {
 }
 ```
 
-Il codice di esempio chiama il metodo `createPdf` all&#39;interno del gestore di percorsi Express per generare il PDF.
+Il codice di esempio chiama `createPdf` all&#39;interno del gestore di route Express per generare il PDF.
 
-Per scoprire come viene chiamato questo metodo, vedere [il codice del progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers/blob/master/src/helpers/pdf.js).
+Per informazioni su come viene chiamato questo metodo, vedere [il codice del progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers/blob/master/src/helpers/pdf.js).
 
 ## Anteprima delle risorse di apprendimento
 
-L&#39;interfaccia utente utilizza l&#39;API PDF Embed per eseguire il rendering dei PDF in un browser Web. Questa API è disponibile gratuitamente.
+L’interfaccia utente utilizza l’API PDF Embed per eseguire il rendering dei PDF in un browser web. Questa API è disponibile per l&#39;uso gratuito.
 
-L’API per l’incorporamento di PDF utilizza una credenziale diversa dall’API dei servizi di PDF, quindi è necessario [creare una credenziale](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-prima di utilizzarlo. Potrai quindi utilizzare PDF Embed completamente gratuito.
+L’API PDF Embed utilizza credenziali diverse dall’API PDF Services, pertanto è necessario [crea credenziali](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+prima di poterlo utilizzare. Puoi quindi utilizzare PDF Embed in modo completamente gratuito.
 
-Assicurati di immettere l’URL del sito Web corretto nel token. In caso contrario, potrebbe non essere possibile eseguire il rendering dei PDF con il token.
+Assicurati di inserire l’URL del sito Web corretto nel token. In caso contrario, potrebbe non essere possibile eseguire il rendering dei PDF con il token.
 
-L&#39;interfaccia utente utilizza il metodo [Handlebars](https://handlebarsjs.com/) linguaggio dei modelli. Viene visualizzato il PDF in un browser Web.
+L&#39;interfaccia utente utilizza [Manubrio](https://handlebarsjs.com/) linguaggio dei modelli. Il PDF viene visualizzato in un browser Web.
 
-Di seguito è riportato il codice per questo passaggio:
+Di seguito è riportato il codice di questo passaggio:
 
 ```
 <div id="adobe-dc-view" style="height: 750px; width: 700px;"></div>
@@ -140,39 +141,39 @@ Di seguito è riportato il codice per questo passaggio:
 </p>
 ```
 
-Questo codice visualizza l&#39;output del PDF e il collegamento per scaricare il report del PDF, come illustrato di seguito nell&#39;acquisizione delle schermate:
+Questo codice visualizza l’output PDF e il collegamento per scaricare il report PDF, come illustrato nell’acquisizione schermo seguente:
 
-![Screenshot dell’anteprima di student PDF](assets/edu_3.png)
+![Schermata di anteprima di PDF per studenti](assets/edu_3.png)
 
-Gli studenti devono poter scaricare il report o lavorare sul materiale qui.
+Gli studenti dovrebbero essere in grado di scaricare il rapporto o lavorare sul materiale qui.
 
-## Annotazione dei documenti PDF
+## Creazione di annotazioni sui documenti PDF
 
-Una piattaforma di apprendimento dovrebbe supportare annotazioni, commenti e discussioni di base nei PDF. L’API di incorporamento di PDF fornisce tutte queste funzioni. Attiva il supporto per le annotazioni mediante `showAnnotationTools`, consentendo a docenti e studenti di commentare i documenti e archiviare i commenti come parte del PDF.
+Una piattaforma di apprendimento deve supportare annotazioni di base, commenti e discussioni nei PDF. L’API PDF Embed offre tutte queste funzioni. Attiva il supporto delle annotazioni utilizzando `showAnnotationTools`, consentendo a docenti e studenti di commentare i documenti e archiviare i commenti come parte del PDF.
 
-Per attivare le annotazioni nei documenti PDF, è sufficiente passare l’argomento `showAnnotationTools` : fedele alla proprietà `previewFile` metodo. Viene visualizzato lo strumento annotazioni nell’anteprima PDF. Accedete a questo strumento dal menu con i tre punti nell’angolo superiore destro dell’anteprima.
+Per abilitare le annotazioni nei documenti PDF, è sufficiente passare l&#39;argomento `showAnnotationTools` : true per `previewFile` metodo. In questo modo viene visualizzato lo strumento Anteprima PDF. Accedete a questo strumento dal menu con i tre punti in alto a destra nell’anteprima.
 
-![Screenshot degli strumenti di commento in PDF](assets/edu_4.png)
+![Schermata degli strumenti per commenti in PDF](assets/edu_4.png)
 
-Nei documenti caricati dagli insegnanti, gli studenti possono evidenziare il testo, aggiungere commenti e così via.
+Nei documenti caricati dai docenti, gli studenti possono evidenziare il testo, aggiungere commenti e così via.
 
-![Screenshot dell’aggiunta di un commento in PDF](assets/edu_5.png)
+![Schermata per l’aggiunta di un commento in PDF](assets/edu_5.png)
 
-Nella schermata di cui sopra, l’utente è etichettato come &quot;Ospite&quot;, ma puoi configurare i profili per gli utenti, ad esempio studenti e docenti.
+Nell’acquisizione della schermata precedente, l’utente è etichettato come &quot;Guest&quot;, ma è possibile configurare i profili per gli utenti, ad esempio studenti e docenti.
 
-Quando uno studente applica un’annotazione, l’API Incorpora PDF visualizza un **Salva** sul banner superiore. Il salvataggio aggiunge le annotazioni al file. Prova a fare clic **Salva** per vedere come viene salvato il file con l’annotazione incorporata nel rapporto.
+Quando uno studente applica un’annotazione, l’API PDF Embed visualizza un **Salva** lungo il banner superiore. Quando si salva, le annotazioni vengono aggiunte al file. Prova a fare clic **Salva** per vedere come viene salvato il file con l&#39;annotazione incorporata nel report.
 
-Gli studenti possono utilizzare annotazioni per fare domande o condividere i loro commenti sul materiale di apprendimento.
+Gli studenti possono utilizzare le annotazioni per porre domande o condividere i propri commenti sul materiale di apprendimento.
 
-## Monitoraggio dell&#39;utilizzo dei documenti
+## Tracciamento dell’utilizzo del documento
 
-È importante per gli insegnanti e le scuole vedere come gli studenti utilizzano le piattaforme online. Questo aiuta i docenti a sostenere gli studenti con risorse che li aiutano a svolgere meglio i loro compiti. L’API di incorporamento di PDF si integra con l’analisi che puoi utilizzare per misurare tutti gli eventi in corso, ad esempio quando gli utenti aprono, leggono e chiudono i documenti. Con l&#39;API dei servizi PDF, i docenti possono anche disattivare la stampa, il download e la modifica dei file per contribuire a mantenere l&#39;integrità accademica.
+È importante che i docenti e le scuole vedano come gli studenti utilizzano le piattaforme online. Questo aiuta i docenti a supportare gli studenti con risorse che li aiutano a svolgere meglio i loro compiti. L’API PDF Embed si integra con le analisi che puoi utilizzare per misurare tutti gli eventi in corso, ad esempio quando gli utenti aprono, leggono e chiudono documenti. Con l&#39;API di PDF Services, i docenti possono anche disabilitare la stampa, il download e la modifica dei file per mantenere l&#39;integrità accademica.
 
-Se si dispone di un [Adobe Analytics](https://www.adobe.io/apis/experiencecloud/analytics.html) , è possibile utilizzare la sua [integrazione preconfigurata](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#adobe-analytics). In caso contrario, utilizza le funzioni di callback per integrare i servizi di PDF con altri fornitori di analisi, ad esempio [Google](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#google-analytics).
+Se si dispone di un [Adobe Analytics](https://www.adobe.io/apis/experiencecloud/analytics.html) licenza, è possibile utilizzare la relativa [integrazione preconfigurata](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#adobe-analytics). In caso contrario, utilizza i callback per integrare i Servizi PDF con altri provider di analisi, ad esempio [Google](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#google-analytics).
 
-Per abilitare la misurazione degli eventi del documento, associare i gestori di eventi mediante `registerCallback` con l&#39;Adobe dell&#39;istanza della vista DC. Potete visualizzare le metriche di base, ad esempio l’apertura di un documento o la lettura di una pagina, sulla console. Puoi anche salvare le metriche in un registro o pubblicarle in altri archivi di analisi.
+Per attivare la misurazione degli eventi del documento, è possibile allegare i gestori eventi utilizzando il comando `registerCallback` metodo con Adobe DC View. Sulla console è possibile visualizzare le metriche di base, ad esempio l&#39;apertura di un documento o la lettura di una pagina. È inoltre possibile salvare le metriche in un registro o pubblicarle in altri archivi di analisi.
 
-Di seguito è riportato il codice di esempio per associare i gestori di eventi:
+Di seguito è riportato il codice di esempio per allegare i gestori eventi:
 
 ```
 adobeDCView.registerCallback(
@@ -186,17 +187,17 @@ adobeDCView.registerCallback(
 );
 ```
 
-Gli insegnanti possono vedere quanti studenti hanno visto il compito, quanti hanno esaminato tutte le pagine dei loro appunti e altri dettagli preziosi.
+I docenti possono vedere quanti studenti hanno visto il compito, quanti sono passati attraverso tutte le pagine dei loro appunti e altri dettagli preziosi.
 
-Di seguito è riportata una schermata di acquisizione della console del browser Web:
+Ecco un&#39;immagine della console del browser Web:
 
-![Screenshot della console del browser Web](assets/edu_6.png)
+![Schermata della console del browser Web](assets/edu_6.png)
 
-Questa schermata mostra che lo studente ha aperto il file assegnazione, ha letto la prima pagina, o non ha scorrere le pagine aggiuntive o il documento aveva una sola pagina, quindi ha scaricato il file. Puoi raccogliere queste metriche per eseguire analisi e studiare il comportamento dei tuoi studenti.
+Questa schermata mostra che lo studente ha aperto il file di assegnazione, ha letto la prima pagina - o non ha fatto scorrere le pagine aggiuntive o il documento aveva una sola pagina - poi ha scaricato il file. Puoi raccogliere queste metriche per eseguire analisi e studiare il comportamento degli studenti.
 
-Inoltre, [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è integrato con l&#39;API di incorporamento di PDF, quindi se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare le metriche nell&#39;abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l&#39;ID della suite alla funzione di costruzione API di PDF Embed. (Tenete presente che dovete utilizzare le credenziali API di incorporamento PDF, non le credenziali API dei servizi PDF).
+Inoltre, [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è integrato con PDF Embed API; pertanto, se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare i parametri nel tuo abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l’ID suite al costruttore PDF Embed API. (Si noti che è necessario utilizzare le credenziali API di PDF Embed e non le credenziali API di PDF Services).
 
-Di seguito è riportato un esempio di codice che mostra come passare l&#39;ID della suite alla funzione di costruzione API di incorporamento di PDF:
+Di seguito è riportato un codice di esempio che mostra come passare l&#39;ID suite al costruttore API PDF Embed:
 
 ```
 var adobeDCView = new AdobeDC.View({
@@ -208,8 +209,8 @@ var adobeDCView = new AdobeDC.View({
 
 ## Fasi seguenti
 
-Questa esercitazione pratica ha esaminato come utilizzare l’API PDF Services e l’API PDF Embed per creare un portale di apprendimento, facilitando l’utilizzo efficace [collaborazione tra studenti e docenti](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html). Utilizzando questo portale, gli insegnanti possono caricare materiale didattico in qualsiasi formato e convertirlo in PDF utilizzando l’API dei servizi PDF. Gli studenti possono quindi visualizzare in anteprima questi PDF utilizzando l&#39;API di incorporamento di PDF.
+In questa esercitazione pratica è stato descritto come utilizzare l’API di PDF Services e l’API di PDF Embed per creare un portale di apprendimento, al fine di semplificare l’utilizzo [collaborazione tra studenti e docenti](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html). Utilizzando questo portale, i docenti possono caricare materiale didattico in qualsiasi formato e convertirlo in PDF utilizzando l’API di PDF Services. Gli studenti possono quindi visualizzare in anteprima questi PDF utilizzando l’API PDF Embed.
 
-Ora che sai come annotare i report PDF, archiviare le annotazioni e monitorare l&#39;uso dei report PDF, puoi iniziare a implementare queste soluzioni nei tuoi progetti.
+Ora che sai come annotare i report PDF, archiviare le annotazioni e tenere traccia dell’utilizzo dei report PDF, puoi iniziare ad implementare queste soluzioni nei tuoi progetti.
 
-È possibile utilizzare [!DNL Adobe Acrobat Services] API per creare esperienze di PDF interattive intuitive sul tuo sito web. Approfitta dell&#39;API gratuita di Adobe PDF Services per sei mesi e non [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) (tramite AWS o un accordo diretto) solo per \$0,05 per transazione documento. Usa Adobe PDF Incorpora gratuitamente senza limiti di tempo. Crea un account gratuito per [inizia](https://www.adobe.com/go/dcsdks_credentials) oggi.
+È possibile utilizzare [!DNL Adobe Acrobat Services] API per creare esperienze di PDF interattive e di facile utilizzo sul tuo sito Web. Divertiti a utilizzare gratuitamente le API di Adobe PDF Services per sei mesi e poi a soli [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) (tramite AWS o un contratto diretto) solo per \$0,05 per ogni transazione di documento. Utilizza Adobe PDF Embed gratis senza limiti di tempo. Crea un account gratuito per [introduzione](https://www.adobe.com/go/dcsdks_credentials) oggi.

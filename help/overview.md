@@ -1,13 +1,14 @@
 ---
-title: "[!DNL Adobe Acrobat Services] Tutorials API"
+title: "[!DNL Adobe Acrobat Services] TUTORIALS API"
 description: Pagina Panoramica per [!DNL Adobe Acrobat Services]
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API
 thumbnail: KT-7463.jpg
 jira: KT-7463
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 2%
@@ -18,18 +19,18 @@ ht-degree: 2%
 
 ![[!DNL Acrobat Services] Banner](assets/acrobatserviceshero.jpg)
 
-[!DNL Adobe Acrobat Services] dispone di cinque API principali: il [!DNL Adobe PDF Services API], la proprietà [!DNL Adobe PDF Embed API], la proprietà [!DNL Adobe Document Generation API], la proprietà [!DNL Adobe PDF Extract API] e [!DNL Adobe PDF Accessibility Auto-Tag API]. Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un&#39;offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite una serie di moderni servizi web basati su cloud. Ti aiutano a distribuire esperienze più semplici, veloci e personalizzate con il tuo marchio, così potrai controllare l&#39;interazione degli utenti con i tuoi documenti, ottimizzare i flussi di lavoro del PDF e promuovere l&#39;utilizzo e la fidelizzazione. Questi tutorial ti aiutano a distribuire esperienze più semplici, veloci e personalizzate con il marchio [!DNL Adobe Acrobat Services] API.
+[!DNL Adobe Acrobat Services] dispone di cinque API principali: [!DNL Adobe PDF Services API], la [!DNL Adobe PDF Embed API], la [!DNL Adobe Document Generation API], la [!DNL Adobe PDF Extract API] e [!DNL Adobe PDF Accessibility Auto-Tag API]. Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
 
 <table style="table-layout:fixed">
 <tr>
  <td>
    <a href="pdfservices/overview-pdfservices.md">
-      <img alt="API dei servizi PDF" src="assets/pdfservicescard.png" />
+      <img alt="API di PDF Services" src="assets/pdfservicescard.png" />
    </a>
   </td>
   <td>
    <a href="docgen/overview-docgen.md">
-      <img alt="API per la generazione di documenti" src="assets/docgencard.png" />
+      <img alt="API di Document Generation" src="assets/docgencard.png" />
    </a>
   </td>
   <td>
@@ -39,7 +40,7 @@ ht-degree: 2%
   </td>
   <td>
    <a href="pdfembed/overview-embed.md">
-      <img alt="Guida introduttiva all’API Adobe PDF Tools e a Java" src="assets/pdfembedcard.png" />
+      <img alt="Guida introduttiva a Adobe PDF Tools API e Java" src="assets/pdfembedcard.png" />
    </a>
   </td>
 </tr>
@@ -51,7 +52,7 @@ ht-degree: 2%
   </td>
  <td>
    <a href="usecases/overview-usecases.md">
-      <img alt="[!DNL Adobe Acrobat Services] Casi di utilizzo API" src="assets/usecasescard.png" />
+      <img alt="[!DNL Adobe Acrobat Services] Casi di utilizzo delle API" src="assets/usecasescard.png" />
    </a>
   </td>
   <td>

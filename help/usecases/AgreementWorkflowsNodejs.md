@@ -1,14 +1,15 @@
 ---
-title: Flussi di lavoro degli accordi in Node.js
-description: "[!DNL Adobe Acrobat Services] Le API incorporano facilmente funzionalità di PDF nelle applicazioni web"
+title: Flussi di lavoro per accordi in Node.js
+description: "[!DNL Adobe Acrobat Services] Le API integrano facilmente le funzionalità PDF nelle applicazioni Web"
 type: Tutorial
 role: Developer
 level: Beginner
+feature: Use Cases
 thumbnail: KT-7473.jpg
 jira: KT-7473
-keywords: In primo piano
+keywords: In evidenza
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 1%
@@ -17,49 +18,49 @@ ht-degree: 1%
 
 # Flussi di lavoro degli accordi in Node.js
 
-![Usa banner eroe caso](assets/UseCaseAgreementHero.jpg)
+![Banner Hero per casi di utilizzo](assets/UseCaseAgreementHero.jpg)
 
-Molte applicazioni e processi aziendali richiedono documentazione, come proposte e accordi. I documenti di PDF garantiscono una maggiore sicurezza e una minore modificabilità dei file. Inoltre, offrono un supporto per la firma digitale che consente ai clienti di completare i propri documenti in modo semplice e veloce. [!DNL Adobe Acrobat Services] Le API incorporano facilmente funzionalità di PDF nelle applicazioni web.
+Molte applicazioni e processi aziendali richiedono documentazione come proposte e accordi. Con i documenti PDF i file risultano più sicuri e meno modificabili. Offre inoltre il supporto per la firma digitale, per consentire ai clienti di completare i documenti in modo semplice e veloce. [!DNL Adobe Acrobat Services] Le API integrano facilmente le funzionalità PDF nelle applicazioni Web.
 
 ## Cosa puoi imparare
 
-In questa esercitazione pratica, scopri come aggiungere servizi PDF a un’applicazione Node.js per digitalizzare un processo di accordo.
+In questo tutorial pratico, scopri come aggiungere servizi PDF a un’applicazione Node.js per digitalizzare un processo di accordo.
 
 ## API e risorse pertinenti
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
 
 * [Codice progetto](https://github.com/adobe/pdftools-node-sdk-samples)
 
-## Configurazione [!DNL Adobe Acrobat Services]
+## Impostazione [!DNL Adobe Acrobat Services]
 
-Per iniziare, configura le credenziali da utilizzare [!DNL Adobe Acrobat Services]. Registrare un account e utilizzare il metodo [Node.js QuickStart](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#node-js) per verificare che le credenziali funzionino prima di integrare la funzionalità in un&#39;applicazione più grande.
+Per iniziare, configura le credenziali da utilizzare [!DNL Adobe Acrobat Services]. Registra un account e utilizza [Node.js QuickStart](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#node-js) per verificare il funzionamento delle credenziali prima di integrare la funzionalità in un&#39;applicazione di grandi dimensioni.
 
-Innanzitutto, richiedi un account sviluppatore di Adobe. Quindi, sul [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) , selezionare la proprietà *Introduzione* in Crea nuove credenziali. Puoi registrarti per la versione di prova gratuita che offre 1.000 transazioni con documenti utilizzabili nell&#39;arco di sei mesi.
+Per prima cosa, ottieni un account sviluppatore di Adobe. Quindi, sul [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) , seleziona la pagina *Introduzione* opzione in Crea nuove credenziali. Puoi registrarti per la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzati in sei mesi.
 
 ![Immagine della creazione di nuove credenziali](assets/AWNjs_1.png)
 
-Nella seguente pagina Crea nuove credenziali, viene richiesto di scegliere tra l’API per l’incorporamento di PDF e l’API per i servizi di PDF.
+Nella pagina Creazione di nuove credenziali seguente viene richiesto di scegliere tra l&#39;API PDF Embed e l&#39;API PDF Services.
 
-Seleziona *API dei servizi PDF*.
+Seleziona *API di PDF Services*.
 
-Immettete un nome per l&#39;applicazione e selezionate la casella con etichetta *Creare un esempio di codice personalizzato*. Selezionando questa casella, le credenziali vengono incorporate automaticamente nell&#39;esempio di codice. Se lasciate questa casella deselezionata, dovete aggiungere manualmente le credenziali all&#39;applicazione.
+Immetti un nome per l’applicazione e seleziona la casella etichettata *Creare un esempio di codice personalizzato*. Selezionando questa casella, le credenziali vengono incorporate automaticamente nell&#39;esempio di codice. Se si lascia deselezionata questa casella, è necessario aggiungere manualmente le credenziali all&#39;applicazione.
 
 Seleziona *Node.js* per il tipo di applicazione e fare clic su *Crea credenziali*.
 
-Qualche istante dopo, un file .zip inizia a essere scaricato con un progetto di esempio, comprese le tue credenziali. Il pacchetto Node.js per [!DNL Acrobat Services] è già incluso nel codice di progetto di esempio.
+Pochi istanti dopo, un file .zip inizia a essere scaricato con un progetto di esempio che include le tue credenziali. Pacchetto Node.js per [!DNL Acrobat Services] è già incluso nel codice del progetto di esempio.
 
-![Immagine della selezione delle credenziali API dei servizi PDF](assets/AWNjs_2.png)
+![Immagine della selezione delle credenziali API di PDF Services](assets/AWNjs_2.png)
 
 ## Configurazione manuale del progetto di esempio
 
 Se scegliete di non scaricare un progetto di esempio dalla pagina Crea nuove credenziali, potete anche impostare il progetto manualmente.
 
-Scarica il codice (senza credenziali incorporate) da [GitHub](https://github.com/adobe/pdftools-node-sdk-samples). Se utilizzate questa versione del codice, dovete aggiungere le credenziali al file pdftools-api-credentials.json prima di utilizzare:
+Scarica il codice (senza credenziali incorporate) da [GitHub](https://github.com/adobe/pdftools-node-sdk-samples). Se si utilizza questa versione del codice, è necessario aggiungere le credenziali al file pdftools-api-credentials.json prima di utilizzare:
 
 ```
 {
@@ -75,7 +76,7 @@ Scarica il codice (senza credenziali incorporate) da [GitHub](https://github.com
 }
 ```
 
-Per l&#39;applicazione, è necessario copiare il file della chiave privata e i file delle credenziali nell&#39;origine dell&#39;applicazione.
+Per la propria applicazione, è necessario copiare il file della chiave privata e i file delle credenziali nell&#39;origine dell&#39;applicazione.
 
 È necessario installare il pacchetto Node.js per [!DNL Acrobat Services]. Per installare il pacchetto, utilizza il comando seguente:
 
@@ -85,7 +86,7 @@ npm install --save @adobe/documentservices-pdftools-node-sdk
 
 ## Impostazione della registrazione
 
-Gli esempi qui usano Express per il framework applicativo. Utilizzano anche log4js per la registrazione delle applicazioni. Con log4js, puoi facilmente indirizzare l’accesso alla console o a un file:
+In questi esempi viene utilizzato Express per il framework dell&#39;applicazione. e log4js per la registrazione delle applicazioni. Con log4js, potete indirizzare facilmente l&#39;accesso alla console o a un file:
 
 ```
 const log4js = require('log4js');
@@ -99,20 +100,20 @@ logger.level = 'info';
 logger.info('Application started')
 ```
 
-Il codice riportato sopra scrive i dati registrati in un file in ./logs/applicationlog.txt. Se invece desideri che scriva nella console, puoi commentare la chiamata a log4js.configure.
+Il codice riportato sopra scrive i dati registrati in un file in ./logs/applicationlog.txt. Se invece desideri che scriva sulla console, puoi commentare la chiamata su log4js.configure.
 
 ## Conversione di file Word in PDF
 
-Accordi e proposte sono spesso scritti in un’applicazione per la produttività, come Microsoft Word. Per accettare documenti in questo formato e convertire il documento in PDF, è possibile aggiungere funzionalità all&#39;applicazione. Vediamo come caricare e salvare un documento in un&#39;applicazione Express e salvarlo nel file system.
+Gli accordi e le proposte vengono spesso scritti in un’applicazione di produttività, come Microsoft Word. Per accettare documenti in questo formato e convertire il documento in PDF, è possibile aggiungere funzionalità per l&#39;applicazione. Diamo un&#39;occhiata a come caricare e salvare un documento in un&#39;applicazione Express e salvarlo nel file system.
 
-Nel HTML dell&#39;applicazione, aggiungete un elemento file e un pulsante per avviare il caricamento:
+Nel HTML dell’applicazione, aggiungi un elemento file e un pulsante per avviare il caricamento:
 
 ```
 <input type="file" name="source" id="source" />
 <button onclick="upload()" >Upload</button>
 ```
 
-Nella pagina JavaScript, caricate il file in modo asincrono utilizzando la funzione di recupero:
+In JavaScript della pagina, caricare il file in modo asincrono utilizzando la funzione di recupero:
 
 ```
 function upload()
@@ -124,13 +125,13 @@ function upload()
 }
 ```
 
-Scegli una cartella in cui accettare i file caricati. L&#39;applicazione richiede un percorso a questa cartella. Trovare il percorso assoluto utilizzando un percorso relativo unito a \_\_dirname:
+Scegli una cartella per accettare i file caricati. L&#39;applicazione richiede un percorso per questa cartella. Trovare il percorso assoluto utilizzando un percorso relativo unito a \_\_dirname:
 
 ```
 const uploadFolder = path.join(__dirname, "../uploads");
 ```
 
-Poiché il file viene inviato tramite post, devi rispondere a un messaggio post sul lato server:
+Poiché il file viene inviato tramite post, è necessario rispondere a un messaggio di post sul lato server:
 
 ```
 router.post('/', (req, res, next) => {
@@ -151,9 +152,9 @@ router.post('/', (req, res, next) => {
 });
 ```
 
-Una volta eseguita questa funzione, il file viene salvato nella cartella di caricamento delle applicazioni ed è disponibile per ulteriori elaborazioni.
+Dopo l&#39;esecuzione di questa funzione, il file viene salvato nella cartella di caricamento delle applicazioni ed è disponibile per ulteriori elaborazioni.
 
-Quindi, convertite il file dal formato nativo a PDF. Il codice di esempio scaricato in precedenza contiene uno script di nome `create-pdf-from-docx.js` per la conversione di un documento in PDF. La funzione seguente, `convertDocumentToPDF`, accetta un documento caricato e lo converte in un PDF in una cartella diversa:
+Quindi, converti il file dal suo formato nativo in PDF. Il codice di esempio scaricato in precedenza contiene uno script denominato `create-pdf-from-docx.js` per la conversione di un documento in PDF. La seguente funzione: `convertDocumentToPDF`, prende un documento caricato e lo converte in un PDF in una cartella diversa:
 
 ```
 function convertDocumentToPDF(sourcePath, destinationPath)
@@ -186,11 +187,11 @@ function convertDocumentToPDF(sourcePath, destinationPath)
 }
 ```
 
-È possibile notare un pattern generale con il codice:
+Con il codice è possibile osservare uno schema generale:
 
-Il codice crea un oggetto credenziali e un contesto di esecuzione, inizializza alcune operazioni, quindi esegue l&#39;operazione con il contesto di esecuzione. Questo pattern è visibile in tutto il codice di esempio.
+Il codice crea un oggetto credenziali e un contesto di esecuzione, inizializza alcune operazioni, quindi esegue l&#39;operazione con il contesto di esecuzione. Potete vedere questo pattern in tutto il codice di esempio.
 
-Effettuando alcune aggiunte alla funzione di caricamento in modo che chiami questa funzione, i documenti Word caricati dagli utenti vengono ora convertiti automaticamente in PDF.
+Aggiungendo alcune aggiunte alla funzione di caricamento in modo da richiamarla, i documenti di Word caricati dagli utenti vengono ora automaticamente convertiti in PDF.
 
 Il codice seguente crea il percorso di destinazione per il PDF convertito e avvia la conversione:
 
@@ -210,7 +211,7 @@ logger.info('converting to ${destinationName}')
 
 ## Conversione di altri tipi di file in PDF
 
-Il document toolkit converte in PDF altri formati, ad esempio static HTML, un altro tipo di documento comune. Il toolkit accetta i documenti di HTML compilati come file .zip con tutte le risorse a cui fa riferimento il documento (file CSS, immagini e altri file) nello stesso file .zip. Il documento di HTML stesso deve essere denominato index.html e inserito nella cartella principale del file .zip.
+Document Toolkit converte altri formati in PDF, ad esempio static HTML, un altro tipo di documento comune. Il toolkit accetta documenti HTML inseriti in un pacchetto come file .zip contenente tutte le risorse a cui fa riferimento il documento (file CSS, immagini e altri file) nello stesso file .zip. Il documento HTML stesso deve essere denominato index.html e inserito nella directory principale del file .zip.
 
 Per convertire un file .zip contenente HTML, utilizzate il codice seguente:
 
@@ -231,7 +232,7 @@ htmlToPDFOperation.execute(executionContext)
 });
 ```
 
-La funzione `setCustomOptions` specifica altre impostazioni di PDF, ad esempio le dimensioni della pagina. Qui, la funzione imposta le dimensioni della pagina su 11,5 x 11 pollici:
+La funzione `setCustomOptions` specifica altre impostazioni di PDF, ad esempio le dimensioni della pagina. Qui puoi vedere come la funzione imposta le dimensioni di pagina su 11,5 x 11 pollici:
 
 ```
 const setCustomOptions = (htmlToPDFOperation) => {    
@@ -247,23 +248,23 @@ const setCustomOptions = (htmlToPDFOperation) => {
 };
 ```
 
-Quando si apre un documento HTML contenente alcuni termini, nel browser viene visualizzato quanto segue:
+All’apertura di un documento HTML che contiene alcuni termini, nel browser viene visualizzato quanto segue:
 
-![Immagine di termini informatici](assets/AWNjs_3.png)
+![Immagine dei termini del computer](assets/AWNjs_3.png)
 
 L&#39;origine di questo documento è composta da un file CSS e da un file HTML:
 
 ![Immagine del file CSS e HTML](assets/AWNjs_4.png)
 
-Dopo aver elaborato il file HTML, lo stesso testo è disponibile in formato PDF:
+Dopo l’elaborazione del file HTML, il testo in formato PDF sarà lo stesso:
 
-![File PDF dei termini del computer](assets/AWNjs_5.png)
+![File PDF delle Condizioni del computer](assets/AWNjs_5.png)
 
 ## Aggiunta di pagine
 
-Un&#39;altra operazione comune con i file PDF consiste nell&#39;aggiungere alla fine delle pagine che possono contenere del testo standard, ad esempio un elenco di termini. Il kit di strumenti del documento può combinare più documenti PDF in un unico documento. Se disponi di un elenco di percorsi di documento (qui in `sourceFileList`), è possibile aggiungere i riferimenti dei file di ogni file a un oggetto per un&#39;operazione di combinazione.
+Un’altra operazione comune con i file PDF è aggiungere alla fine delle pagine che possono contenere testo standard, ad esempio un elenco di termini. Il toolkit per documenti può combinare più documenti PDF in un unico documento. Se disponi di un elenco di percorsi dei documenti (qui nella `sourceFileList`), potete aggiungere i riferimenti dei file di ogni file a un oggetto per un&#39;operazione di combinazione.
 
-Quando l&#39;operazione di combinazione viene eseguita, viene fornito un singolo file con una parte del contenuto sorgente. È possibile utilizzare `saveAsFile` sull&#39;oggetto per mantenere il file nell&#39;archiviazione.
+Quando viene eseguita l’operazione di combinazione, viene fornito un singolo file con il contenuto di origine. È possibile utilizzare `saveAsFile` sull&#39;oggetto per salvare in modo permanente il file nell&#39;archiviazione.
 
 ```
 const executionContext = PDFToolsSDK.ExecutionContext.create(credentials);
@@ -283,57 +284,57 @@ combineOperation.execute(executionContext)
 });    
 ```
 
-## Visualizzazione dei documenti PDF
+## Visualizzazione di documenti PDF
 
-Hai eseguito diverse operazioni sui file PDF, ma in ultima analisi, l&#39;utente deve visualizzare i documenti. Potete incorporare il documento in una pagina Web utilizzando l’API di incorporamento PDF di Adobe.
+Hai eseguito diverse operazioni sui file PDF, ma alla fine, l&#39;utente deve visualizzare i documenti. Puoi incorporare il documento in una pagina Web utilizzando l’API PDF Embed di Adobe.
 
-Nella pagina che visualizza il PDF, aggiungete un `<div />` per contenere il documento e assegnarvi un ID. A breve userai questo ID. Nella pagina Web, includere un `<script />` riferimento alla libreria JavaScript di Adobe:
+Nella pagina in cui è visualizzato il PDF, aggiungi un `<div />` per contenere il documento e assegnargli un ID. Questo ID verrà utilizzato a breve. Nella pagina Web, includi un `<script />` riferimento alla libreria JavaScript di Adobe:
 
 ```
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-L&#39;ultimo bit di codice necessario è una funzione che visualizza il documento una volta caricata l&#39;API JavaScript di Adobe PDF Embed. Quando si riceve la notifica che lo script viene caricato mediante un evento adobe_dc_view\_sdk.ready, creare un nuovo oggetto AdobeDC.View. Questo oggetto richiede l&#39;ID client e l&#39;ID dell&#39;elemento creato in precedenza. Trova il tuo ID client nel [Console Adobe Developer](https://console.adobe.io/). Quando visualizzate le impostazioni dell’applicazione creata durante la generazione delle credenziali precedenti, l’ID client viene visualizzato.
+L’ultimo bit di codice necessario è una funzione che visualizza il documento una volta caricato l’API JavaScript di Adobe PDF Embed. Quando ricevete una notifica che avvisa che lo script è stato caricato tramite un evento adobe_dc_view\_sdk.ready, create un nuovo oggetto AdobeDC.View. Questo oggetto richiede l&#39;ID client e l&#39;ID dell&#39;elemento creato in precedenza. Trova il tuo ID client nella [Console Adobe Developer](https://console.adobe.io/). Quando si visualizzano le impostazioni per l&#39;applicazione creata durante la generazione delle credenziali precedenti, viene visualizzato l&#39;ID client.
 
 ![Immagine della chiave client API](assets/AWNjs_6.png)
 
-## Altre opzioni di PDF
+## Altre opzioni PDF
 
-Il [Dimostrazione delle API di Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) consente di visualizzare in anteprima le varie opzioni per incorporare i documenti PDF.
+La [Demo delle API di Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) consente di visualizzare in anteprima le varie altre opzioni per l’incorporamento di documenti PDF.
 
 ![Immagine delle opzioni di incorporamento di PDF ](assets/AWNjs_7.png)
 
-Potete attivare e disattivare varie opzioni e vedere immediatamente il rendering. Quando trovate una combinazione che vi piace, fate clic sul *\&lt;/\> Genera codice* per generare il codice HTML effettivo utilizzando queste opzioni.
+Puoi attivare e disattivare varie opzioni e vedere immediatamente come vengono eseguite. Quando trovi una combinazione che ti piace, fai clic sul pulsante *\&lt;/\> Genera codice* per generare il codice HTML effettivo utilizzando tali opzioni.
 
-![Immagine di Anteprima codice](assets/AWNjs_8.png)
+![Immagine dell&#39;anteprima del codice](assets/AWNjs_8.png)
 
-## Aggiunta di firme digitali e protezione
+## Aggiunta di firme digitali e sicurezza
 
-Una volta che un documento è pronto, puoi aggiungere firme digitali per l’approvazione utilizzando Adobe Sign. Questa funzionalità funziona in modo leggermente diverso rispetto alla funzionalità utilizzata finora. Per le firme digitali, un’applicazione deve essere configurata per utilizzare OAuth per l’autenticazione dell’utente.
+Una volta che il documento è pronto, è possibile aggiungervi firme digitali per l’approvazione utilizzando Adobe Sign. Questa funzionalità funziona in modo leggermente diverso rispetto a quella utilizzata finora. Per le firme digitali, un’applicazione deve essere configurata per utilizzare OAuth per l’autenticazione dell’utente.
 
-Il primo passo nella configurazione dell&#39;applicazione consiste nel [registrare la domanda](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) per utilizzare OAuth per Adobe Sign. Una volta effettuato l’accesso, accedi alla schermata per creare le applicazioni facendo clic su *Account*, quindi aprire il *API Adobe Sign* e fai clic su *Applicazioni API* per aprire l&#39;elenco delle applicazioni registrate.
+Il primo passaggio della configurazione dell&#39;applicazione è [registrare l&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) per utilizzare OAuth per Adobe Sign. Una volta effettuato l’accesso, accedi alla schermata per creare le applicazioni facendo clic su *Account*, quindi aprire il *API ADOBE SIGN* e fare clic su *Applicazioni API* per aprire l&#39;elenco delle applicazioni registrate.
 
 ![Immagine del primo passaggio della registrazione dell&#39;applicazione](assets/AWNjs_9.png)
 
-Per creare una nuova voce dell&#39;applicazione, fate clic sull&#39;icona più (+) nell&#39;angolo in alto a destra.
+Per creare una nuova voce dell’applicazione, fai clic sull’icona più in alto a destra.
 
 ![Immagine dell&#39;icona più nell&#39;angolo superiore destro dello schermo](assets/AWNjs_10.png)
 
-Nella finestra che si apre, immettete un nome applicazione e un nome visualizzato. Seleziona *Cliente* per il dominio, quindi fai clic su *Salva*.
+Nella finestra visualizzata, immetti il nome dell’applicazione e il nome visualizzato. Seleziona *Cliente* per il dominio, quindi fare clic su *Salva*.
 
-![Immagine di dove immettere il nome dell&#39;applicazione e il nome di visualizzazione](assets/AWNjs_11.png)
+![Immagine da dove immettere il nome dell&#39;applicazione e il nome visualizzato](assets/AWNjs_11.png)
 
-Dopo aver creato l&#39;applicazione, potete selezionarla dall&#39;elenco e fare clic su *Configurare OAuth per l’applicazione*. Selezionate le opzioni desiderate. Nell’URL di reindirizzamento, immettete l’URL dell’applicazione. È possibile immettere più URL qui. Per l&#39;applicazione che state testando, il valore è:
+Dopo aver creato l&#39;applicazione, è possibile selezionarla dall&#39;elenco e fare clic su *Configurazione di OAuth per l’applicazione*. Seleziona le opzioni. Nell’URL di reindirizzamento, immetti l’URL dell’applicazione. Qui puoi inserire più URL. Per l&#39;applicazione che state testando, il valore è:
 
 ```
 http://localhost:3000/signed-in 
 ```
 
-Il processo di utilizzo di OAuth per ottenere un token è standard. L&#39;applicazione indirizza un utente a un URL per l&#39;accesso. Una volta effettuato l&#39;accesso, l&#39;utente viene reindirizzato all&#39;applicazione con ulteriori informazioni nei parametri di query della pagina.
+Il processo di utilizzo di OAuth per ottenere un token è standard. L’applicazione indirizza un utente a un URL per l’accesso. Una volta effettuato l&#39;accesso, l&#39;utente viene reindirizzato all&#39;applicazione con ulteriori informazioni nei parametri di query della pagina.
 
-Per l&#39;URL di accesso, l&#39;applicazione deve passare l&#39;ID client, l&#39;URL di reindirizzamento e un elenco degli ambiti necessari.
+Per l’URL di accesso, l’applicazione deve passare l’ID client, l’URL di reindirizzamento e un elenco degli ambiti necessari.
 
-Il pattern dell&#39;URL è simile al seguente:
+Il modello per l&#39;URL è simile al seguente:
 
 ```
 https://secure.adobesign.com/public/oauth?
@@ -343,15 +344,15 @@ https://secure.adobesign.com/public/oauth?
   scope=
 ```
 
-All&#39;utente viene richiesto di accedere al proprio ID per Adobe Sign. Dopo aver effettuato l’accesso, viene chiesto se devono fornire autorizzazioni all’applicazione.
+All’utente viene richiesto di accedere al proprio ID per Adobe Sign. Dopo aver effettuato l’accesso, viene richiesto se fornire le autorizzazioni all’applicazione.
 
-![Immagine della schermata di conferma dell’accesso](assets/AWNjs_12.png)
+![Immagine della schermata di conferma dell&#39;accesso](assets/AWNjs_12.png)
 
-Se l&#39;utente fa clic su *Consenti accesso* nell&#39;URL di reindirizzamento, un parametro di query denominato code passa il codice di autorizzazione:
+Se l&#39;utente fa clic su *Consenti accesso* nell’URL di reindirizzamento, un parametro di query denominato code passa il codice di autorizzazione:
 
 https://YourServer.com/?code=**\&lt;authorization_code>**\&amp;api_access_point=https://api.adobesign.com&amp;web_access_point=https://secure.adobesign.com
 
-L&#39;invio di questo codice al server Adobe Sign insieme all&#39;ID client e al segreto client fornisce un token di accesso per accedere al servizio. Salvare i valori nei parametri `api_access_point` e `web_access_point`. Questi valori vengono utilizzati per ulteriori richieste.
+La pubblicazione di questo codice sul server Adobe Sign insieme all’ID client e al segreto client fornisce un token di accesso per accedere al servizio. Salvare i valori nei parametri `api_access_point` e `web_access_point`. Questi valori vengono utilizzati per ulteriori richieste.
 
 ```
 var requestURL = ' ${api_access_point}oauth/token?code=${code}'
@@ -367,7 +368,7 @@ request.post(requestURL, {form: { }
 });
 ```
 
-Quando un documento richiede una firma, il documento deve prima essere caricato. L&#39;applicazione può caricare il documento sul `api_access_point` valore ricevuto durante la richiesta del token OAUTH. Il punto finale è `/api/rest/v6/transientDocuments`. I dati di richiesta sono i seguenti:
+Quando un documento richiede una firma, è necessario prima caricarlo. L’applicazione può caricare il documento in `api_access_point` valore ricevuto durante la richiesta del token OAUTH. L&#39;endpoint è `/api/rest/v6/transientDocuments`. I dati della richiesta hanno un aspetto simile al seguente:
 
 ```
 POST /api/rest/v6/transientDocuments HTTP/1.1
@@ -378,7 +379,7 @@ Content-Disposition: form-data; name=";File"; filename="MyPDF.pdf"
 <PDF CONTENT>
 ```
 
-All&#39;interno dell&#39;applicazione, create la richiesta con il codice seguente:
+All’interno dell’applicazione, genera la richiesta con il codice seguente:
 
 ```
 var uploadRequest = {
@@ -406,9 +407,9 @@ request(uploadRequest, (error, response) => {
 });
 ```
 
-La richiesta restituisce un `transientID` valore. Il documento è stato caricato ma non è ancora stato inviato. Per inviare il documento, utilizzare il metodo `transientID` per richiedere di inviare il documento.
+La richiesta restituisce un `transientID` valore. Il documento è stato caricato, ma non è ancora stato inviato. Per inviare il documento, utilizzare il `transientID` per richiedere l’invio del documento.
 
-Iniziare creando un oggetto JSON contenente le informazioni per il documento da firmare. Nell&#39;esempio seguente, la variabile `transientDocumentId` contiene l&#39;ID del codice precedente e `agreementDescription` contiene il testo che descrive l’accordo che deve essere firmato. Le persone da firmare sono elencate in `participantSetsInfo` per indirizzo e-mail e ruolo.
+Inizia creando un oggetto JSON contenente le informazioni per il documento da firmare. Di seguito viene riportata la variabile `transientDocumentId` contiene l’ID dal codice precedente e `agreementDescription` contiene una descrizione dell’accordo da firmare. Le persone che firmeranno il documento sono elencate in `participantSetsInfo` per indirizzo e-mail e ruolo.
 
 ```
 var requestBody = {
@@ -433,11 +434,11 @@ request(requestBody, function (error, response) {
 });
 ```
 
-Se i firmatari dimenticano di firmare e hanno bisogno di un altro messaggio e-mail di notifica, invialo nuovamente utilizzando l’ID ricevuto in precedenza. L’unica differenza è che devi anche aggiungere gli ID dei partecipanti delle parti. Puoi ottenere gli ID dei partecipanti inviando una richiesta di GET a `/agreements/{agreementID}/members`.
+Se i firmatari dimenticano di firmare e hanno bisogno di un’altra e-mail di notifica, invia nuovamente le notifiche utilizzando l’ID ricevuto in precedenza. L’unica differenza è che devi aggiungere anche gli ID partecipanti delle parti. Puoi ottenere gli ID dei partecipanti inviando una richiesta di GET a `/agreements/{agreementID}/members`.
 
-Per richiedere di inviare il promemoria, create prima un oggetto JSON che descriva la richiesta. L&#39;oggetto minimo richiede un elenco degli ID dei partecipanti e uno stato per il promemoria (&quot;ACTIVE&quot;, &quot;COMPLETE&quot; o &quot;CANCELED&quot;).
+Per richiedere l’invio del promemoria, crea prima un oggetto JSON che descriva la richiesta. L’oggetto minimo richiede un elenco degli ID partecipanti e uno stato per il promemoria (&quot;ATTIVO&quot;, &quot;COMPLETO&quot; o &quot;ANNULLATO&quot;).
 
-Facoltativamente, la richiesta può contenere ulteriori informazioni, ad esempio un valore per &quot;nota&quot; che verrà visualizzato all&#39;utente. Oppure, un ritardo (in ore) di aspettare fino all&#39;invio del promemoria (in `firstReminderDelay`) e una frequenza di promemoria (nel campo &quot;frequency&quot;), che accetta valori quali DAILY_UNTIL_SIGNED, EVERY_THIRD_DAY_UNTIL_SIGNED o WEEKLY_UNTIL_SIGNED.
+La richiesta può facoltativamente contenere informazioni aggiuntive, ad esempio un valore per &quot;nota&quot; che verrà visualizzato all&#39;utente. Oppure, un ritardo (in ore) nell’attesa dell’invio del promemoria (nel `firstReminderDelay`) e una frequenza promemoria (nel campo &quot;frequency&quot;), che accetta valori come DAILY_Until_SIGNED, EVERY_THIRD_DAY_Until_SIGNED o WEEKLY_Until_SIGNED.
 
 ```
 var requestBody = {
@@ -462,17 +463,17 @@ request(reminderRequest, function (error, response) {
 });
 ```
 
-Ed è tutto ciò che serve per inviare una richiesta di promemoria.
+È tutto ciò che serve per inviare una richiesta di promemoria.
 
 ![Immagine del modulo Web](assets/AWNjs_13.png)
 
 ## Creazione di moduli Web
 
-È inoltre possibile utilizzare l’API Adobe Sign per creare moduli Web. I moduli Web consentono di incorporare un modulo in una pagina Web o di collegarlo direttamente. Una volta creato, un modulo Web viene visualizzato anche tra i moduli Web della console Adobe Sign. È possibile creare moduli Web con stato BOZZA per la creazione incrementale, lo stato AUTHORING per la modifica dei campi modulo Web e lo stato ATTIVO per ospitare immediatamente il modulo.
+Per creare moduli Web, puoi anche utilizzare l’API di Adobe Sign. I moduli Web consentono di incorporare un modulo in una pagina Web o di collegarlo direttamente a essa. Una volta creato, un modulo Web viene visualizzato anche tra i moduli Web nella console di Adobe Sign. È possibile creare moduli Web con stato BOZZA per la compilazione incrementale, stato AUTHORING per la modifica dei campi del modulo Web e stato ACTIVE per ospitare immediatamente il modulo.
 
 ![Immagine del modulo Web nella schermata Gestisci di Adobe Sign](assets/AWNjs_14.png)
 
-Per creare un modulo Web, utilizzare il modulo `transientDocumentId`. Stabilire un titolo per il modulo e uno stato per inizializzarlo.
+Per creare un modulo Web, utilizza il modulo `transientDocumentId`. Stabilire un titolo per il modulo e uno stato per inizializzarlo.
 
 ```
 var requestBody = {
@@ -509,12 +510,12 @@ request(createWebFormRequest, function (error, response) {
 });
 ```
 
-Ora puoi incorporare o collegare il tuo documento.
+Ora potete incorporare o collegare il vostro documento.
 
 ## Fasi seguenti
 
-Come puoi vedere dalle Guide rapide e dal codice fornito, è facile implementare processi di approvazione dei documenti digitali e di PDF utilizzando Node con il [!DNL Adobe Acrobat Services] API. Le API di Adobe si integrano perfettamente nelle applicazioni client esistenti.
+Come si può vedere dal rapido avvio e dal codice fornito, è facile implementare i processi di approvazione dei documenti digitali e PDF utilizzando Nodo con il [!DNL Adobe Acrobat Services] API. Le API di Adobe si integrano perfettamente nelle applicazioni client esistenti.
 
-Per scoprire gli ambiti richiesti per una chiamata o per vedere come viene creata la chiamata, è possibile creare chiamate di esempio dal metodo [Documentazione delle API di riposo](https://secure.na4.adobesign.com/public/docs/restapi/v6). Il [QuickStart](https://github.com/adobe/pdftools-node-sdk-samples) dimostrare anche altre funzionalità e altri formati di file [!DNL Adobe Acrobat Services] processi API.
+Per individuare gli ambiti necessari per una chiamata o per vedere come viene creata la chiamata, è possibile creare chiamate di esempio dal [Documentazione delle API REST](https://secure.na4.adobesign.com/public/docs/restapi/v6). La [QuickStart](https://github.com/adobe/pdftools-node-sdk-samples) dimostrerà anche altre funzionalità e formati di file [!DNL Adobe Acrobat Services] Processi API.
 
-Puoi aggiungere numerose funzionalità di PDF alle tue applicazioni, consentendo agli utenti di visualizzare e firmare i documenti in modo semplice e veloce e molto altro ancora. Per iniziare, consultate [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) oggi.
+Puoi aggiungere numerose funzionalità di PDF alle tue applicazioni, consentendo agli utenti di visualizzare e firmare in modo facile e veloce i documenti e molto altro ancora. Per iniziare, controlla [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) oggi.
