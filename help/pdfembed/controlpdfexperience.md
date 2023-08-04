@@ -1,13 +1,14 @@
 ---
 title: Controlla la tua esperienza online di PDF e raccogli analisi
 description: In questo tutorial pratico imparerai a utilizzare l’API di incorporamento di Adobe PDF per controllare l’aspetto, abilitare la collaborazione e raccogliere analisi su come l’utente interagisce con i PDF, incluso il tempo dedicato a una pagina e le ricerche
-type: Tutorial
+feature: PDF Embed API
 role: Developer
 level: Intermediate
-thumbnail: KT-7487.jpg
+type: Tutorial
 jira: KT-7487
+thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
