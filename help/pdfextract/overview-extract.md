@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: 382518232e804a5a64504bead419e6b822df42c0
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
 # Esercitazioni per le API di Adobe PDF Extract
-
-![Banner API di PDF Embed](../assets/pdfextracthero.jpg)
 
 Sblocca la struttura e gli elementi di contenuto di qualsiasi PDF con un servizio Web basato sull&#39;apprendimento automatico di Adobe Sensei.
 

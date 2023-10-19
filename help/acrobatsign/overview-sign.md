@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '223'
 ht-degree: 11%
 
 ---
 
 # Esercitazioni per le API di Acrobat Sign
-
-![Banner API di Acrobat Sign](../assets/acrobatsignhero.png)
 
 Le API di Acrobat Sign consentono di creare app e di incorporare l’interfaccia utente e le funzionalità di Acrobat Sign nelle applicazioni.
 
