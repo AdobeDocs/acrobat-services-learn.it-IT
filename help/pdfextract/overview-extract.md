@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,11 @@ Sblocca la struttura e gli elementi di contenuto di qualsiasi PDF con un servizi
 <table style="table-layout:fixed">
 <tr>
  <td>
+   <a href="automate-content-extraction.md">
+      <img alt="Automatizzare l&apos;estrazione dei contenuti" src="assets/automate-content-extraction.png" />
+   </a>
+  </td>
+  <td>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html">
       <img alt="Analisi di PDF: facile come lavorare con i dati JSON con l’API PDF Extract" src="assets/ParsingPDF_1280.png" />
    </a>
@@ -33,11 +38,6 @@ Sblocca la struttura e gli elementi di contenuto di qualsiasi PDF con un servizi
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Analisi di PDF: facile come lavorare con i dati JSON con l’API PDF Extract</strong></a>
     </div>
     <em>Scopri in che modo il servizio PDF Extract nell’API dei servizi Adobe PDF può semplificare l’analisi di PDF quanto l’analisi di JSON</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Spaziatore" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
     <br>
   </td>
   <td>
