@@ -8,16 +8,16 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c130591ed32bb1aab457556938fc994756e8b04a
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '125'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] Esercitazioni API
 
-[!DNL Adobe Acrobat Services] dispone di cinque API principali: [!DNL Adobe PDF Services API], la [!DNL Adobe PDF Embed API], la [!DNL Adobe Document Generation API], la [!DNL Adobe PDF Extract API] e [!DNL Adobe PDF Accessibility Auto-Tag API]. Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
+[!DNL Adobe Acrobat Services] dispone di sei API principali: [!DNL Adobe PDF Services API], la [!DNL Adobe PDF Embed API], la [!DNL Adobe Document Generation API], la [!DNL Adobe PDF Accessibility Auto-Tag API],il [!DNL Adobe PDF Extract API]e [!DNL Adobe PDF Accessibility Auto-Tag API]. Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
 
 <table style="table-layout:fixed">
 <tr>
@@ -32,18 +32,23 @@ ht-degree: 2%
    </a>
   </td>
   <td>
-   <a href="pdfextract/overview-extract.md">
-      <img alt="API PDF Extract" src="assets/pdfextractcard.png" />
+   <a href="pdfaccessibility/overview-accessibility.md">
+      <img alt="API per tag automatici accessibilità PDF" src="assets/PDFAccessibility.png" />
    </a>
   </td>
   <td>
-   <a href="pdfembed/overview-embed.md">
-      <img alt="Guida introduttiva a Adobe PDF Tools API e Java" src="assets/pdfembedcard.png" />
+   <a href="pdfextract/overview-extract.md">
+      <img alt="API PDF Extract" src="assets/pdfextractcard.png" />
    </a>
   </td>
 </tr>
 <tr>
   <td>
+   <a href="pdfembed/overview-embed.md">
+      <img alt="Guida introduttiva a Adobe PDF Tools API e Java" src="assets/pdfembedcard.png" />
+   </a>
+  </td>
+ <td>
    <a href="acrobatsign/overview-sign.md">
       <img alt="API di Acrobat Sign" src="assets/acrobatsigncard.png" />
    </a>
@@ -52,11 +57,6 @@ ht-degree: 2%
    <a href="usecases/overview-usecases.md">
       <img alt="[!DNL Adobe Acrobat Services] Casi di utilizzo delle API" src="assets/usecasescard.png" />
    </a>
-  </td>
-  <td>
-    <img alt="Spaziatore" src="assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
   </td>
   <td>
     <img alt="Spaziatore" src="assets/GrayBanner_Placeholder.png" />
