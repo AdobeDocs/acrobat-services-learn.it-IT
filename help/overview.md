@@ -8,16 +8,25 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: eee88418f6d94c1f35ba05b23ab7fea6a5f54847
+source-git-commit: cdbefd8bd0d4b65e0d34e5bbf74065f80faf20e1
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '122'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] Esercitazioni API
 
-[!DNL Adobe Acrobat Services] dispone di sei API principali: [!DNL Adobe PDF Services API], la [!DNL Adobe PDF Embed API], la [!DNL Adobe Document Generation API], la [!DNL Adobe PDF Electronic Seal API], la [!DNL Adobe PDF Extract API]e [!DNL Adobe PDF Accessibility Auto-Tag API]. Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
+[!DNL Adobe Acrobat Services] dispone di sei API principali:
+
+* [!DNL Adobe PDF Services API]
+* [!DNL Adobe PDF Embed API]
+* [!DNL Adobe Document Generation API]
+* [!DNL Adobe PDF Electronic Seal API]
+* [!DNL Adobe PDF Extract API]
+* [!DNL Adobe PDF Accessibility Auto-Tag API]
+
+Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
 
 <table style="table-layout:fixed">
 <tr>
