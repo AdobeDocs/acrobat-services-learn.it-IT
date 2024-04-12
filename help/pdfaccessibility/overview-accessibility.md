@@ -1,14 +1,15 @@
 ---
-title: Tag automatici per l’accessibilità di Adobe PDF Tutorials
-description: Pagina Panoramica, ad Adobe Tag automatico accessibilità
+title: Tutorials API per tag automatici di accessibilità di Adobe PDF
+description: Pagina di panoramica, ad Adobe Esercitazioni per l’API di assegnazione automatica dei tag di accessibilità
 feature: PDF Services API
 role: Developer
 level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
-source-git-commit: 7bc199a7bacb9dcbf1fa90031bfb128dd31109f2
+exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
+source-git-commit: 175259d209d0cd61a7bbcd1f8dc9bd21d2f60130
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
