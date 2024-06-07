@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 558bd677d3b357a98488ada9dda1054bb21b81af
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Tutti questi esempi sono disponibili nel [Esempi di GitHub](https://github.com/a
 
 Avanti, in [!DNL Spring Boot], puoi ottenere un file utilizzando il percorso String o il flusso in cui viene caricato il file. Ogni operazione eseguita deve essere inizializzata e deve essere impostato un percorso del file di input. Per questo tutorial, utilizzerai i report di PDF disponibili pubblicamente da [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). Puoi utilizzare qualsiasi altra fonte, compresi i tuoi report.
 
-Per iniziare, acquisite [FileRef](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/io/FileRef.html) dal file. Per semplicità, concentratevi sui file in base al percorso String. Di seguito, viene creata un&#39;operazione per convertire un file nel percorso da PDF a Excel:
+Iniziate acquisendo l&#39;oggetto FileRef dal file. Per semplicità, concentratevi sui file in base al percorso String. Di seguito, viene creata un&#39;operazione per convertire un file nel percorso da PDF a Excel:
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 Questo codice genera un documento PDF dal report in formato Excel.
 
-Prima di consegnare questo PDF ai tuoi clienti, puoi proteggerlo con una password. Crea un’altra operazione che gestisca questa protezione per te, [ProtectPDFOperation](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/ProtectPDFOperation.html), quindi utilizzare [ProtectPDFOptions](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/options/protectpdf/package-summary.html) per aggiungere la password al documento.
+Prima di consegnare questo PDF ai tuoi clienti, puoi proteggerlo con una password. Creare un&#39;altra operazione che gestisca automaticamente questa protezione, ProtectPDFOperation, quindi utilizzare ProtectPDFOptions per aggiungere la password al documento.
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
