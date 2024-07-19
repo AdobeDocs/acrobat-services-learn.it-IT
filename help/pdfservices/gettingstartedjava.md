@@ -10,7 +10,7 @@ thumbnail: KT-6676.jpg
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Gli sviluppatori possono iniziare in pochi minuti con i file di esempio pronti p
 
 Il primo passaggio consiste nel ottenere una credenziale (chiave API) per sbloccare l’utilizzo. [Registrati qui per la prova gratuita](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) e fai clic su &quot;Inizia&quot; per creare le nuove credenziali.
 
-![Passaggio 1](assets/GettingStartedJava_step1.png)
+![Passo 1](assets/GettingStartedJava_step1.png)
 
 È importante scegliere un &quot;Account personale&quot; per registrarsi per la versione di prova gratuita:
 
@@ -43,10 +43,10 @@ Riceverai per il download un file .zip denominato PDFToolsSDK-JavaSamples.zip ch
 
 ## Passaggio 2: configurazione dell’ambiente Java
 
-1. Installa [Java 8 o versione successiva](https://www.oracle.com/java/technologies/javase-downloads.html) se non l&#39;hai già fatto.
+1. Installa [Java 8 o versione successiva](https://www.oracle.com/java/technologies/javase-downloads.html), se non lo hai ancora fatto.
 1. Esegui `javac -version` per verificare l&#39;installazione.
 1. Verificare che la cartella JDK bin sia inclusa nella variabile PATH (il metodo varia in base al sistema operativo).
-1. Installa [Maven](https://maven.apache.org/install.html) utilizzando lo strumento che preferisci, se non l’hai già fatto.
+1. Se non l&#39;hai già fatto, installa [Maven](https://maven.apache.org/install.html) utilizzando il tuo strumento preferito.
 
 Gli esempi personalizzati forniscono tutto, dal codice di esempio pronto per l&#39;esecuzione, un file JSON delle credenziali incorporato e connessioni preconfigurate alle dipendenze.
 
@@ -56,15 +56,15 @@ Gli esempi personalizzati forniscono tutto, dal codice di esempio pronto per l&#
 
 ## Pensieri finali
 
-L’API di PDF Services consente di eliminare i processi manuali automatizzando i flussi di lavoro comuni e trasferendo il carico di elaborazione sul cloud. In un mondo in cui ogni browser tratta PDF in modo diverso, sfruttando l’API Adobe PDF Embed insieme all’API PDF Services, è possibile creare processi semplificati, affidabili e prevedibili che vengono eseguiti e visualizzati correttamente **ogni volta** indipendentemente dalla piattaforma o dal dispositivo.
+L’API di PDF Services consente di eliminare i processi manuali automatizzando i flussi di lavoro comuni e trasferendo il carico di elaborazione sul cloud. In un mondo in cui ogni browser tratta PDF in modo diverso, sfruttando l&#39;API Adobe PDF Embed insieme all&#39;API PDF Services, è possibile creare processi semplificati, affidabili e prevedibili che vengono eseguiti e visualizzati correttamente **ogni volta**, indipendentemente dalla piattaforma o dal dispositivo.
 
 ## Risorse e passaggi successivi
 
-* Per ulteriore assistenza e supporto, visita l&#39;Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
+* Per ulteriore assistenza e supporto, visita il forum della community [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) di Adobe
 
-* API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+* API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
+* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per le domande sull&#39;API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
 
@@ -72,4 +72,4 @@ L’API di PDF Services consente di eliminare i processi manuali automatizzando 
 
   [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Versione di luglio di [!DNL Adobe Acrobat Services]: Servizi PDF Embed e PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Versione di luglio di [!DNL Adobe Acrobat Services]: PDF Embed e PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

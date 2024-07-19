@@ -1,6 +1,6 @@
 ---
 title: Accelera il processo di vendita
-description: Scopri come accelerare le vendite integrando le esperienze documentali con [!DNL Adobe Acrobat Services]
+description: Scopri come accelerare le vendite integrando le esperienze con i documenti con  [!DNL Adobe Acrobat Services]
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,41 +10,41 @@ thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # Velocizzare il processo di vendita
 
-![Banner Hero per casi di utilizzo](assets/UseCaseAccelerateSalesHero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseAccelerateSalesHero.jpg)
 
-Da white paper a contratti e accordi, sono necessari numerosi documenti per tutto il percorso di acquisto. In questo tutorial, scoprite come [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) può integrare le esperienze documentali in questo percorso per accelerare le vendite.
+Da white paper a contratti e accordi, sono necessari numerosi documenti per tutto il percorso di acquisto. In questo tutorial, scopri come [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) può integrare le esperienze dei documenti in questo percorso per accelerare le vendite.
 
 ## Genera accordi e ordini cliente dai dati
 
 I contratti di vendita, i contratti e altri documenti possono variare notevolmente in base a criteri specifici. Ad esempio, un contratto di vendita può includere solo alcuni termini in base a criteri specifici, come l&#39;appartenenza a un determinato paese o stato o l&#39;inclusione di determinati prodotti come parte del contratto. La creazione manuale di questi documenti o la gestione di diverse varianti di modelli può aumentare notevolmente i costi legali associati alla revisione manuale delle modifiche.
 
-[Adobe dell’API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) consente di acquisire dati dal sistema CRM o da altri sistemi di dati per generare dinamicamente documenti di vendita basati su tali dati.
+[L&#39;API per la generazione di documenti di Adobe](https://developer.adobe.com/document-services/apis/doc-generation/) consente di acquisire dati dal sistema CRM o da altri sistemi di dati per generare dinamicamente documenti di vendita basati su tali dati.
 
 ## Ottieni credenziali
 
 Per iniziare, registra le credenziali gratuite dei servizi Adobe PDF:
 
-1. Naviga [qui](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) per registrare le credenziali.
+1. Naviga [qui](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) per registrare le tue credenziali.
 1. Effettua l’accesso utilizzando il tuo Adobe ID.
 1. Impostare il nome delle credenziali (ad esempio, Demo contratti di vendita).
 
-   ![Schermata per l’impostazione del nome delle credenziali](assets/accsales_1.png)
+   ![Schermata di impostazione del nome delle credenziali](assets/accsales_1.png)
 
 1. Scegli una lingua per scaricare il codice di esempio (ad esempio, Node.js).
-1. Seleziona per accettare **[!UICONTROL condizioni per lo sviluppatore]**.
-1. Seleziona **[!UICONTROL Crea credenziali]**.
+1. Verifica di accettare **[!UICONTROL condizioni per gli sviluppatori]**.
+1. Selezionare **[!UICONTROL Crea credenziali]**.
 Nel computer viene scaricato un file con un file ZIP contenente i file di esempio pdfservices-api-credentials.json e private.key per l&#39;autenticazione.
 
    ![Schermata delle credenziali](assets/accsales_2.png)
 
-1. Seleziona **[!UICONTROL Ottieni componente aggiuntivo Microsoft Word]** oppure vai a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) da installare.
+1. Seleziona **[!UICONTROL Scarica il componente aggiuntivo Microsoft Word]** o vai a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) per installarlo.
 
    >[!NOTE]
    >
@@ -110,27 +110,27 @@ Se si estraggono dati da un sistema di dati specifico, è necessario generare ta
 
 ## Aggiungere tag di base al documento
 
-In questo scenario viene utilizzato un documento Ordine di vendita che può essere scaricato [qui](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
+In questo scenario viene utilizzato un documento Ordine di vendita scaricabile [qui](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
 
 ![Schermata del documento ordine cliente di esempio](assets/accsales_3.png)
 
-1. Apri il pannello *OrdineVendita.docx* documento di esempio in Microsoft Word.
-1. Se il plug-in di Document Generation è installato, seleziona **[!UICONTROL Document Generation]** sulla barra multifunzione. Se sulla barra multifunzione non è presente Document Generation, seguire le istruzioni riportate di seguito.
+1. Apri il documento di esempio *SalesOrder.docx* in Microsoft Word.
+1. Se il plug-in Document Generation è installato, seleziona **[!UICONTROL Document Generation]** nella barra multifunzione. Se sulla barra multifunzione non è presente Document Generation, seguire le istruzioni riportate di seguito.
 1. Seleziona **[!UICONTROL Introduzione]**.
-1. Copia i dati di esempio JSON scritti in precedenza nel *Dati JSON* campo.
+1. Copia i dati di esempio JSON scritti in precedenza nel campo *Dati JSON*.
 
    ![Schermata di copia dei dati JSON](assets/accsales_4.png)
 
 Quindi, passate al pannello Tag di Document Generation per inserire i tag nel documento.
 
-1. Seleziona il testo da sostituire (ad esempio, *RAGIONE SOCIALE*).
-1. Nella *Document Generation Tagger* , cerca &quot;nome&quot;.
+1. Seleziona il testo da sostituire (ad esempio, *NOME AZIENDA*).
+1. Nel pannello *Document Generation Tagger*, cercate &quot;name&quot;.
 1. Nell’elenco dei tag, seleziona nome in azienda.
-1. Seleziona **[!UICONTROL Inserisci testo]**.
+1. Selezionare **[!UICONTROL Inserisci testo]**.
 
    ![Schermata di inserimento del tag](assets/accsales_5.png)
 
-   Questo processo inserisce un tag denominato {{company.name}} perché il tag si trova sotto il percorso nel file JSON.
+   Questo processo inserisce un tag denominato {{company.name}} perché il tag si trova sotto il percorso nel JSON.
 
    ```
    {
@@ -149,11 +149,11 @@ Ripetere queste azioni per alcuni dei tag aggiuntivi del documento, ad esempio I
 
 Direttamente in Microsoft Word, puoi visualizzare in anteprima il documento generato in base ai dati JSON di esempio.
 
-1. Nella *Document Generation Tagger* , seleziona **[!UICONTROL Genera documento]**. La prima volta che ti viene richiesto di accedere con il tuo Adobe ID. Seleziona **[!UICONTROL Accedi]** e completare le richieste di accesso con le tue credenziali.
+1. Nel pannello *Document Generation Tagger*, selezionate **[!UICONTROL Genera documento]**. La prima volta che ti viene richiesto di accedere con il tuo Adobe ID. Seleziona **[!UICONTROL Accedi]** e completa le richieste di accesso con le tue credenziali.
 
    ![Schermata di anteprima del documento generato](assets/accsales_6.png)
 
-1. Seleziona **[!UICONTROL Visualizza documento]**.
+1. Selezionare **[!UICONTROL Visualizza documento]**.
 
    ![Schermata del pulsante Visualizza documento](assets/accsales_7.png)
 
@@ -170,13 +170,13 @@ Nel documento sono visualizzati i tag sostituiti con i dati dei dati di esempio 
 In questo scenario successivo, aggiungere un elenco di prodotti a una tabella del documento.
 
 1. Inserire il cursore nel punto in cui deve essere posizionata la tabella.
-1. Nella *Document Generation Tagger* , seleziona **[!UICONTROL Avanzate]**.
-1. Espandi **[!UICONTROL Tabelle ed elenchi]**.
-1. Nella *Record di tabella* , seleziona *referenceOrder*, che è una matrice che elenca tutti gli elementi del prodotto.
-1. Nel campo Seleziona record di colonna digitare per includere *descrizione* e *totalPaymentDue.price* campo.
-1. Seleziona **[!UICONTROL Inserisci tabella]**.
+1. Nel pannello *Document Generation Tagger*, selezionate **[!UICONTROL Advanced]**.
+1. Espandere **[!UICONTROL Tabelle ed elenchi]**.
+1. Nel campo *Record di tabella*, seleziona *referencesOrder*, una matrice che elenca tutti gli elementi del prodotto.
+1. Nel campo Seleziona record di colonna digitare per includere *descrizione* e *totalPaymentDue.price*.
+1. Selezionare **[!UICONTROL Inserisci tabella]**.
 
-   ![Schermata per l&#39;inserimento della tabella](assets/accsales_10.png)
+   ![Schermata di inserimento tabella](assets/accsales_10.png)
 
 Modificate la tabella per adattarla a stili, dimensioni e altri parametri come qualsiasi altra tabella di Microsoft Word.
 
@@ -184,13 +184,13 @@ Modificate la tabella per adattarla a stili, dimensioni e altri parametri come q
 
 I calcoli numerici consentono di calcolare somme e altri calcoli in base a una raccolta di dati, ad esempio una matrice. In questo scenario aggiungere un campo per calcolare il subtotale.
 
-1. Selezionare il *0,00 $* accanto al titolo del subtotale.
-1. Nella *[!UICONTROL Document Generation Tagger]* pannello, espandi **[!UICONTROL Calcoli numerici]**.
-1. Sotto *[!UICONTROL Seleziona tipo di calcolo]*, scegliere **[!UICONTROL aggregazione]**.
-1. Sotto *[!UICONTROL Seleziona il tipo]*, scegliere **[!UICONTROL Somma]**.
-1. Sotto *[!UICONTROL Seleziona record]*, scegliere **[!UICONTROL ReferencesOrder]**.
-1. Sotto *[!UICONTROL Selezionare l&#39;articolo per eseguire l&#39;aggregazione]**, scegli **[!UICONTROL totalPaymentsDue.price]**.
-1. Seleziona **[!UICONTROL Inserisci calcolo]**.
+1. Seleziona *$0.00* accanto al titolo del subtotale.
+1. Nel pannello *[!UICONTROL Document Generation Tagger]*, espandere **[!UICONTROL Calcoli numerici]**.
+1. In *[!UICONTROL Seleziona tipo di calcolo]*, scegli **[!UICONTROL Aggregazione]**.
+1. In *[!UICONTROL Seleziona tipo]*, scegli **[!UICONTROL Somma]**.
+1. In *[!UICONTROL Seleziona record]*, scegli **[!UICONTROL ReferencesOrder]**.
+1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]**, scegliere **[!UICONTROL totalPaymentsDue.price]**.
+1. Selezionare **[!UICONTROL Inserisci calcolo]**.
 
 Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Esempio:
 
@@ -207,17 +207,17 @@ Calcola il prezzo e moltiplica per 1,08 per calcolare il subtotale + l&#39;impos
 
 Le sezioni condizionali consentono di includere una frase o un paragrafo solo quando viene soddisfatta una determinata condizione. In questo scenario, solo una sezione viene inclusa se corrisponde a un determinato stato.
 
-1. Nel documento, individua la sezione denominata *INFORMATIVE SULLA PRIVACY IN CALIFORNIA*.
+1. Nel documento, individua la sezione *INFORMATIVE SULLA PRIVACY DELLA CALIFORNIA*.
 1. Selezionare la sezione con il cursore.
 
-   ![Schermata di selezione](assets/accsales_11.png)
+   ![Schermata della selezione](assets/accsales_11.png)
 
-1. Nella *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Avanzate]**.
-1. Espandi **[!UICONTROL Contenuto condizionale]**.
-1. Nella *[!UICONTROL Seleziona record]* campo, cerca e seleziona **[!UICONTROL customer.address.state]**.
-1. Nella *[!UICONTROL Seleziona operatore]* , seleziona **=**.
-1. Nella *[!UICONTROL Campo Valore]*, tipo *CA*.
-1. Seleziona **[!UICONTROL Inserisci condizione]**.
+1. In *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Advanced]**.
+1. Espandere **[!UICONTROL Contenuto condizionale]**.
+1. Nel campo *[!UICONTROL Seleziona record]*, cerca e seleziona **[!UICONTROL customer.address.state]**.
+1. Nel campo *[!UICONTROL Seleziona operatore]*, selezionare **=**.
+1. Nel campo *[!UICONTROL Valore]*, digitare *CA*.
+1. Selezionare **[!UICONTROL Inserisci condizione]**.
 
 La sezione California viene visualizzata nel documento generato solo se customer.address.state = CA.
 
@@ -230,18 +230,18 @@ L’API Document Generation consente di inserire dinamicamente immagini dai dati
 Le immagini possono essere passate da un URL nel contenuto data o base64. Questo esempio utilizza un URL.
 
 1. Posizionare il cursore nel punto in cui si desidera includere un&#39;immagine.
-1. Nella *[!UICONTROL Document Generation Tagger]* , seleziona **[!UICONTROL Avanzate]**.
-1. Espandi **[!UICONTROL Immagini]**.
-1. Nella *[!UICONTROL Selezionare i tag]* campo, scegli **[!UICONTROL logo]**.
-1. Nella *[!UICONTROL Testo alternativo facoltativo]* fornire una descrizione (ad esempio, un logo). Questo processo inserisce un segnaposto immagine simile al seguente:
+1. Nel pannello *[!UICONTROL Document Generation Tagger]*, selezionate **[!UICONTROL Advanced]**.
+1. Espandere **[!UICONTROL Immagini]**.
+1. Nel campo *[!UICONTROL Seleziona tag]*, scegli il **[!UICONTROL logo]**.
+1. Nel campo *[!UICONTROL Testo alternativo facoltativo]*, fornire una descrizione (ad esempio, logo). Questo processo inserisce un segnaposto immagine simile al seguente:
 
-   ![Schermata dell’immagine segnaposto](assets/accsales_12.png)
+   ![Schermata dell&#39;immagine segnaposto](assets/accsales_12.png)
 
 Tuttavia, potete impostare l’immagine in modo dinamico su un’immagine già presente nel layout, effettuando le seguenti operazioni:
 
 1. Fare clic con il pulsante destro del mouse sull&#39;immagine segnaposto inserita.
 
-   ![Schermata dell’immagine segnaposto](assets/accsales_13.png)
+   ![Schermata dell&#39;immagine segnaposto](assets/accsales_13.png)
 
 1. Seleziona **[!UICONTROL Modifica testo alternativo]**.
 1. Nel pannello, copia il testo che appare così:
@@ -250,7 +250,7 @@ Tuttavia, potete impostare l’immagine in modo dinamico su un’immagine già p
 
    ![Schermata della nuova immagine nel documento](assets/accsales_14.png)
 
-1. Fate clic con il pulsante destro del mouse sull’immagine e selezionate **[!UICONTROL Modifica testo alternativo]**.
+1. Fai clic con il pulsante destro del mouse sull&#39;immagine e seleziona **[!UICONTROL Modifica testo alternativo]**.
 1. Incollate il valore nel pannello.
 
 Questo processo sostituisce l&#39;immagine con un&#39;immagine che si trova nella variabile del logo nei dati.
@@ -261,20 +261,20 @@ Adobe Acrobat Sign consente di acquisire firme elettroniche sui documenti. Acrob
 
 1. Individua il punto in cui è richiesta una firma nel documento di esempio.
 1. Inserire il cursore dove è necessaria la firma.
-1. Nella *[!UICONTROL Adobe di Tagger Document Generation]* , seleziona **[!UICONTROL Adobe Sign]**.
-1. Nella *[!UICONTROL Specifica il numero di destinatari]* , imposta il numero di destinatari (in questo esempio è uno).
-1. Nella *[!UICONTROL Destinatari]* , seleziona **[!UICONTROL Signer-1]**.
-1. Nella *[!UICONTROL Campo]* testo, seleziona **[!UICONTROL Firma]**.
-1. Seleziona **[!UICONTROL Inserisci tag di testo di Adobe Sign]**.
+1. Nel pannello *[!UICONTROL Adobe di Document Generation Tagger]*, selezionate **[!UICONTROL Adobe Sign]**.
+1. Nel campo *[!UICONTROL Specificare il numero di destinatari]*, impostare il numero di destinatari (in questo esempio si tratta di uno).
+1. Nel campo *[!UICONTROL Destinatari]*, seleziona **[!UICONTROL Firmatario-1]**.
+1. Nel tipo *[!UICONTROL Campo]*, selezionare **[!UICONTROL Firma]**.
+1. Seleziona **[!UICONTROL Inserisci tag di testo Adobe Sign]**.
 
 Nel documento viene inserito un tag.
 
 ![Schermata del tag di firma nel documento](assets/accsales_15.png)
 
 In Acrobat Sign sono disponibili diversi altri tipi di campi, ad esempio i campi data.
-1. Nella *Campo* testo, seleziona **[!UICONTROL Data]**.
+1. Nel tipo *Campo*, selezionare **[!UICONTROL Data]**.
 1. Sposta il cursore sopra la posizione della data nel documento.
-1. Seleziona **[!UICONTROL Inserisci tag di testo di Adobe Sign]**.
+1. Seleziona **[!UICONTROL Inserisci tag di testo Adobe Sign]**.
 
 ![Schermata del tag data nel documento](assets/accsales_16.png)
 
@@ -337,7 +337,7 @@ documentMergeOperation.execute(executionContext)
 ```
 
 1. Sostituisci `<INSERT JSON FILE>` con il nome del file JSON in /resources.
-1. Sostituisci `<INSERT DOCX>` con il nome del file DOCX.
+1. Sostituire `<INSERT DOCX>` con il nome del file DOCX.
 1. Per eseguire, utilizzare Terminale per eseguire il nodo generate-salesOrder.js.
 
 Il file di output deve trovarsi nella cartella /output con il documento generato correttamente.
@@ -362,15 +362,16 @@ Per ulteriori informazioni su alcune delle altre azioni disponibili, consultate 
 
 ## Ulteriori informazioni
 
-Vuoi saperne di più? Scopri altri modi di utilizzare [!DNL Adobe Acrobat Services]:
+Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Services]:
 
-* Per saperne di più [documentazione](https://developer.adobe.com/document-services/docs/overview/)
+* Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [Blog sulla tecnologia dell&#39;Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
-* Abbonati a [Clip di carta (streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per ulteriori informazioni sull&#39;automazione mediante [!DNL Adobe Acrobat Services]. =======
-* Per saperne di più [documentazione](https://developer.adobe.com/document-services/docs/overview/)
+* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].
+=======
+* Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [Blog sulla tecnologia dell&#39;Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
-* Abbonati a [Clip di carta (streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per ulteriori informazioni sull&#39;automazione mediante [!DNL Adobe Acrobat Services]
+* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services]

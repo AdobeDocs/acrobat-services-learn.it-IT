@@ -61,9 +61,9 @@ L’API di Document Generation accetta un modello di documento (con tag di model
       <img alt="Panoramica dell’Adobe Document Generation Tagger" src="assets/Taggeroverview_thumb.png" />
    </a>
     <div>
-   <a href="taggeroverview.md"><strong>Panoramica dell’Adobe Document Generation Tagger</strong></a>
+   <a href="taggeroverview.md"><strong>Panoramica dell'Adobe Document Generation Tagger</strong></a>
     </div>
-    <em>Panoramica di Document Generation Tagger di Adobe progettato per l’uso con l’API di Document Generation di Adobe</em>
+    <em>Panoramica dell'Adobe Document Generation Tagger progettato per l'utilizzo con l'API Document Generation di Adobe</em>
     <br>
   </td>
   <td>
@@ -73,7 +73,7 @@ L’API di Document Generation accetta un modello di documento (con tag di model
     <div>
    <a href="taggeraddtexttags.md"><strong>Aggiunta di tag di testo</strong></a>
     </div>
-    <em>Scopri come aggiungere tag di testo ai modelli Microsoft Word utilizzando Document Generation Tagger di Adobe da utilizzare con l’API di Document Generation di Adobe</em>
+    <em>Scopri come aggiungere tag di testo ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe da utilizzare con l’API di Document Generation di Adobe</em>
     <br>
   </td>
   <td>
@@ -83,7 +83,7 @@ L’API di Document Generation accetta un modello di documento (con tag di model
     <div>
    <a href="taggeraddimagetags.md"><strong>Aggiunta di tag immagine</strong></a>
     </div>
-    <em>Scopri come aggiungere tag di immagine ai modelli Microsoft Word utilizzando l’Adobe Document Generation Tagger per inviare dinamicamente le immagini nei documenti utilizzando l’API di Adobe Document Generation</em>
+    <em>Scopri come aggiungere tag immagine ai modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per inviare dinamicamente immagini nei documenti utilizzando l’API di Document Generation</em> di Adobe
     <br>
   </td>
   <td>
@@ -93,7 +93,7 @@ L’API di Document Generation accetta un modello di documento (con tag di model
     <div>
    <a href="taggertables.md"><strong>Aggiunta di tabelle e tag di elenco</strong></a>
     </div>
-    <em>Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando l’Adobe Document Generation Tagger per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l’API di Adobe Document Generation</em>
+    <em>Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l'API di Document Generation di Adobe</em>
     <br>
   </td>
 </tr>
@@ -103,9 +103,9 @@ L’API di Document Generation accetta un modello di documento (con tag di model
       <img alt="Impostazione dei tag di calcolo numerico" src="assets/Taggercalculations_thumb.png" />
    </a>
     <div>
-   <a href="taggercalculations.md"><strong>Impostazione dei tag di calcolo numerico</strong></a>
+   <a href="taggercalculations.md"><strong>Impostazione dei tag di calcolo numerici</strong></a>
     </div>
-    <em>Scopri come impostare i tag di calcolo numerico nei modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per calcolare le aggregazioni o l’aritmetica dei valori dei dati utilizzando l’API di Adobe Document Generation</em>
+    <em>Informazioni sull'impostazione di tag di calcolo numerico nei modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per calcolare aggregazioni o aritmetica dei valori dei dati utilizzando l'API di Document Generation di Adobe</em>
     <br>
   </td>
   <td>
@@ -115,7 +115,7 @@ L’API di Document Generation accetta un modello di documento (con tag di model
     <div>
    <a href="taggerconditional.md"><strong>Impostazione del contenuto condizionale</strong></a>
     </div>
-    <em>Scopri come impostare le sezioni nei modelli di Microsoft Word utilizzando l’Adobe Document Generation Tagger per includere o escludere dinamicamente sezioni di un documento basate su dati utilizzando l’API di Adobe Document Generation</em>
+    <em>Scopri come impostare le sezioni nei modelli di Microsoft Word utilizzando l'Adobe Document Generation Tagger per includere o escludere dinamicamente sezioni di un documento in base ai dati utilizzando l'API di Adobe Document Generation</em>
     <br>
   </td>
   <td>

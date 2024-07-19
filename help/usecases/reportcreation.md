@@ -10,20 +10,20 @@ thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 1%
+source-wordcount: '1292'
+ht-degree: 0%
 
 ---
 
 # Creazione e modifica di report
 
-![Banner Hero per casi di utilizzo](assets/UseCaseReportHero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseReportHero.jpg)
 
-Finanza, istruzione, marketing e altri settori utilizzano i PDF per condividere i dati con i clienti e gli stakeholder. I PDF semplificano la condivisione di documenti avanzati, con tabelle, elementi grafici e contenuti interattivi, in un formato visualizzabile da tutti. [!DNL Adobe Acrobat Services] Le API consentono a queste aziende di generare report PDF condivisibili da Microsoft Word, Microsoft Excel, elementi grafici e altri formati di documenti diversi.
+Finanza, istruzione, marketing e altri settori utilizzano i PDF per condividere i dati con i clienti e gli stakeholder. I PDF semplificano la condivisione di documenti avanzati, con tabelle, elementi grafici e contenuti interattivi, in un formato visualizzabile da tutti. Le API [!DNL Adobe Acrobat Services] consentono a queste aziende di generare report PDF condivisibili da Microsoft Word, Microsoft Excel, elementi grafici e altri formati di documenti diversi.
 
-Dì che [gestire una società di tracciamento dei social media](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). I clienti accedono a una parte del sito protetta da password per visualizzare l&#39;analisi della campagna. Spesso vogliono condividere queste statistiche con i loro dirigenti, azionisti, donatori o altri stakeholder. I documenti PDF scaricabili sono un ottimo modo per i tuoi clienti di condividere numeri, grafici e altro ancora.
+Dì che [gestisci una società di monitoraggio dei social media](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). I clienti accedono a una parte del sito protetta da password per visualizzare l&#39;analisi della campagna. Spesso vogliono condividere queste statistiche con i loro dirigenti, azionisti, donatori o altri stakeholder. I documenti PDF scaricabili sono un ottimo modo per i tuoi clienti di condividere numeri, grafici e altro ancora.
 
-Incorporando [API di PDF Services](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) nel tuo sito web, puoi generare report PDF ovunque ti trovi per ogni cliente. Puoi creare dei PDF e quindi combinarli in un unico rapporto pratico che i tuoi clienti potranno scaricare e trasmettere ai loro stakeholder.
+L&#39;integrazione dell&#39;API [PDF Services](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) nel sito Web consente di generare report PDF in mobilità per ogni cliente. Puoi creare dei PDF e quindi combinarli in un unico rapporto pratico che i tuoi clienti potranno scaricare e trasmettere ai loro stakeholder.
 
 ## Cosa puoi imparare
 
@@ -31,9 +31,9 @@ In questo tutorial pratico, scoprite come utilizzare PDF Services SDK in un ambi
 
 ## API e risorse pertinenti
 
-* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 ## Dashboard dei report delle campagne per i clienti
 
@@ -43,9 +43,9 @@ In questo tutorial pratico, scoprite come utilizzare PDF Services SDK in un ambi
 
 Qui, hai un&#39;applicazione web di base Express.js che ha un&#39;area rapporti clienti e una sezione amministratore. Questa applicazione può mostrare i report per le campagne sui social media. Ad esempio, può dimostrare quante volte si fa clic su un annuncio.
 
-![Schermata per ottenere report personalizzati](assets/report_1.png)
+![Schermata di come ottenere report personalizzati](assets/report_1.png)
 
-Puoi scaricare questo progetto da [Repository GitHub](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
+Puoi scaricare questo progetto dal [repository GitHub](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
 
 Scopriamo ora come pubblicare i report.
 
@@ -53,7 +53,7 @@ Scopriamo ora come pubblicare i report.
 
 Per semplificare, utilizzare solo il caricamento e l&#39;elaborazione basati su file system. In Express.js, puoi utilizzare il modulo fs per elencare tutti i file disponibili in una directory.
 
-Nella stessa pagina, abilita l&#39;amministratore per caricare i file del report sul server per consentirne la visualizzazione ai clienti. Questi file possono essere in molti formati diversi, come Microsoft Word, Microsoft Excel, HTML e [altri formati di dati]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) compresi i file grafici. La pagina di amministrazione è simile alla seguente:
+Nella stessa pagina, abilita l&#39;amministratore per caricare i file del report sul server per consentirne la visualizzazione ai clienti. Questi file possono essere in molti formati diversi, ad esempio Microsoft Word, Microsoft Excel, HTML e [altri formati di dati]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), inclusi i file grafici. La pagina di amministrazione è simile alla seguente:
 
 ![Schermata delle funzionalità di amministrazione](assets/report_2.png)
 
@@ -82,7 +82,7 @@ Per quanto riguarda l’utente, è disponibile un modulo che consente ai clienti
 
 Per un&#39;interfaccia utente più avanzata, è inoltre possibile visualizzare un&#39;anteprima del report qui.
 
-![Schermata delle capacità del cliente](assets/report_3.png)
+![Schermata delle funzionalità del cliente](assets/report_3.png)
 
 ## Generazione di un report PDF
 
@@ -92,7 +92,7 @@ Utilizzare PDF Services SDK per creare i report PDF dai dati immessi. I dati (co
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Prima di iniziare, è necessario disporre di credenziali API, [esente da Adobi](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Usa il tuo [!DNL Acrobat Services] account [gratis per sei mesi e poi paghi in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) solo per \$0,05 per transazione documento.
+Prima di iniziare, è necessario disporre di credenziali API, [libere dall&#39;Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred). Usa il tuo account [!DNL Acrobat Services] [gratis per sei mesi, quindi paga in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per ogni transazione documento.
 
 Scarica il file di archivio ed estrai il file JSON per le credenziali e la chiave privata. Nel progetto di esempio, il file viene inserito nella directory src.
 
@@ -131,11 +131,11 @@ console.log('Exception encountered while executing operation', err);
 
 Nel codice precedente, leggere le credenziali e creare il contesto di esecuzione. PDF Services SDK richiede il contesto di esecuzione per autenticare le richieste.
 
-Quindi, eseguite l’operazione Crea PDF che converte i documenti raw in formato PDF. Infine, viene utilizzato il `outputPdf` per copiare il report PDF. Nell&#39;esempio di codice, questo codice si trova nel file src/helpers/pdf.js. Più avanti in questo tutorial, puoi importare il modulo PDF e chiamare questo metodo.
+Quindi, eseguite l’operazione Crea PDF che converte i documenti raw in formato PDF. Utilizzare infine il parametro `outputPdf` per copiare il report PDF. Nell&#39;esempio di codice, questo codice si trova nel file src/helpers/pdf.js. Più avanti in questo tutorial, puoi importare il modulo PDF e chiamare questo metodo.
 
 Come dimostrato nella sezione precedente, i clienti possono accedere alla pagina seguente per selezionare i report che desiderano convertire in PDF:
 
-![Schermata delle capacità del cliente](assets/report_3.png)
+![Schermata delle funzionalità del cliente](assets/report_3.png)
 
 Quando un cliente seleziona uno o più di questi report, viene creato il file PDF.
 
@@ -209,7 +209,7 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-Questo codice genera un report compilato per più documenti di input. L&#39;unica funzione aggiunta è `combinePdf` metodo che accetta un elenco di nomi di percorso dei file PDF e restituisce un singolo PDF di output.
+Questo codice genera un report compilato per più documenti di input. L&#39;unica funzione aggiunta è il metodo `combinePdf` che accetta un elenco di nomi di percorso dei file PDF e restituisce un singolo PDF di output.
 
 Ora, i clienti del tuo dashboard sui social media possono selezionare i report pertinenti dal proprio account e scaricarli come un pratico PDF. Questo dashboard consente ai responsabili e agli altri stakeholder di mostrare il successo delle campagne con dati, tabelle e grafici in un formato universalmente facile da aprire.
 
@@ -217,6 +217,6 @@ Ora, i clienti del tuo dashboard sui social media possono selezionare i report p
 
 Questo tutorial pratico spiega come utilizzare l’API di PDF Services per aiutare i clienti a scaricare i report pertinenti come PDF facili da condividere. È stata creata un&#39;applicazione Node.js per illustrare le potenzialità dell&#39;API di PDF Services per i servizi di reporting e lettura di PDF. L’applicazione ha dimostrato come i clienti possono scaricare un singolo documento del report o combinare e unire più documenti in un unico report PDF.
 
-Questa applicazione basata su Adobi consente di [clienti del dashboard dei social media](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) ottieni e condividi i report di cui hanno bisogno, senza preoccuparti se tutti i destinatari dispongono di Microsoft Office o di altro software installato sul loro dispositivo. Puoi utilizzare le stesse tecniche nella tua applicazione per aiutare i tuoi utenti a visualizzare, combinare e scaricare i documenti. In alternativa, consulta le numerose altre API di Adobe per aggiungere firme e tenere traccia di esse e molto altro.
+Questa applicazione basata su Adobi consente ai [clienti del dashboard dei social media](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) di ottenere e condividere i report necessari, senza preoccuparsi se tutti i destinatari dispongono di Microsoft Office o di altro software installato sul dispositivo. Puoi utilizzare le stesse tecniche nella tua applicazione per aiutare i tuoi utenti a visualizzare, combinare e scaricare i documenti. In alternativa, consulta le numerose altre API di Adobe per aggiungere firme e tenere traccia di esse e molto altro.
 
-Per iniziare, richiedi il tuo [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) creare esperienze di reporting coinvolgenti per i dipendenti e i clienti. Goditi gratuitamente il tuo account per sei mesi, quindi [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) con l&#39;espansione delle attività di marketing, sono disponibili solo \$0,05 per ogni transazione di documento.
+Per iniziare, richiedi il tuo account gratuito [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html), quindi crea esperienze di reporting coinvolgenti per i tuoi dipendenti e clienti. Approfitta gratuitamente del tuo account per sei mesi, poi [paga in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) man mano che le tue attività di marketing aumentano, a soli \$0,05 per transazione documento.

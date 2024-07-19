@@ -1,6 +1,6 @@
 ---
 title: Flussi di lavoro per documenti HR in Java
-description: "[!DNL Adobe Acrobat Services] Le API integrano facilmente le funzionalità PDF nelle applicazioni Web HR"
+description: "[!DNL Adobe Acrobat Services] Le API incorporano facilmente funzionalità PDF nelle applicazioni Web HR"
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,14 +10,14 @@ thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 2%
+source-wordcount: '1777'
+ht-degree: 0%
 
 ---
 
 # Flussi di lavoro per documenti HR in Java
 
-![Banner Hero per casi di utilizzo](assets/UseCaseHRHero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseHRHero.jpg)
 
 Molte aziende richiedono una documentazione per un nuovo assunto, come gli accordi sul posto di lavoro per i dipendenti che lavorano da casa. In genere, le aziende gestivano fisicamente questi documenti in moduli difficili da gestire e archiviare. Quando si passa a documenti elettronici, i file PDF rappresentano la scelta ideale perché sono più sicuri e meno modificabili rispetto ad altri tipi di file. Inoltre, supportano le firme digitali.
 
@@ -27,7 +27,7 @@ In questo tutorial pratico scopri come implementare un modulo HR basato su web c
 
 ## API e risorse pertinenti
 
-* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
 
@@ -35,17 +35,17 @@ In questo tutorial pratico scopri come implementare un modulo HR basato su web c
 
 ## Generazione delle credenziali API
 
-Registrati per iniziare alla versione di prova gratuita delle API di Adobe PDF Services. Vai a [Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [sito Web](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) e fai clic sul pulsante *Introduzione* pulsante sotto *Crea nuove credenziali*. La versione di prova gratuita fornisce 1.000 transazioni di documenti che possono essere utilizzati nell&#39;arco di sei mesi. Nella pagina successiva (vedi di seguito), scegli il servizio (API di PDF Services), imposta il nome delle credenziali (ad esempio, HRDocumentWFCredentials) e immetti una descrizione.
+Registrati per iniziare alla versione di prova gratuita delle API di Adobe PDF Services. Passate al [Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [sito Web](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) e fate clic sul pulsante *Inizia* in *Crea nuove credenziali*. La versione di prova gratuita fornisce 1.000 transazioni di documenti che possono essere utilizzati nell&#39;arco di sei mesi. Nella pagina successiva (vedi di seguito), scegli il servizio (API di PDF Services), imposta il nome delle credenziali (ad esempio, HRDocumentWFCredentials) e immetti una descrizione.
 
-Selezionare il linguaggio (Java per questo esempio) e selezionare *Creare esempi di codice personalizzati*. L’ultimo passaggio garantisce che gli esempi di codice contengano già il file precompilato pdftools-api-credentials.json che utilizzi, insieme alla chiave privata per autenticare l’app all’interno dell’API.
+Selezionare il linguaggio (Java per questo esempio) e controllare *Creare esempi di codice personalizzati*. L’ultimo passaggio garantisce che gli esempi di codice contengano già il file precompilato pdftools-api-credentials.json che utilizzi, insieme alla chiave privata per autenticare l’app all’interno dell’API.
 
-Infine, fare clic sul pulsante *Crea credenziali* pulsante. Questo genera le credenziali e gli esempi iniziano automaticamente a essere scaricati.
+Fare clic sul pulsante *Crea credenziali*. Questo genera le credenziali e gli esempi iniziano automaticamente a essere scaricati.
 
 ![Schermata Crea nuove credenziali](assets/HRWJ_1.png)
 
 Per verificare che le credenziali funzionino, apri gli esempi scaricati. In questo caso si utilizza IntelliJ IDEA. Quando si apre il codice sorgente, l&#39;ambiente di sviluppo integrato (IDE) richiede il motore di generazione. In questo esempio viene utilizzato Maven, ma potete anche lavorare con Gradle, a seconda delle preferenze.
 
-Quindi, eseguire il comando `mvn clean install` L&#39;obiettivo di Maven è quello di creare i file jar.
+Quindi, esegui l&#39;obiettivo di `mvn clean install` Maven per creare i file jar.
 
 Infine, esegui l’esempio Combina PDF, come illustrato di seguito. Il codice genera il PDF nella cartella di output.
 
@@ -57,11 +57,11 @@ Fornite le credenziali che avete creato l&#39;applicazione. Questo esempio utili
 
 Per prima cosa, configura le impostazioni del progetto per utilizzare il linguaggio Java 8 e il packaging Jar (vedi la schermata riportata di seguito).
 
-![Schermata per l’Inizializzatore primaverile](assets/HRWJ_3.png)
+![Schermata per l&#39;inizializzatore di primavera](assets/HRWJ_3.png)
 
 In secondo luogo, aggiungi Spring Web (dal Web) e Thymeleaf (dai motori modello):
 
-![Screenshot per aggiungere Spring Web e Thymeleaf](assets/HRWJ_4.png)
+![Schermata per aggiungere Spring Web e Thymeleaf](assets/HRWJ_4.png)
 
 Dopo aver creato il progetto, accedi al file pom.xml e completa la sezione delle dipendenze con pdftools-sdk e log4j-slf4j-impl:
 
@@ -202,9 +202,9 @@ Per eseguire il rendering del contenuto dinamico, viene utilizzato il motore di 
 
 A questo punto, genera il documento PDF contenente il contratto virtuale compilando dinamicamente i campi selezionati dopo il rendering del modulo dati personali. In particolare, devi inserire i dati relativi alla persona nel contratto precreato.
 
-In questo caso, per semplicità, si dispone solo di un&#39;intestazione, di un sottotitolo e di una costante stringa con la seguente dicitura: &quot;Questo contratto è stato preparato per \&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person=&quot;&quot;>&quot;.
+Qui, per semplicità, hai solo un&#39;intestazione, un sottotitolo e una costante di stringa che dice: &quot;Questo contratto è stato preparato per \&lt;nome completo della persona\>&quot;.
 
-Per raggiungere questo obiettivo, iniziate con l&#39;Adobe [Creazione di un PDF da Dynamic HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) esempio. Analizzando il codice di esempio, è possibile verificare che il processo di popolamento dei campi Dynamic HTML funzioni nel modo seguente.
+Per raggiungere questo obiettivo, iniziare con l&#39;Adobe [Creazione di un PDF da Dynamic HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html). Analizzando il codice di esempio, è possibile verificare che il processo di popolamento dei campi Dynamic HTML funzioni nel modo seguente.
 
 In primo luogo, è necessario preparare la pagina HTML, che ha contenuto statico e dinamico. La parte dinamica viene aggiornata utilizzando JavaScript. Nello specifico, l’API di PDF Services inserisce l’oggetto JSON nel HTML.
 
@@ -242,7 +242,7 @@ Otterrai quindi le proprietà JSON utilizzando la funzione JavaScript che viene 
 
 Quindi, è necessario comprimere il HTML con tutti i file JavaScript e CSS dipendenti. L&#39;API PDF Services non accetta file di HTML. Al contrario, richiede un file zip come input. In questo caso, il file compresso viene memorizzato in src\\main\\resources\\contract\\index.zip.
 
-Successivamente, è possibile integrare la `PersonController` con un altro metodo che gestisce le richieste POST:
+Successivamente, è possibile integrare `PersonController` con un altro metodo che gestisce le richieste POST:
 
 ```
 @PostMapping("/")
@@ -260,15 +260,15 @@ public String checkPersonInfo(@Valid PersonForm personForm,
 
 Il metodo sopra descritto crea un contratto PDF utilizzando i dati personali forniti ed esegue il rendering della vista delle azioni del contratto. Quest’ultimo fornisce collegamenti al PDF generato e per la firma del PDF.
 
-Ora vediamo come `CreateContract` il metodo funziona (l&#39;elenco completo è riportato di seguito). Il metodo si basa su due campi:
+Ora vediamo come funziona il metodo `CreateContract` (l&#39;elenco completo è riportato di seguito). Il metodo si basa su due campi:
 
 * `LOGGER`, da log4j, per eseguire il debug delle informazioni su eventuali eccezioni
 
-* `contractFilePath`, contenente il percorso del file al PDF generato
+* `contractFilePath`, contenente il percorso del file per PDF generato
 
-La `CreateContract` il metodo imposta le credenziali e crea il PDF da HTML. Per passare e compilare i dati della persona nel contratto, utilizzare la `setCustomOptionsAndPersonData` aiutante. Questo metodo recupera i dati della persona dal modulo, quindi li invia al PDF generato tramite l&#39;oggetto JSON descritto in precedenza.
+Il metodo `CreateContract` imposta le credenziali e crea il PDF da HTML. Per passare e popolare i dati della persona nel contratto, utilizzare l&#39;helper `setCustomOptionsAndPersonData`. Questo metodo recupera i dati della persona dal modulo, quindi li invia al PDF generato tramite l&#39;oggetto JSON descritto in precedenza.
 
-Inoltre, `setCustomOptionsAndPersonData` mostra come controllare l’aspetto dei PDF disattivando l’intestazione e il piè di pagina. Una volta completati questi passaggi, puoi salvare il file PDF in output/contract.pdf ed eventualmente eliminare il file generato in precedenza.
+In `setCustomOptionsAndPersonData` viene inoltre illustrato come controllare l&#39;aspetto dei PDF disattivando l&#39;intestazione e il piè di pagina. Una volta completati questi passaggi, puoi salvare il file PDF in output/contract.pdf ed eventualmente eliminare il file generato in precedenza.
 
 ```
 private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
@@ -325,7 +325,7 @@ private static void setCustomOptionsAndPersonData(
 }
 ```
 
-Quando si genera il contratto, è inoltre possibile unire i dati dinamici specifici della persona con condizioni di contratto fisse. Per eseguire questa operazione, seguire le istruzioni [Creazione di un PDF da static HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) esempio. In alternativa, è possibile [unisci due PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html).
+Quando si genera il contratto, è inoltre possibile unire i dati dinamici specifici della persona con condizioni di contratto fisse. A tale scopo, seguire l&#39;esempio [Create a PDF from static HTML](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html). In alternativa, è possibile [unire due PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html).
 
 ## Presentazione del file PDF per il download
 
@@ -348,7 +348,7 @@ Ora puoi presentare il collegamento al PDF generato per il download da parte del
 </html>
 ```
 
-Quindi, è possibile implementare `downloadContract` metodo all&#39;interno del `PersonController` classe come segue:
+Implementare quindi il metodo `downloadContract` all&#39;interno della classe `PersonController` nel modo seguente:
 
 ```
 @RequestMapping("/pdf")
@@ -376,13 +376,13 @@ Dopo l’esecuzione dell’app, viene visualizzato il seguente flusso. Nella pri
 
 ![Schermata dei valori dei dati](assets/HRWJ_6.png)
 
-Dopo aver fatto clic sul pulsante *Invia* , il modulo viene convalidato e il PDF viene generato in base al HTML (resources/contract/index.html). Nell’applicazione viene visualizzata un’altra vista (dettagli del contratto), in cui è possibile scaricare PDF:
+Dopo aver fatto clic sul pulsante *Invia*, il modulo viene convalidato e il PDF viene generato in base al HTML (resources/contract/index.html). Nell’applicazione viene visualizzata un’altra vista (dettagli del contratto), in cui è possibile scaricare PDF:
 
 ![Schermata in cui è possibile scaricare PDF](assets/HRWJ_7.png)
 
 Dopo il rendering nel browser Web, PDF ha il seguente aspetto. In particolare, i dati personali immessi vengono propagati al PDF:
 
-![Schermata del rendering PDF con dati personali](assets/HRWJ_8.png)
+![Schermata del PDF di cui è stato eseguito il rendering con dati personali](assets/HRWJ_8.png)
 
 ## Abilitazione delle firme e della sicurezza
 
@@ -390,11 +390,11 @@ Quando l’accordo è pronto, Adobe Sign può aggiungere firme digitali che rapp
 
 Per ottenere un token di autorizzazione, è necessario eseguire diversi passaggi:
 
-Per prima cosa, registra un [account sviluppatore](https://acrobat.adobe.com/it/it/sign/developer-form.html).
+Registra innanzitutto un [account sviluppatore](https://acrobat.adobe.com/it/it/sign/developer-form.html).
 
-Creare l&#39;applicazione CLIENT nel [Portale Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Creare l&#39;applicazione CLIENT nel [portale Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Configura OAuth per l’applicazione come descritto [qui](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) e [qui](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Annota l&#39;identificatore client e il segreto client. È quindi possibile utilizzare `https://www.google.com` come URI di reindirizzamento e gli ambiti seguenti:
+Configura OAuth per l’applicazione come descritto [qui](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) e [qui](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Annota l&#39;identificatore client e il segreto client. Puoi quindi utilizzare `https://www.google.com` come URI di reindirizzamento e i seguenti ambiti:
 
 * user_login: self
 
@@ -404,7 +404,7 @@ Configura OAuth per l’applicazione come descritto [qui](https://www.adobe.io/a
 
 * agreement_send: account
 
-Prepara un URL come indicato di seguito utilizzando l’ID client anziché \&lt;client_id>:
+Prepara un URL come segue utilizzando il tuo ID client al posto di \&lt;CLIENT_ID\>:
 
 ```
 https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.com
@@ -413,15 +413,16 @@ https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.co
 &scope=user_login:self+agreement_read:account+agreement_write:account+agreement_send:account
 ```
 
-Digitate l’URL sopra riportato nel browser Web. Verrai reindirizzato a google.com e il codice verrà visualizzato nella barra degli indirizzi come code=\&lt;your_code>, ad esempio:
+Digitate l’URL sopra riportato nel browser Web. Verrai reindirizzato a google.com e il codice verrà visualizzato nella barra degli indirizzi come code=\&lt;YOUR_CODE\>, per
+esempio:
 
 ```
 https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobesign.com/&web_access_point=https://secure.eu1.adobesign.com%2F
 ```
 
-Prendi nota dei valori forniti per \&lt;your_code> e api_access_point.
+Prendi nota dei valori forniti per \&lt;YOUR_CODE\> e api_access_point.
 
-Per inviare una richiesta HTTP POST che fornisce il token di accesso, utilizzare l&#39;ID client \&lt;your_code>e api_access_point. È possibile utilizzare [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
+Per inviare una richiesta HTTP POST che fornisce il token di accesso, utilizzare i valori ID client, \&lt;CODICE_UTENTE\> e api_access_point. Puoi utilizzare [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -453,7 +454,7 @@ Prendi nota del tuo access_token. Ne hai bisogno per autorizzare il codice clien
 
 ## Utilizzo di Adobe Sign Java SDK
 
-Una volta ottenuto il token di accesso, puoi inviare chiamate API REST ad Adobe Sign. Per semplificare questo processo, utilizza Adobe Sign Java SDK. Il codice sorgente è disponibile nel [Adobe del repository GitHub](https://github.com/adobe-sign/AdobeSignJavaSdk).
+Una volta ottenuto il token di accesso, puoi inviare chiamate API REST ad Adobe Sign. Per semplificare questo processo, utilizza Adobe Sign Java SDK. Il codice sorgente è disponibile nel [repository GitHub di Adobe](https://github.com/adobe-sign/AdobeSignJavaSdk).
 
 Per integrare il pacchetto con l&#39;applicazione, è necessario clonare il codice. Quindi, crea il pacchetto Maven (pacchetto mvn) e installa i seguenti file nel progetto (li puoi trovare nel codice complementare nella cartella adobe-sign-sdk):
 
@@ -475,7 +476,7 @@ Per integrare il pacchetto con l&#39;applicazione, è necessario clonare il codi
 
 * target/lib/swagger-annotations-1.5.15.jar
 
-In IntelliJ IDEA è possibile aggiungere tali file come dipendenze utilizzando *Struttura del progetto* (Struttura di file/progetto).
+In IntelliJ IDEA è possibile aggiungere tali file come dipendenze utilizzando *Struttura progetto* (Struttura file/progetto).
 
 ## Invio del PDF per la firma
 
@@ -500,9 +501,9 @@ Ora puoi inviare l’accordo da firmare. A tale scopo, completa prima contract-d
 </html>
 ```
 
-Quindi, aggiungi un altro controller, `AdobeSignController`, in cui si implementa `sendContractMethod` (vedere il codice correlato). Il metodo funziona come segue:
+Quindi, aggiungere un altro controller, `AdobeSignController`, in cui implementare `sendContractMethod` (vedere il codice correlato). Il metodo funziona come segue:
 
-In primo luogo, utilizza `ApiClient` per ottenere l’endpoint API.
+In primo luogo, utilizza `ApiClient` per ottenere l&#39;endpoint API.
 
 ```
 ApiClient apiClient = new ApiClient();
@@ -578,7 +579,7 @@ participantSetInfo.setRole(ParticipantSetInfo.RoleEnum.SIGNER);
 agreementCreationInfo.addParticipantSetsInfoItem(participantSetInfo);
 ```
 
-Infine, invia l’accordo utilizzando il `createAgreement` metodo di Adobe Sign Java SDK:
+Infine, invia l’accordo utilizzando il metodo `createAgreement` dall’SDK Java di Adobe Sign:
 
 ```
 // Create agreement using the transient document.
@@ -589,9 +590,9 @@ AgreementCreationResponse agreementCreationResponse = agreementsApi.createAgreem
 System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 ```
 
-Dopo aver eseguito questo codice, riceverai un&#39;e-mail (all&#39;indirizzo specificato nel codice come `<email_address>)` con la richiesta di firma dell’accordo. L’e-mail contiene il collegamento ipertestuale che indirizza i destinatari al portale Adobe Sign per l’esecuzione della firma. Il documento viene visualizzato nel Portale per sviluppatori Adobe Sign (vedi la figura seguente) e puoi anche tenere traccia del processo di firma a livello di programmazione utilizzando il [getAgreementInfo](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) metodo.
+Dopo aver eseguito questo codice, riceverai un messaggio e-mail (all’indirizzo specificato nel codice come `<email_address>)`) con la richiesta di firma dell’accordo. L’e-mail contiene il collegamento ipertestuale che indirizza i destinatari al portale Adobe Sign per l’esecuzione della firma. Puoi visualizzare il documento nel Portale per sviluppatori Adobe Sign (vedi figura seguente) nonché tenere traccia del processo di firma a livello di programmazione utilizzando il metodo [getAgreementInfo](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo).
 
-Infine, puoi anche proteggere con password il tuo PDF utilizzando l’API di PDF Services, come mostrato nelle seguenti [esempi](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf).
+Infine, puoi anche proteggere con password il tuo PDF utilizzando l&#39;API di PDF Services, come mostrato in questi [esempi](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf).
 
 ![Schermata dei dettagli del contratto](assets/HRWJ_9.png)
 
@@ -601,4 +602,4 @@ Come puoi vedere, sfruttando i quickstart, puoi implementare un semplice modulo 
 
 Proseguendo nell’esempio, è possibile creare moduli che i destinatari possono firmare in remoto e in modo sicuro. Quando sono necessarie più firme, è anche possibile instradare automaticamente i moduli a una serie di persone in un flusso di lavoro. L&#39;inserimento dei tuoi dipendenti è stato migliorato e il reparto Risorse Umane ti amerà.
 
-Check-out [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) per aggiungere una moltitudine di funzionalità PDF alle applicazioni attuali.
+Consulta [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) per aggiungere numerose funzionalità di PDF alle tue applicazioni.

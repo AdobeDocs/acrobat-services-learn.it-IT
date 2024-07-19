@@ -10,18 +10,18 @@ thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
 
 # Revisioni e approvazioni
 
-![Banner Hero per casi di utilizzo](assets/UseCaseReviewsHero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseReviewsHero.jpg)
 
-Durante la pandemia di COVID-19, molte imprese hanno dovuto collaborare in remoto tra loro, [condivisione e revisione di documenti digitali](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) presenta una serie di sfide per i team e le risorse interfunzionali.
+La collaborazione remota tra team è diventata necessaria per molte aziende durante la pandemia COVID-19, [la condivisione e la revisione dei documenti digitali](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) presenta una serie di sfide per i team e le risorse interfunzionali.
 
-Queste sfide includono la condivisione di documenti in diversi formati di file, la revisione e la creazione di commenti efficaci per il contenuto e la sincronizzazione con le modifiche più recenti. [!DNL Adobe Acrobat Services] Le API sono progettate per consentire agli sviluppatori di applicazioni di risolvere questi problemi per gli utenti.
+Queste sfide includono la condivisione di documenti in diversi formati di file, la revisione e la creazione di commenti efficaci per il contenuto e la sincronizzazione con le modifiche più recenti. Le API [!DNL Adobe Acrobat Services] sono progettate per consentire agli sviluppatori di applicazioni di risolvere questi problemi per gli utenti.
 
 ## Cosa puoi imparare
 
@@ -43,25 +43,25 @@ L&#39;applicazione dispone delle seguenti funzionalità:
 
 ## API e risorse pertinenti
 
-* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Codice progetto](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
 ## Creazione di credenziali API di Adobe
 
-Prima di avviare il codice, è necessario [crea credenziali](https://www.adobe.com/go/dcsdks_credentials) per Adobe PDF Embed API e Adobe PDF Services API. L’API PDF Embed può essere utilizzata liberamente. L’API di PDF Services può essere utilizzata gratuitamente per sei mesi, dopodiché puoi passare a un [piano a pagamento in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per transazione documento.
+Prima di avviare il codice, è necessario [creare le credenziali](https://www.adobe.com/go/dcsdks_credentials) per l&#39;API di Adobe PDF Embed e l&#39;API dei servizi Adobe PDF. L’API PDF Embed può essere utilizzata liberamente. L&#39;API di PDF Services può essere utilizzata gratuitamente per sei mesi, quindi è possibile passare a un piano [a pagamento](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per ogni transazione di documento.
 
-Quando crei le credenziali per l’API di PDF Services, seleziona **Creare un esempio di codice personalizzato** e selezionare Node.js per la lingua. Salva il file ZIP ed estrai pdftools-api-credentials.json e private.key nella directory principale del progetto Node.js Express.
+Durante la creazione delle credenziali per l&#39;API di Servizi PDF, selezionare l&#39;opzione **Crea codice personalizzato di esempio** e selezionare Node.js per la lingua. Salva il file ZIP ed estrai pdftools-api-credentials.json e private.key nella directory principale del progetto Node.js Express.
 
 ## Impostazione di un progetto e delle dipendenze
 
-Configura il tuo progetto Node.js ed Express in modo che serva file statici da una cartella denominata &quot;public&quot;. Puoi impostare il progetto in modi diversi, a seconda delle tue preferenze. Per iniziare rapidamente a utilizzare, è possibile [Generatore di app Express](https://expressjs.com/en/starter/generator.html). Oppure, se vuoi mantenere le cose semplici, puoi [inizia da zero](https://expressjs.com/en/starter/hello-world.html) e mantenere il codice in un unico file JavaScript. Nel progetto di esempio sopra collegato, stai utilizzando l&#39;approccio a un file e mantenendo tutto il tuo codice in index.js.
+Configura il tuo progetto Node.js ed Express in modo che serva file statici da una cartella denominata &quot;public&quot;. Puoi impostare il progetto in modi diversi, a seconda delle tue preferenze. Per iniziare rapidamente a utilizzare, puoi utilizzare il [generatore di app Express](https://expressjs.com/en/starter/generator.html). Oppure, se desideri semplificare, puoi [iniziare da zero](https://expressjs.com/en/starter/hello-world.html) e mantenere il codice in un unico file JavaScript. Nel progetto di esempio sopra collegato, stai utilizzando l&#39;approccio a un file e mantenendo tutto il tuo codice in index.js.
 
-Copia `pdftools-api-credentials.json` e `private.key` file dall&#39;esempio di codice personalizzato alla directory principale del progetto. Inoltre, aggiungerli al file .gitignore, se presente, in modo che i file delle credenziali non vengano inviati accidentalmente a un repository.
+Copiare i file `pdftools-api-credentials.json` e `private.key` dall&#39;esempio di codice personalizzato nella directory principale del progetto. Inoltre, aggiungerli al file .gitignore, se presente, in modo che i file delle credenziali non vengano inviati accidentalmente a un repository.
 
-Avanti, esegui `npm install @adobe/documentservices-pdftools-node-sdk` per installare Node.js SDK per PDF Services. Importa questo modulo e crea l’oggetto Credenziali API all’interno del codice (index.js nel progetto di esempio), dopo il resto delle importazioni delle dipendenze come segue:
+Eseguire quindi `npm install @adobe/documentservices-pdftools-node-sdk` per installare Node.js SDK per PDF Services. Importa questo modulo e crea l’oggetto Credenziali API all’interno del codice (index.js nel progetto di esempio), dopo il resto delle importazioni delle dipendenze come segue:
 
 ```
   const PDFToolsSdk = require( "@adobe/documentservices-pdftools-node-sdk" );
@@ -95,13 +95,13 @@ Il codice di partenza dovrebbe essere simile al seguente:
   } );
 ```
 
-Ora sei pronto per lavorare con [!DNL Acrobat Services] API.
+Ora è possibile lavorare con le API [!DNL Acrobat Services].
 
 ## Conversione di un file in PDF
 
 Per la prima parte del flusso di lavoro dei documenti, l’utente finale deve caricare i documenti da condividere. Per abilitare questa opzione, aggiungi una funzione di caricamento e consolida i diversi formati di file del documento in PDF per prepararli per il processo di revisione.
 
-Inizia creando una funzione per convertire i documenti in PDF in base al [frammento di esempio per l’API di PDF Services](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html). In questo esempio vengono mostrati frammenti per molte altre funzioni vitali, tra cui il riconoscimento ottico dei caratteri (OCR), la protezione e la rimozione della password e la compressione.
+Iniziare creando una funzione per convertire i documenti in PDF in base allo [snippet di esempio per l&#39;API PDF Services](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html). In questo esempio vengono mostrati frammenti per molte altre funzioni vitali, tra cui il riconoscimento ottico dei caratteri (OCR), la protezione e la rimozione della password e la compressione.
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -129,14 +129,14 @@ Ora puoi utilizzare questa funzione per creare PDF da documenti caricati.
 
 Per ricevere ed elaborare i documenti, il server deve quindi disporre di un endpoint per il caricamento dei file sul server Web.
 
-Per prima cosa, crea una cartella all&#39;interno di una cartella di caricamento e denominala &quot;bozze&quot;. I file caricati e i file PDF convertiti vengono archiviati qui. Avanti, esegui `npm install express-fileupload` per installare il modulo Express-FileUpload e aggiungere il middleware ad Express nel codice:
+Per prima cosa, crea una cartella all&#39;interno di una cartella di caricamento e denominala &quot;bozze&quot;. I file caricati e i file PDF convertiti vengono archiviati qui. Eseguire quindi `npm install express-fileupload` per installare il modulo Express-FileUpload e aggiungere il middleware ad Express nel codice:
 
 ```
 const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-Ora aggiungi un `/upload `e salvare il file caricato all&#39;interno della cartella delle bozze utilizzando lo stesso nome di file. Quindi, chiamate la funzione che avete scritto in precedenza per creare un file PDF dello stesso documento, se non è già in formato PDF. Potete generare un nome file per il nuovo file PDF in base al nome del documento caricato originale:
+Ora aggiungi un endpoint `/upload ` e salva il file caricato all&#39;interno della cartella delle bozze utilizzando lo stesso nome di file. Quindi, chiamate la funzione che avete scritto in precedenza per creare un file PDF dello stesso documento, se non è già in formato PDF. Potete generare un nome file per il nuovo file PDF in base al nome del documento caricato originale:
 
 ```
 // Create a PDF file from an uploaded file
@@ -166,7 +166,7 @@ app.post( "/upload", ( req, res ) => {
 
 ## Creazione di una pagina di caricamento
 
-Per caricare i file dall&#39;applicazione Web, crea un `index.html` pagina Web all&#39;interno della cartella uploads. Nella pagina, aggiungi un modulo di caricamento file che invii il file all&#39;endpoint /upload:
+Per caricare i file dall&#39;applicazione Web, creare una pagina Web `index.html` all&#39;interno della cartella uploads. Nella pagina, aggiungi un modulo di caricamento file che invii il file all&#39;endpoint /upload:
 
 ```
 <form ref="uploadForm" 
@@ -178,7 +178,7 @@ Per caricare i file dall&#39;applicazione Web, crea un `index.html` pagina Web a
   </form>
 ```
 
-![Schermata con funzionalità di caricamento file su pagina Web](assets/reviews_1.png)
+![Schermata con funzionalità di caricamento file sulla pagina Web](assets/reviews_1.png)
 
 Ora puoi caricare i documenti sul server Node.js. Il server salva il file all&#39;interno della cartella uploads/draft e crea una versione in formato PDF accanto ad esso.
 
@@ -210,7 +210,7 @@ return res.json( files.filter( f =\> f.endsWith( ".pdf" ) ) );
 } );
 ```
 
-Aggiungi un `/download/:file` route che fornisce l&#39;accesso al file PDF caricato per l&#39;incorporamento nella pagina Web.
+Aggiungi una route `/download/:file` che consente di accedere al file PDF caricato per l&#39;incorporamento nella pagina Web.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Create una pagina Web denominata &quot;draft.html&quot; e aggiungete un elemento
   <div id="adobe-dc-view"></div>
 ```
 
-Includi [!DNL Acrobat Services] libreria:
+Includi la libreria [!DNL Acrobat Services]:
 
 ```
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -330,9 +330,9 @@ Il tuo profilo ti identifica come un utente specifico quando visualizzi e annota
 
 ## Salvataggio del feedback sul documento
 
-Dopo che un utente ha aggiunto un commento a un documento, può fare clic su **Risparmia.** Per impostazione predefinita, fare clic su **Salva** scarica il file PDF aggiornato. Modificare questa azione per aggiornare il file PDF corrente sul server.
+Dopo che un utente ha aggiunto commenti a un documento, fa clic su **Salva.** Per impostazione predefinita, facendo clic su **Salva** viene scaricato il file PDF aggiornato. Modificare questa azione per aggiornare il file PDF corrente sul server.
 
-Aggiungi un `/save` endpoint al codice server che sovrascrive il file PDF nella cartella uploads/draft:
+Aggiungere un endpoint `/save` al codice server che sovrascrive il file PDF nella cartella uploads/draft:
 
 ```
   // Overwrite the PDF file with latest PDF changes and annotations
@@ -383,7 +383,7 @@ Registra una richiamata della vista PDF per l’API SAVE che carica il contenuto
   );
 ```
 
-Commenti e annotazioni sui documenti bozza ora vengono salvati sul server. È possibile [ulteriori informazioni su come eseguire le richiamate](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) si adatta al flusso di lavoro. Ad esempio: [callback di stato](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) per gestire i conflitti di file, se più persone desiderano rivedere e commentare contemporaneamente lo stesso documento.
+Commenti e annotazioni sui documenti bozza ora vengono salvati sul server. Puoi [leggere ulteriori informazioni su come le richiamate](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) si adattano al flusso di lavoro. Ad esempio, i [callback di stato](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) consentono di gestire i conflitti dei file se più persone desiderano rivedere e commentare contemporaneamente lo stesso documento.
 
 Nel passaggio finale, combini tutti i documenti modificati in un unico file PDF utilizzando l’API di PDF Services.
 
@@ -415,7 +415,7 @@ Il codice combinato PDF è simile al codice di creazione PDF, ma utilizza l’op
 
 ## Download di final PDF in corso
 
-Aggiungere un endpoint denominato /finalize che richiama la funzione per combinare tutti i file PDF all&#39;interno del `uploads/drafts` cartella in una `Final.pdf` file, quindi lo scarica.
+Aggiungere un endpoint denominato /finalize che richiama la funzione per combinare tutti i file PDF all&#39;interno della cartella `uploads/drafts` in un file `Final.pdf`, quindi scaricarlo.
 
 ```
   app.get( "/finalize", ( req, res ) => {
@@ -443,8 +443,8 @@ Infine, aggiungere un collegamento nella pagina Web principale index.html a ques
 
 ## Fasi seguenti
 
-Questo tutorial pratico ha mostrato come [!DNL Acrobat Services] Le API integrano un [condivisione di documenti e flusso di lavoro di revisione](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) in un&#39;applicazione web. L&#39;applicazione consente ai dipendenti remoti di condividere file e collaborare con i colleghi del team, in modo particolarmente utile per dipendenti e appaltatori che lavorano da casa.
+Questa esercitazione pratica ha mostrato come le API [!DNL Acrobat Services] integrano un [flusso di lavoro per la condivisione e la revisione di documenti](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) in un&#39;applicazione Web. L&#39;applicazione consente ai dipendenti remoti di condividere file e collaborare con i colleghi del team, in modo particolarmente utile per dipendenti e appaltatori che lavorano da casa.
 
-Puoi utilizzare queste tecniche per abilitare la collaborazione nella tua app o esplorare [Esempi SDK nodo servizi PDF](https://github.com/adobe/pdftools-node-sdk-samples) e [Esempi di API PDF Embed](https://github.com/adobe/pdf-embed-api-samples) su GitHub per trovare ispirazione su come utilizzare in altri modi le API di Adobe.
+Puoi utilizzare queste tecniche per abilitare la collaborazione nella tua app o esplorare gli esempi di SDK [Nodo servizi PDF](https://github.com/adobe/pdftools-node-sdk-samples) e gli [Esempi di API di incorporamento di PDF](https://github.com/adobe/pdf-embed-api-samples) in GitHub per trovare ispirazione su come utilizzare in alternativa le API di Adobe.
 
-Sei pronto ad abilitare la condivisione e la revisione dei documenti nella tua app? Registrati [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) account sviluppatore. Accedi ad Adobe PDF Embed gratuitamente e goditi una versione di prova gratuita di sei mesi delle altre API. Al termine della versione di prova, puoi [pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) per soli \$0,05 per transazione documento in base alla crescita dell&#39;azienda.
+Sei pronto ad abilitare la condivisione e la revisione dei documenti nella tua app? Registra il tuo account sviluppatore [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Accedi ad Adobe PDF Embed gratuitamente e goditi una versione di prova gratuita di sei mesi delle altre API. Dopo la versione di prova, puoi [pagare in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) per soli \$0,05 per transazione documento in base alla crescita dell&#39;azienda.

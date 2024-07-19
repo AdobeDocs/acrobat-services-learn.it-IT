@@ -10,8 +10,8 @@ thumbnail: KT-6674.jpg
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 5%
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
@@ -45,13 +45,13 @@ Utilizza le esercitazioni introduttive riportate di seguito per creare le creden
 
 **Java**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
    Ad esempio, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.exportpdf.ExportPDFToDOCX`
 
@@ -59,7 +59,7 @@ Il PDF viene creato nella directory src/main/resources.
 
 **.Net**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
@@ -67,21 +67,21 @@ Il PDF viene creato nella directory src/main/resources.
 
 1. Cambia nuovamente le directory nella directory ExportPDFtoDocx.
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `dotnet run ExportPDFToDocx.csproj`
 
 Il tuo PDF viene creato nella stessa directory.
 
-**Node.js**
+**Nodo.js**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
    Ad esempio, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `node src/ocr/ocr-pdf.js`
 
@@ -101,10 +101,10 @@ In un altro formato.
 
 ## Risorse e passaggi successivi
 
-* Per ulteriore assistenza e supporto, visita [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
+* Per ulteriore assistenza e supporto, visita il forum della community [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)
 
-* API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+* API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
+* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per le domande sull&#39;API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi

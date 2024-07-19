@@ -10,7 +10,7 @@ thumbnail: KT-8116.jpg
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
 source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
       <img alt="Introduzione all’API di PDF Services" src="assets/introduction_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Introduzione all’API di PDF Services</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Introduzione all'API di Servizi PDF</strong></a>
     </div>
-    <em>L’API di Adobe PDF Services consente agli sviluppatori di creare, combinare, esportare ed estrarre dati dai PDF tramite API basate su cloud potenti e flessibili</em>
+    <em>L'API di Adobe PDF Services consente agli sviluppatori di creare, combinare, esportare ed estrarre dati dai PDF tramite API basate su cloud potenti e flessibili</em>
     <br>
   </td>
   <td>
@@ -36,7 +36,7 @@ ht-degree: 0%
     <div>
    <a href="getting-credentials-power-automate.md"><strong>Recupero delle credenziali per [!DNL Microsoft Power Automate]</strong></a>
     </div>
-    <em>Scopri come ottenere le credenziali per iniziare a utilizzare o provare [!DNL Adobe PDF Services]</em>
+    <em>Informazioni su come ottenere le credenziali per iniziare a utilizzare o provare [!DNL Adobe PDF Services]</em>
     <br>
   </td>
   <td>
@@ -46,7 +46,7 @@ ht-degree: 0%
     <div>
    <a href="create-workflow-power-automate.md"><strong>Crea il tuo primo flusso di lavoro in [!DNL Microsoft Power Automate]</strong></a>
     </div>
-    <em>Scopri come utilizzare [!DNL Adobe PDF Services] ingresso connettore [!DNL Microsoft Power Automate]</em>
+    <em>Informazioni sull'utilizzo del connettore [!DNL Adobe PDF Services] in [!DNL Microsoft Power Automate]</em>
     <br>
   </td>
   <td>
@@ -54,7 +54,7 @@ ht-degree: 0%
       <img alt="Crea un PDF da HTML o MS Office in pochi minuti con API di PDF Services e Node.js" src="assets/PDFServices_GettingStartedNode_thumb.jpg" />
    </a>
     <div>
-   <a href="createpdffromhtml.md"><strong>Creazione di un PDF da HTML o [!DNL MS Office] in pochi minuti con PDF Services API e Node.js</strong></a>
+   <a href="createpdffromhtml.md"><strong>Crea un PDF da HTML o [!DNL MS Office] in pochi minuti con l'API di PDF Services e Node.js</strong></a>
     </div>
     <em>[!DNL Adobe PDF Services API] che offre agli sviluppatori la possibilità di scegliere tra diversi potenti servizi di manipolazione dei PDF per soddisfare le esigenze di flussi di lavoro aziendali complessi</em>
     <br>
@@ -66,9 +66,9 @@ ht-degree: 0%
       <img alt="Utilizzo dell&apos;API di PDF Services per esportare PDF in Word, PowerPoint e altri formati" src="assets/PDFServices_ExportPDF_thumb.jpg" />
    </a>
     <div>
-   <a href="exportpdf.md"><strong>Utilizzo [!DNL PDF Services API] per esportare PDF in [!DNL Word], [!DNL PowerPoint]e altro</strong></a>
+   <a href="exportpdf.md"><strong>Utilizzo di [!DNL PDF Services API] per esportare PDF in [!DNL Word], [!DNL PowerPoint] e altro ancora</strong></a>
     </div>
-    <em>Scopri come eseguire [!DNL PDF Services API] operazione di esportazione utilizzando file di esempio per i linguaggi Node.js, Java e .Net</em>
+    <em>Informazioni su come eseguire l'operazione di esportazione di [!DNL PDF Services API] utilizzando file di esempio per le lingue Node.js, Java e .Net</em>
     <br>
   </td>
    <td>
@@ -76,7 +76,7 @@ ht-degree: 0%
       <img alt="Guida introduttiva all’API e a Java di Adobe PDF Services" src="assets/PDFServices_GettingStartedJAVA_thumb.jpg" />
    </a>
     <div>
-   <a href="gettingstartedjava.md"><strong>Guida introduttiva all’API e a Java di Adobe PDF Services</strong></a>
+   <a href="gettingstartedjava.md"><strong>Guida introduttiva all'API di Adobe PDF Services e a Java</strong></a>
     </div>
     <em>Gli sviluppatori possono iniziare in pochi minuti con i file di esempio pronti per l'esecuzione forniti per accedere a tutti i servizi Web disponibili</em>
     <br>
@@ -86,9 +86,9 @@ ht-degree: 0%
       <img alt="Utilizzo dell’API di Adobe PDF Services per i file OCR PDF" src="assets/PDFServices_OCR_Thumb.jpg" />
    </a>
     <div>
-   <a href="ocr.md"><strong>Utilizzo [!DNL Adobe PDF Services API] nei file OCR PDF</strong></a>
+   <a href="ocr.md"><strong>Utilizzo di [!DNL Adobe PDF Services API] per i file OCR PDF</strong></a>
     </div>
-    <em>Con l’OCR (riconoscimento ottico dei caratteri), puoi sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili.</em>
+    <em>Con l'OCR (riconoscimento ottico dei caratteri), puoi sbloccare i PDF scansionati per estrarre il testo e creare file ricercabili</em>
     <br>
   </td>
   <td>

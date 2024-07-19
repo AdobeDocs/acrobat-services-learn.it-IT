@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Adobe Acrobat Services] TUTORIALS API"
-description: Pagina Panoramica per [!DNL Adobe Acrobat Services]
+title: "[!DNL Adobe Acrobat Services] Tutorials API"
+description: Pagina Panoramica per  [!DNL Adobe Acrobat Services]
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Electronic Seal API, PDF Extract API, PDF Accessibility Auto-Tag API
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Acrobat Services] Esercitazioni API
+# Esercitazioni per l&#39;API [!DNL Adobe Acrobat Services]
 
 [!DNL Adobe Acrobat Services] dispone di sei API principali:
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un’offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a realizzare esperienze con marchio più semplici, più veloci e più rapide con [!DNL Adobe Acrobat Services] API.
+Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un&#39;offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a creare esperienze con marchio più semplici e veloci con le API [!DNL Adobe Acrobat Services].
 
 <table style="table-layout:fixed">
 <tr>

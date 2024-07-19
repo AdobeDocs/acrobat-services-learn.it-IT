@@ -10,7 +10,7 @@ thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -102,15 +102,15 @@ Il PDF verrà creato nel percorso indicato nell&#39;output, che per impostazione
 
 ## Risorse e passaggi successivi
 
-* Per ulteriore assistenza e supporto, visita l&#39;Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
+* Per ulteriore assistenza e supporto, visita il forum della community [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) di Adobe
 
-API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
+* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per le domande sull&#39;API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
 
 * Articoli correlati:
   [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Versione di luglio di [!DNL Adobe Acrobat Services]: Servizi PDF Embed e PDF](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Versione di luglio di [!DNL Adobe Acrobat Services]: PDF Embed e PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

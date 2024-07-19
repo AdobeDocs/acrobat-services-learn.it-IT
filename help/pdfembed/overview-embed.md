@@ -10,7 +10,7 @@ thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
 source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ L’API PDF Embed è un’API JavaScript gratuita che consente di incorporare PD
     <div>
    <a href="controlpdfexperience.md"><strong>Controlla la tua esperienza online di PDF e raccogli analisi</strong></a>
     </div>
-    <em>Scopri come utilizzare l’API Adobe PDF Embed per controllare l’aspetto, abilitare la collaborazione e raccogliere informazioni analitiche sulle modalità di interazione degli utenti con i PDF, incluso il tempo dedicato a una pagina e alle ricerche</em>
+    <em>Scopri come utilizzare l’API Adobe PDF Embed per controllare l’aspetto, abilitare la collaborazione e raccogliere informazioni analitiche sulle interazioni tra gli utenti e i PDF, incluso il tempo dedicato a una pagina e alle ricerche</em>
     <br>
   </td>
   <td>
@@ -36,9 +36,9 @@ L’API PDF Embed è un’API JavaScript gratuita che consente di incorporare PD
       <img alt="Divertiti PDF sul Web come un professionista" src="assets/Wrangle_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-embed-api.html"><strong>Divertiti PDF sul Web come un professionista</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-embed-api.html"><strong>Divertiti con i PDF sul Web come un professionista</strong></a>
     </div>
-    <em>Scopri come utilizzare l’API gratuita di Adobe PDF Embed per semplificare l’utilizzo dei PDF nel tuo sito Web</em>
+    <em>Scopri come utilizzare l'API gratuita Adobe PDF Embed per semplificare l'utilizzo dei PDF nel tuo sito Web</em>
     <br>
   </td>
   <td>

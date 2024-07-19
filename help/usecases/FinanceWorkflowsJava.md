@@ -1,6 +1,6 @@
 ---
 title: Gestione dei flussi di lavoro per documenti finanziari in Java
-description: "[!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzioni necessari per elaborare ed estrarre i dati dai documenti finanziari PDF"
+description: "[!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzionalità necessari per elaborare ed estrarre dati dai documenti finanziari PDF"
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -17,27 +17,27 @@ ht-degree: 0%
 
 # Gestione dei flussi di lavoro dei documenti finanziari in Java
 
-![Banner Hero per casi di utilizzo](assets/UseCaseFinancialHero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseFinancialHero.jpg)
 
 Il settore finanziario utilizza ampiamente i file PDF per lo scambio di dati, in quanto consente di mantenere il formato, la progettazione e la struttura dei documenti. Questo robusto formato consente agli analisti e ai consulenti finanziari di aiutare i clienti a prendere decisioni consapevoli.
 
-Il formato PDF, tuttavia, può risultare difficile da elaborare e automatizzare, soprattutto quando si combinano più origini dati, un caso d&#39;uso comune nel settore finanziario. La creazione di una soluzione personalizzata per l&#39;elaborazione dei documenti PDF è un&#39;opzione possibile, ma non è necessario investire troppo tempo e denaro in software e infrastrutture. [!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzioni necessari per elaborare ed estrarre i dati dai documenti PDF.
+Il formato PDF, tuttavia, può risultare difficile da elaborare e automatizzare, soprattutto quando si combinano più origini dati, un caso d&#39;uso comune nel settore finanziario. La creazione di una soluzione personalizzata per l&#39;elaborazione dei documenti PDF è un&#39;opzione possibile, ma non è necessario investire troppo tempo e denaro in software e infrastrutture. [!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzionalità necessari per elaborare ed estrarre dati dai documenti PDF.
 
 ## Cosa puoi imparare
 
-In questo tutorial pratico, scoprite come utilizzare [!DNL Adobe Acrobat Services] API per [!DNL Java Spring Boot] applicazioni. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l’Adobe [API PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Services] per le applicazioni [!DNL Java Spring Boot]. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l&#39;Adobe [PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 ## API e risorse pertinenti
 
-* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Esempi di progetto](https://github.com/adobe/pdftools-java-sdk-samples)
 
 ## Configurazione
 
-[!DNL Adobe Acrobat Services] utilizza un sistema di autenticazione per controllare l&#39;accesso alle risorse. Per accedere ai servizi, è necessario richiedere una chiave API da Adobe per la tua organizzazione o applicazione. Se disponi di una chiave API, continua alla sezione successiva. Per creare una nuova chiave API, visita [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) nella [!DNL Acrobat Services] sito. Puoi creare una chiave utilizzando la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzate per un massimo di sei mesi.
+[!DNL Adobe Acrobat Services] utilizza un sistema di autenticazione per controllare l&#39;accesso alle risorse. Per accedere ai servizi, è necessario richiedere una chiave API da Adobe per la tua organizzazione o applicazione. Se disponi di una chiave API, continua alla sezione successiva. Per creare una nuova chiave API, visita [Guida introduttiva](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) nel sito [!DNL Acrobat Services]. Puoi creare una chiave utilizzando la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzate per un massimo di sei mesi.
 
 Per seguire questo tutorial, sono necessari due set di chiavi API:
 
@@ -45,21 +45,21 @@ Per seguire questo tutorial, sono necessari due set di chiavi API:
 
 * API di Adobe PDF Embed
 
-Dopo aver creato le credenziali, copia le credenziali API di PDF Services e la chiave privata nel [!DNL Spring Boot] nella sezione delle risorse. Ulteriori informazioni sul [Librerie e dipendenze Maven e Gradle](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) sul [!DNL Adobe Acrobat Services] sito web. Prima di procedere, assicurati di configurare tutti i pacchetti e le librerie necessari.
+Dopo aver creato le credenziali, copiare le credenziali API di PDF Services e la chiave privata nell&#39;applicazione [!DNL Spring Boot] all&#39;interno della sezione delle risorse. Ulteriori informazioni sulle [librerie e dipendenze Maven e Gradle](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) nel sito Web [!DNL Adobe Acrobat Services]. Prima di procedere, assicurati di configurare tutti i pacchetti e le librerie necessari.
 
-![Schermata della posizione della directory per le credenziali API di PDF Services](assets/FAWJ_1.png)
+![Schermata del percorso della directory per le credenziali API di PDF Services](assets/FAWJ_1.png)
 
-Per configurare i servizi di registrazione, visitare [Documentazione dell’Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) e scorri fino alla sezione Archiviazione.
+Per configurare i servizi di registrazione, visitare la [documentazione di Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) e scorrere fino alla sezione Registrazione.
 
 >[!NOTE]
 >
 > Nell’ambiente di produzione, non salvare le chiavi private nel controllo della versione. Utilizzare sempre un archivio segreto o un servizio di inserimento chiavi per impedire l&#39;utilizzo non autorizzato delle credenziali.
 
-Ora che [!DNL Spring Boot] l&#39;applicazione è configurata, è possibile procedere con l&#39;elaborazione dei PDF e la generazione di report per i clienti.
+Ora che l&#39;applicazione [!DNL Spring Boot] è configurata, è possibile procedere con l&#39;elaborazione dei PDF e la generazione di report per i clienti.
 
 ## Invio dei dati del report
 
-Per utilizzare l’API di Adobe PDF Services, devi prima configurare un `ExecutionContext` che utilizza le credenziali fornite. Poiché si dispone delle credenziali all&#39;interno dell&#39;applicazione, è possibile leggerle dal file e creare il contesto nel modo seguente:
+Per utilizzare l&#39;API di Adobe PDF Services, configurare prima un `ExecutionContext` che utilizzi le credenziali specificate. Poiché si dispone delle credenziali all&#39;interno dell&#39;applicazione, è possibile leggerle dal file e creare il contesto nel modo seguente:
 
 ```
 Credentials credentials = Credentials.serviceAccountCredentialsBuilder()
@@ -81,9 +81,9 @@ Quindi, ottieni il contesto per elaborare i documenti PDF. Ecco le azioni che pu
 
 * Ottimizzazione dei documenti PDF per la distribuzione in rete
 
-Tutti questi esempi sono disponibili nel [Esempi di GitHub](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) archivio.
+Tutti questi esempi sono disponibili nel repository [GitHub samples](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples).
 
-Avanti, in [!DNL Spring Boot], puoi ottenere un file utilizzando il percorso String o il flusso in cui viene caricato il file. Ogni operazione eseguita deve essere inizializzata e deve essere impostato un percorso del file di input. Per questo tutorial, utilizzerai i report di PDF disponibili pubblicamente da [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). Puoi utilizzare qualsiasi altra fonte, compresi i tuoi report.
+Successivamente, in [!DNL Spring Boot], è possibile ottenere un file utilizzando il percorso String o il flusso in cui viene caricato il file. Ogni operazione eseguita deve essere inizializzata e deve essere impostato un percorso del file di input. Per questo tutorial, utilizzi i report di PDF disponibili pubblicamente da [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). Puoi utilizzare qualsiasi altra fonte, compresi i tuoi report.
 
 Iniziate acquisendo l&#39;oggetto FileRef dal file. Per semplicità, concentratevi sui file in base al percorso String. Di seguito, viene creata un&#39;operazione per convertire un file nel percorso da PDF a Excel:
 
@@ -111,9 +111,9 @@ In questo scenario viene gestito un solo file PDF. Potete anche iniziare con pi�
 
 ## Generazione del report
 
-[!DNL Adobe Acrobat Services] non supporta l&#39;elaborazione dei documenti di Excel, ma è comunque possibile utilizzare framework e librerie della community per elaborare il contenuto.
+[!DNL Adobe Acrobat Services] non supporta l&#39;elaborazione di documenti di Excel preconfigurati, ma è comunque possibile utilizzare framework e librerie della community per elaborare il contenuto.
 
-Ad esempio, è possibile utilizzare [Apache POI](https://poi.apache.org/) per elaborare Excel (o altri documenti Microsoft) nel [!DNL Java Spring Boot] oppure eseguire altre operazioni manuali o automatiche sul file Excel.
+Ad esempio, è possibile utilizzare [Apache POI](https://poi.apache.org/) per elaborare Excel (o altri documenti di Microsoft) nell&#39;app [!DNL Java Spring Boot] oppure eseguire altre attività manuali o automatizzate nel file di Excel.
 
 In questo esempio, iniziando dai documenti PDF, si estrae il valore patrimoniale netto per i tre fondi e li si mostra in una tabella. È possibile richiamare anche altre informazioni, ad esempio grafici e tabelle, in base alle proprie esigenze e ai dati disponibili. È anche possibile importare dati da altre origini.
 
@@ -139,7 +139,7 @@ try {
 
 >[!TIP]
 >
-> Per evitare di dover ricreare l&#39;oggetto ogni volta che viene richiesta, utilizzare Spring&#39;s dependency injection per iniettare il `ExecutionContext` oggetto.
+> Per evitare di dover ricreare l&#39;oggetto ogni volta che viene effettuata una richiesta, utilizzare Spring&#39;s dependency injection per inserire l&#39;oggetto `ExecutionContext`.
 
 Questo codice genera un documento PDF dal report in formato Excel.
 
@@ -163,7 +163,7 @@ Ora che il report PDF è stato generato, puoi visualizzarlo sul sito Web utilizz
 >
 > A questo punto è necessario il secondo token di credenziali, l&#39;ID client.
 
-Nella [!DNL Spring Boot] aggiungi il seguente frammento di HTML nel punto in cui desideri eseguire il rendering del report PDF:
+Nell&#39;applicazione [!DNL Spring Boot], aggiungere il seguente frammento di HTML in cui si desidera eseguire il rendering del report PDF:
 
 ```
 <div id="pdf-viewer"></div>
@@ -195,8 +195,8 @@ L’API PDF Embed fornisce tutti gli strumenti necessari per visualizzare in ant
 
 ## Fasi seguenti
 
-Questo tutorial pratico ha esplorato [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) API e ha discusso come utilizzare questi servizi per elaborare i dati PDF e generare report per le decisioni finanziarie. È stato dimostrato come integrare le API nei sistemi, utilizzando [!DNL Java Spring Boot] come framework di esempio, per mostrare quanto sia facile elaborare rapidamente i documenti PDF.
+In questa esercitazione pratica sono state esplorate le API [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) e si è discusso su come utilizzare questi servizi per elaborare i dati PDF e generare report per le decisioni finanziarie. È stato illustrato come integrare le API nei sistemi utilizzando [!DNL Java Spring Boot] come framework di esempio, per dimostrare quanto sia facile elaborare rapidamente i documenti PDF.
 
-Esplora [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) e scopri cosa possono fare i Servizi Adobe PDF per la tua azienda. Per ulteriori informazioni sulle altre funzioni disponibili nell&#39;SDK, consultare [Repository GitHub](https://github.com/adobe/pdftools-java-sdk-samples) per i campioni e scoprire come [API PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) consente di visualizzare rapidamente i PDF all&#39;interno delle applicazioni.
+Esplora [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) e scopri cosa possono fare i servizi Adobe PDF per la tua azienda. Per ulteriori informazioni sulle altre funzionalità disponibili nell&#39;SDK, consulta il [repository GitHub](https://github.com/adobe/pdftools-java-sdk-samples) per gli esempi e scopri come l&#39;[API PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) può aiutarti a visualizzare rapidamente i PDF nelle tue applicazioni.
 
-Per combinare e manipolare facilmente i documenti, creando utili report PDF per i clienti finanziari, inizia registrandoti gratuitamente [account sviluppatore Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/) oggi.
+Per combinare e manipolare facilmente i documenti, creando utili report PDF per i clienti finanziari, iniziate subito registrandovi per il vostro [account sviluppatore Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/) gratuito.

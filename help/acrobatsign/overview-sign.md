@@ -28,7 +28,7 @@ Le API di Acrobat Sign consentono di creare app e di incorporare l’interfaccia
       <img alt="Introduzione" src="assets/GSASAPI_thumb.png" />
     </a>
     <div>
-    <a href="signapi.md"><strong>Introduzione</strong></a>
+    <a href="signapi.md"><strong>Per iniziare</strong></a>
     </div>
     <em>Scopri come includere l’API di Sign nell’applicazione per raccogliere firme e altre informazioni</em>
     <br>
@@ -62,9 +62,9 @@ Scopri come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;appl
       <img alt="Iscrizione a un account sviluppatore" src="assets/Signingup_1280.png" />
    </a>
     <div>
-   <a href="sign-up-developer-account.md"><strong>Iscrizione a un account sviluppatore</strong></a>
+   <a href="sign-up-developer-account.md"><strong>Registrazione per un account sviluppatore</strong></a>
     </div>
-    <em>Scopri come registrarti per un account Sviluppatore per Acrobat Sign, completamente abilitato con le funzionalità Sign e API</em>
+    <em>Scopri come registrarti per un account sviluppatore per Acrobat Sign, completamente abilitato con le funzionalità Sign e API</em>
     <br>
   </td>
   <td>
@@ -72,9 +72,9 @@ Scopri come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;appl
       <img alt="Creazione dell’applicazione" src="assets/Creatingyourapplication_1280.png" />
    </a>
     <div>
-   <a href="creating-your-application.md"><strong>Creazione dell’applicazione</strong></a>
+   <a href="creating-your-application.md"><strong>Creazione dell'applicazione</strong></a>
     </div>
-    <em>Scopri come creare un’applicazione in Acrobat Sign</em>
+    <em>Scopri come creare un'applicazione in Acrobat Sign</em>
     <br>
   </td>
    <td>
@@ -84,7 +84,7 @@ Scopri come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;appl
     <div>
    <a href="creating-an-embed-link.md"><strong>Creazione di un collegamento di incorporamento</strong></a>
     </div>
-    <em>Scopri come creare un collegamento di incorporamento per OAuth, il metodo che l’applicazione ottiene le autorizzazioni per gli utenti</em>
+    <em>Scopri come creare un collegamento di incorporamento per OAuth, il metodo che la tua applicazione ottiene le autorizzazioni per gli utenti</em>
     <br>
   </td>
   <td>
@@ -106,7 +106,7 @@ Scopri come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;appl
     <div>
    <a href="creating-a-transient-document.md"><strong>Creazione di un documento transitorio</strong></a>
     </div>
-    <em>Scopri come creare un documento transitorio da utilizzare con il punto di accesso di Acrobat Sign</em>
+    <em>Informazioni sulla creazione di un documento transitorio da utilizzare con il punto di accesso Acrobat Sign</em>
     <br>
   </td>
   <td>

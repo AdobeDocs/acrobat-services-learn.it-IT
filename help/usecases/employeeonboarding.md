@@ -1,6 +1,6 @@
 ---
 title: Modernizzazione dell'inserimento dei dipendenti
-description: Scopri come modernizzare l'inserimento dei dipendenti con [!DNL Adobe Acrobat Services] API
+description: Scopri come modernizzare l'onboarding dei dipendenti con le  [!DNL Adobe Acrobat Services] API
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,34 +10,34 @@ thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 1%
+source-wordcount: '1434'
+ht-degree: 0%
 
 ---
 
 # Modernizzazione dell&#39;inserimento dei dipendenti
 
-![Banner Hero per casi di utilizzo](assets/usecaseemployeeonboardinghero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/usecaseemployeeonboardinghero.jpg)
 
-In una grande organizzazione, l&#39;inserimento dei dipendenti può essere un processo lungo e di grandi dimensioni. In genere, esiste una combinazione di documentazione personalizzata e materiale standard che deve essere presentato e firmato da un nuovo dipendente. Questa combinazione di materiale personalizzato e standard richiede più passaggi, sottraendo tempo prezioso alle persone coinvolte nel processo. [!DNL Adobe Acrobat Services] e Acrobat Sign può modernizzare e automatizzare questo approccio, liberando il personale HR per le attività più importanti. Vediamo come si ottiene.
+In una grande organizzazione, l&#39;inserimento dei dipendenti può essere un processo lungo e di grandi dimensioni. In genere, esiste una combinazione di documentazione personalizzata e materiale standard che deve essere presentato e firmato da un nuovo dipendente. Questa combinazione di materiale personalizzato e standard richiede più passaggi, sottraendo tempo prezioso alle persone coinvolte nel processo. [!DNL Adobe Acrobat Services] e Acrobat Sign possono modernizzare e automatizzare questo approccio, liberando il personale HR per attività più importanti. Vediamo come si ottiene.
 
-## Che cosa sono [!DNL Adobe Acrobat Services]?
+## Cosa sono [!DNL Adobe Acrobat Services]?
 
-[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage) sono un insieme di API relative all’utilizzo dei documenti (e non solo dei PDF). In generale, questa gamma di servizi si suddivide in tre categorie principali:
+[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage) sono un set di API correlate all&#39;utilizzo dei documenti (e non solo PDF). In generale, questa gamma di servizi si suddivide in tre categorie principali:
 
-* I primi sono i [Servizi PDF](https://developer.adobe.com/document-services/apis/pdf-services/) set di strumenti. Questi sono metodi di &quot;utilità&quot; per lavorare con PDF e altri documenti. I servizi includono funzioni quali la conversione da e verso PDF, l’esecuzione di OCR e ottimizzazione, l’unione e la divisione di PDF e così via. È la casella degli strumenti per le funzioni di elaborazione dei documenti.
-* [API PDF Extract](https://developer.adobe.com/document-services/apis/pdf-extract/) utilizza potenti tecniche di intelligenza artificiale/ML per analizzare un PDF e restituire un&#39;incredibile quantità di dettagli sui contenuti. Ciò include il testo, lo stile e le informazioni sulla posizione, e può anche restituire dati tabulari in formato CSV/XLS e recuperare immagini.
-* Infine, [API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) consente agli sviluppatori di utilizzare Microsoft Word come &quot;modello&quot;, combinare i dati (provenienti da qualsiasi origine) e generare documenti dinamici personalizzati (PDF e Word).
+* Il primo è il set di strumenti [PDF Services](https://developer.adobe.com/document-services/apis/pdf-services/). Questi sono metodi di &quot;utilità&quot; per lavorare con PDF e altri documenti. I servizi includono funzioni quali la conversione da e verso PDF, l’esecuzione di OCR e ottimizzazione, l’unione e la divisione di PDF e così via. È la casella degli strumenti per le funzioni di elaborazione dei documenti.
+* L&#39;API [PDF Extract](https://developer.adobe.com/document-services/apis/pdf-extract/) utilizza potenti tecniche di intelligenza artificiale/ML per analizzare un PDF e restituire un&#39;incredibile quantità di dettagli sui contenuti. Ciò include il testo, lo stile e le informazioni sulla posizione, e può anche restituire dati tabulari in formato CSV/XLS e recuperare immagini.
+* Infine, l&#39;[API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) consente agli sviluppatori di utilizzare Microsoft Word come &quot;modello&quot;, di combinare i dati (provenienti da qualsiasi origine) e di generare documenti personalizzati dinamici (PDF e Word).
 
-Gli sviluppatori possono [registrazione](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) e prova tutti questi servizi con una versione di prova gratuita. La [!DNL Acrobat Services] La piattaforma utilizza un’API basata su REST, ma supporta anche gli SDK per Node, Java, .NET e Python (solo per il momento, Extract).
+Gli sviluppatori possono [registrarsi](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) e provare tutti questi servizi con una versione di prova gratuita. La piattaforma [!DNL Acrobat Services] utilizza un&#39;API basata su REST, ma supporta anche gli SDK per Node, Java, .NET e Python (solo per il momento, Extract).
 
-Sebbene non si tratti di un&#39;API, gli sviluppatori possono anche utilizzare [API PDF Embed](https://developer.adobe.com/document-services/apis/pdf-embed/), che offre un’esperienza di visualizzazione coerente e flessibile dei documenti con le pagine Web.
+Sebbene non si tratti di un&#39;API, gli sviluppatori possono anche utilizzare l&#39;API gratuita [PDF Embed](https://developer.adobe.com/document-services/apis/pdf-embed/), che fornisce un&#39;esperienza di visualizzazione coerente e flessibile dei documenti con le pagine Web.
 
 ## Che cos’è Acrobat Sign?
 
 [Acrobat Sign](https://www.adobe.com/it/sign.html) è il leader mondiale nei servizi di firma elettronica. È possibile inviare documenti da firmare utilizzando diversi flussi di lavoro, incluse più firme. Acrobat Sign supporta anche i flussi di lavoro che richiedono firme e informazioni aggiuntive. Tutte queste funzionalità sono supportate da un dashboard potente con un sistema di authoring flessibile.
 
-Come con [!DNL Acrobat Services], Acrobat Sign ha un [prova gratuita](https://www.adobe.com/sign.html#sign_free_trial) che consente agli sviluppatori di testare il processo di firma sia tramite la dashboard che con un’API basata su REST di facile utilizzo.
+Come per [!DNL Acrobat Services], Acrobat Sign dispone di una [versione di prova gratuita](https://www.adobe.com/sign.html#sign_free_trial) che consente agli sviluppatori di testare il processo di firma sia tramite il dashboard che con un&#39;API basata su REST di facile utilizzo.
 
 ## Uno scenario di onboarding
 
@@ -52,19 +52,19 @@ Entriamo nei dettagli su come farlo.
 
 ## Generazione di documenti dinamici
 
-Adobe [Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) L’API consente agli sviluppatori di creare documenti dinamici utilizzando Microsoft Word e un semplice linguaggio di creazione di modelli, come base per la generazione di PDF e documenti Word. Ecco un esempio di come funziona.
+L&#39;API [Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) di Adobe consente agli sviluppatori di creare documenti dinamici utilizzando Microsoft Word e un semplice linguaggio di creazione di modelli, come base per la generazione di PDF e documenti di Word. Ecco un esempio di come funziona.
 
 Iniziamo con un documento di Word che ha valori hardcoded. È possibile applicare al documento uno stile qualsiasi, includendo elementi grafici, tabelle e così via. Ecco il documento iniziale.
 
 ![Schermata del documento iniziale](assets/onboarding_1.png)
 
-Document Generation funziona aggiungendo &quot;token&quot; a un documento Word che vengono sostituiti con i tuoi dati. Sebbene questi token possano essere immessi manualmente, è disponibile una [Componente aggiuntivo di Microsoft Word](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin/) questo lo rende più facile da fare. La sua apertura fornisce agli autori uno strumento per definire tag, o set di dati, che possono essere utilizzati nel documento.
+Document Generation funziona aggiungendo &quot;token&quot; a un documento Word che vengono sostituiti con i tuoi dati. Anche se questi token possono essere immessi manualmente, un [componente aggiuntivo di Microsoft Word](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin/) semplifica questa operazione. La sua apertura fornisce agli autori uno strumento per definire tag, o set di dati, che possono essere utilizzati nel documento.
 
 ![Schermata di Document Tagger](assets/onboarding_2.png)
 
-Puoi caricare le informazioni JSON da un file locale, copiarle in testo JSON o scegliere di continuare con i dati iniziali. Questa operazione consente di definire i tag in modo ad hoc in base alle esigenze specifiche. In questo esempio, è necessario solo un tag per nome, ruolo, stipendio e ubicazione. Questa operazione viene eseguita utilizzando **Crea tag** pulsante:
+Puoi caricare le informazioni JSON da un file locale, copiarle in testo JSON o scegliere di continuare con i dati iniziali. Questa operazione consente di definire i tag in modo ad hoc in base alle esigenze specifiche. In questo esempio, è necessario solo un tag per nome, ruolo, stipendio e ubicazione. A tale scopo, utilizzare il pulsante **Crea tag**:
 
-![Schermata per la definizione di un tag](assets/onboarding_3.png)
+![Schermata di definizione di un tag](assets/onboarding_3.png)
 
 Dopo aver definito il primo tag, potete continuare a definirne tutti gli elementi necessari:
 
@@ -82,7 +82,7 @@ Questo può quindi essere inserito e disposto attorno al paragrafo:
 
 ![Schermata della condizione nel documento](assets/onboarding_7.png)
 
-Per verificarne il funzionamento, selezionare **Genera documento**. La prima volta che si esegue questa operazione, è necessario accedere con un Adobe ID. Dopo l’accesso, viene presentato il JSON predefinito che può essere modificato manualmente.
+Per verificare come funziona, seleziona **Genera documento**. La prima volta che si esegue questa operazione, è necessario accedere con un Adobe ID. Dopo l’accesso, viene presentato il JSON predefinito che può essere modificato manualmente.
 
 ![Schermata dei dati](assets/onboarding_8.png)
 
@@ -138,11 +138,11 @@ documentMergeOperation.execute(executionContext)
 
 In breve, il codice imposta le credenziali, crea un oggetto operazione, imposta l&#39;input e le opzioni, quindi chiama l&#39;operazione. Infine, il risultato viene salvato come PDF. I risultati possono essere generati anche in Word.
 
-Document Generation supporta casi d&#39;uso molto più complessi, inclusa la possibilità di disporre di tabelle e immagini completamente dinamiche. Visualizza la [documentazione](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) per ulteriori dettagli.
+Document Generation supporta casi d&#39;uso molto più complessi, inclusa la possibilità di disporre di tabelle e immagini completamente dinamiche. Per ulteriori dettagli, consulta la [documentazione](https://developer.adobe.com/document-services/docs/overview/document-generation-api/).
 
 ## Esecuzione delle operazioni PDF
 
-La [API di PDF Services](https://developer.adobe.com/document-services/apis/pdf-services/) fornisce un ampio set di operazioni di &quot;utilità&quot; per lavorare con i PDF. Tali operazioni comprendono:
+L&#39;API [PDF Services](https://developer.adobe.com/document-services/apis/pdf-services/) fornisce un ampio set di operazioni di &quot;utilità&quot; per l&#39;utilizzo dei PDF. Tali operazioni comprendono:
 
 * Creazione di PDF dai documenti di Office
 * Esportazione di PDF in documenti di Office
@@ -188,11 +188,11 @@ combineFilesOperation.execute(executionContext)
     });
 ```
 
-Questo codice prende i due PDF, li unisce e salva il risultato in un nuovo PDF. Semplice e facile! Visualizza la [documenti](https://developer.adobe.com/document-services/docs/overview/pdf-services-api/) esempi di ciò che è possibile fare.
+Questo codice prende i due PDF, li unisce e salva il risultato in un nuovo PDF. Semplice e facile! Consulta i [documenti](https://developer.adobe.com/document-services/docs/overview/pdf-services-api/) per esempi su cosa è possibile fare.
 
 ## Il processo di firma
 
-Nella fase finale del processo di inserimento, il dipendente deve firmare un accordo che attesti di aver letto e di accettare tutte le politiche definite in. [Acrobat Sign](https://www.adobe.com/it/sign.html) supporta numerosi flussi di lavoro e integrazioni, tra cui uno automatizzato tramite un [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). In generale, la parte finale dello scenario può essere completata come segue:
+Nella fase finale del processo di inserimento, il dipendente deve firmare un accordo che attesti di aver letto e di accettare tutte le politiche definite in. [Acrobat Sign](https://www.adobe.com/it/sign.html) supporta molti flussi di lavoro e integrazioni diversi, tra cui uno automatizzato tramite [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). In generale, la parte finale dello scenario può essere completata come segue:
 
 Innanzitutto, progetta il documento che include il modulo da firmare. Questa operazione può essere eseguita in diversi modi, incluso un elemento visivo progettato nel dashboard utente di Adobe Sign. Un’altra opzione è quella di utilizzare il componente aggiuntivo Document Generation Word per inserire automaticamente i tag. In questo esempio vengono richieste la firma e la data.
 
@@ -206,6 +206,6 @@ Il modello può essere caricato nel dashboard di Acrobat Sign e quindi utilizzat
 
 ## Sperimentalo da solo
 
-Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [!DNL Adobe Acrobat Services] API [prova gratuita](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) attualmente offre 1.000 richieste gratuite in un periodo di sei mesi. Acrobat Sign [prova gratuita](https://www.adobe.com/sign.html#sign_free_trial) consente di inviare accordi con filigrana a scopo di test.
+Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [versione di prova gratuita](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) dell&#39;API [!DNL Adobe Acrobat Services] offre attualmente 1.000 richieste gratuite in un periodo di sei mesi. La [versione di prova gratuita](https://www.adobe.com/sign.html#sign_free_trial) di Acrobat Sign consente di inviare accordi con filigrana a scopo di test.
 
-Domande? La [forum di supporto](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK) viene monitorato dagli sviluppatori di Adobi e dal personale di supporto ogni giorno. Infine, per trovare l&#39;ispirazione, assicuratevi di prendere il prossimo [Clip di carta](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) episodio. Incontri regolari e in diretta con notizie, demo e colloqui con i clienti.
+Hai domande? Il [forum di supporto](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK) viene monitorato quotidianamente dagli sviluppatori e dal personale di supporto Adobe. Infine, per trovare l&#39;ispirazione, assicuratevi di prendere il prossimo episodio di [ritagli di carta](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Incontri regolari e in diretta con notizie, demo e colloqui con i clienti.

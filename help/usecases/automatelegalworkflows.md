@@ -10,14 +10,14 @@ thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '2876'
-ht-degree: 1%
+source-wordcount: '2826'
+ht-degree: 0%
 
 ---
 
 # Automatizzare i flussi di lavoro legali
 
-![Banner Hero per casi di utilizzo](assets/usecaseautomatelegalhero.jpg)
+![Banner dell&#39;eroe del caso di utilizzo](assets/usecaseautomatelegalhero.jpg)
 
 In uno scenario ideale, i termini dell’accordo vengono accettati senza alcuna modifica. Spesso, tuttavia, gli accordi devono essere personalizzati, per essere poi sottoposti a revisione legale. Le revisioni legali creano costi significativi e rallentano il processo di consegna dei termini degli accordi. L’utilizzo di modelli predefiniti che cambiano in base al linguaggio approvato aiuta i team legali a gestire ed eseguire in modo più sicuro i termini degli accordi.
 
@@ -27,20 +27,20 @@ Questo tutorial utilizza un accordo legale che varia da stato a stato. Per risol
 
 Per iniziare, registra le credenziali gratuite dei servizi Adobe PDF:
 
-1. Naviga [qui](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) per registrare le credenziali.
+1. Naviga [qui](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) per registrare le tue credenziali.
 1. Effettua l’accesso utilizzando il tuo Adobe ID.
 1. Impostare il nome delle credenziali.
 
-   ![Schermata per l’impostazione del nome delle credenziali](assets/automatelegal_1.png)
+   ![Schermata di impostazione del nome delle credenziali](assets/automatelegal_1.png)
 
 1. Scegli una lingua per scaricare il codice di esempio (ad esempio Node.js).
-1. Seleziona per accettare **[!UICONTROL condizioni per lo sviluppatore]**.
-1. Seleziona **[!UICONTROL Crea credenziali]**.
+1. Verifica di accettare **[!UICONTROL condizioni per gli sviluppatori]**.
+1. Selezionare **[!UICONTROL Crea credenziali]**.
 Nel computer viene scaricato un file con un file ZIP contenente i file di esempio pdfservices-api-credentials.json e private.key per l&#39;autenticazione.
 
    ![Schermata delle credenziali](assets/automatelegal_2.png)
 
-1. Seleziona **[!UICONTROL Ottieni componente aggiuntivo Microsoft Word]** oppure vai a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) da installare.
+1. Seleziona **[!UICONTROL Scarica il componente aggiuntivo Microsoft Word]** o vai a [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) per installarlo.
 
    >[!NOTE]
    >
@@ -84,30 +84,30 @@ Nei dati sono presenti informazioni sul cliente, sul suo nome, su chi firma, sul
 
 ## Aggiungere tag di base al documento
 
-In questo scenario viene utilizzato un documento Termini e condizioni, che può essere scaricato [qui](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true).
+In questo scenario viene utilizzato un documento Termini e condizioni che può essere scaricato [qui](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/Agreement/exercise/TermsAndConditions_Sample.docx?raw=true).
 
 ![Schermata del documento Termini e condizioni](assets/automatelegal_3.png)
 
-1. Apri il pannello *TermsAndConditions.docx* documento di esempio in Microsoft Word.
-1. Se il [Document Generation](https://appsource.microsoft.com/en-cy/product/office/WA200002654) plug-in è installato, seleziona **[!UICONTROL Document Generation]** sulla barra multifunzione. Se sulla barra multifunzione non è presente Document Generation, seguire le istruzioni riportate di seguito.
+1. Apri il documento di esempio *TermsAndConditions.docx* in Microsoft Word.
+1. Se è installato il plug-in [Document Generation](https://appsource.microsoft.com/en-cy/product/office/WA200002654), selezionare **[!UICONTROL Document Generation]** nella barra multifunzione. Se sulla barra multifunzione non è presente Document Generation, seguire le istruzioni riportate di seguito.
 1. Seleziona **[!UICONTROL Introduzione]**.
 1. Copia i dati di esempio JSON scritti in precedenza nel campo Dati JSON.
 
    ![Schermata del documento e dei dati JSON](assets/automatelegal_4.png)
 
-Passare alla *Document Generation Tagger* per inserire i tag nel documento.
+Passate al pannello *Document Generation Tagger* per inserire i tag nel documento.
 
 ## Inserire il nome dell&#39;azienda
 
 1. Selezionate il testo da sostituire. In questo scenario, si sostituisce la società nella sezione di apertura del documento.
-1. Ingresso *Document Generation Tagger*, cerca &quot;name&quot;.
+1. In *Document Generation Tagger*, cercate &quot;name&quot;.
 1. In Azienda, scegli *nome*.
 
    ![Schermata di ricerca del nome in Document Generation Tagger](assets/automatelegal_5.png)
 
-1. Seleziona **[!UICONTROL Inserisci testo]**.
+1. Selezionare **[!UICONTROL Inserisci testo]**.
 
-Viene inserito un tag denominato `{{company.name}}` perché il tag si trova sotto quel percorso nel file JSON.
+In questo modo viene inserito un tag denominato `{{company.name}}` perché il tag si trova sotto quel percorso nel file JSON.
 
 ```
 {
@@ -119,15 +119,15 @@ Viene inserito un tag denominato `{{company.name}}` perché il tag si trova sott
 }
 ```
 
-Ripetere quindi questo passaggio nella sezione di apertura per il testo CUSTOMER. Ripeti **passaggi 1-4**, sostituendo CUSTOMER con &quot;name&quot; in customer. L&#39;output deve essere `{{customer.name}}`, a indicare che il testo proviene da sotto l&#39;oggetto cliente.
+Ripetere quindi questo passaggio nella sezione di apertura per il testo CUSTOMER. Ripeti **i passaggi 1-4**, sostituendo CUSTOMER con &quot;name&quot; in Customer. L&#39;output deve essere `{{customer.name}}`, a indicare che il testo proviene da sotto l&#39;oggetto cliente.
 
 L’API di Document Generation di Adobe consente inoltre di includere i tag nelle intestazioni e nei piè di pagina e alla fine della pagina, dove devono essere inseriti i titoli delle firme.
 
-Ripeti questo processo con **passaggi 1-4** per il testo AZIENDA e CLIENTE nel piè di pagina.
+Ripetere nuovamente questa procedura con **passaggi 1-4** per il testo AZIENDA e CLIENTE nel piè di pagina.
 
-![Schermata con l&#39;aggiunta di tag COMPANY e CUSTOMER nel piè di pagina](assets/automatelegal_6.png)
+![Schermata di aggiunta di tag COMPANY e CUSTOMER nel piè di pagina](assets/automatelegal_6.png)
 
-Infine, è necessario **ripeti i passaggi da 1 a 4** per sostituire FIRST NAME e LAST NAME nella sezione Customer della pagina della firma con i tag per `{{customer.signer.firstName}}` e `{{customer.signer.lastName}}` rispettivamente. Non preoccuparti se il tag è lungo e torna alla riga successiva perché il tag viene sostituito quando viene generato il documento.
+Infine, è necessario **ripetere i passaggi 1-4** per sostituire FIRST NAME e LAST NAME nella sezione Customer della pagina della firma rispettivamente con i tag per `{{customer.signer.firstName}}` e `{{customer.signer.lastName}}`. Non preoccuparti se il tag è lungo e torna alla riga successiva perché il tag viene sostituito quando viene generato il documento.
 
 L’inizio del documento e il piè di pagina dovrebbero essere simili al seguente:
 
@@ -149,12 +149,12 @@ Ora che i tag sono stati inseriti nel documento, puoi visualizzare in anteprima 
 
 Direttamente in Microsoft Word, puoi visualizzare in anteprima il documento generato in base ai dati JSON di esempio.
 
-1. Ingresso *Document Generation Tagger*, seleziona **[!UICONTROL Genera documento]**.
-1. La prima volta che ti viene richiesto di accedere con il tuo Adobe ID. Seleziona **[!UICONTROL Accedi]** e completare le richieste di accesso con le tue credenziali.
+1. In *Document Generation Tagger*, seleziona **[!UICONTROL Genera documento]**.
+1. La prima volta che ti viene richiesto di accedere con il tuo Adobe ID. Seleziona **[!UICONTROL Accedi]** e completa le richieste di accesso con le tue credenziali.
 
    ![Schermata di selezione del pulsante Genera documento](assets/automatelegal_10.png)
 
-1. Seleziona **[!UICONTROL Visualizza documento]**.
+1. Selezionare **[!UICONTROL Visualizza documento]**.
 
    ![Schermata del pulsante Visualizza documento](assets/automatelegal_11.png)
 
@@ -168,24 +168,24 @@ In questa sezione seguente vengono impostate solo determinate sezioni da include
 
 ![Schermata del testo specifico dello stato](assets/automatelegal_13.png)
 
-![Schermata per la selezione della sezione California Disclosure](assets/automatelegal_14.png)
+![Schermata di selezione della sezione Divulgazione California](assets/automatelegal_14.png)
 
 1. Nel documento, selezionate la sezione Informativa sulla California e tutti i punti secondari.
 
    ![Schermata del tag di sezione condizionale](assets/automatelegal_15.png)
 
-1. Ingresso *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Avanzate]**.
-1. Espandi **[!UICONTROL Contenuto condizionale]**.
-1. Ingresso *[!UICONTROL Seleziona record]* campo, cerca e seleziona **[!UICONTROL customer.state]**.
-1. Ingresso *[!UICONTROL Seleziona operatore]* , seleziona **=**.
-1. Ingresso *[!UICONTROL Valore]* campo, tipo *CA*.
-1. Seleziona **[!UICONTROL Inserisci condizione]**.
+1. In *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Advanced]**.
+1. Espandere **[!UICONTROL Contenuto condizionale]**.
+1. Nel campo *[!UICONTROL Seleziona record]*, cerca e seleziona **[!UICONTROL customer.state]**.
+1. Nel campo *[!UICONTROL Seleziona operatore]*, selezionare **=**.
+1. Nel campo *[!UICONTROL Valore]*, digitare *CA*.
+1. Selezionare **[!UICONTROL Inserisci condizione]**.
 
-La sezione è ora completata con alcuni tag denominati tag di sezione condizionale. Quando li avete aggiunti, è possibile che il tag di sezione condizionale sia stato aggiunto come riga numerata. Puoi rimuoverla spostando la barra rovesciata prima del tag, altrimenti numererà gli elementi come se il tag non fosse presente quando viene generato il documento. La sezione condizionale termina con `{% end-section %}` tag.
+La sezione è ora completata con alcuni tag denominati tag di sezione condizionale. Quando li avete aggiunti, è possibile che il tag di sezione condizionale sia stato aggiunto come riga numerata. Puoi rimuoverla spostando la barra rovesciata prima del tag, altrimenti numererà gli elementi come se il tag non fosse presente quando viene generato il documento. La sezione condizionale termina con il tag `{% end-section %}`.
 
 ![Schermata del tag di sezione condizionale](assets/automatelegal_16.png)
 
-**Ripeti i passaggi da 1 a 7** per *Divulgazione di Washington* , sostituendo la *CA* valore con *WA* per indicare che la sezione viene visualizzata solo se lo stato del cliente è Washington.
+**Ripetere i passaggi 1-7** per la sezione *Informativa di Washington*, sostituendo il valore *CA* con *WA* per indicare che la sezione viene visualizzata solo se lo stato del cliente è Washington.
 
 ![Schermata del tag di sezione condizionale per WA](assets/automatelegal_17.png)
 
@@ -195,7 +195,7 @@ Una volta posizionate le sezioni condizionali, potete visualizzare in anteprima 
 
 Quando si genera il documento, si noti che la sezione inclusa è solo quella che soddisfa i criteri relativi ai dati. Nell&#39;esempio seguente, poiché lo stato è uguale a CA, viene inclusa solo la sezione California.
 
-![Schermata delle informazioni di California Disclosure](assets/automatelegal_18.png)
+![Schermata delle informazioni sulla divulgazione della California](assets/automatelegal_18.png)
 
 Un’altra modifica rilevante è che la numerazione della sezione successiva, Uso dei Servizi e del Software, ha il numero 5. Ciò significa che quando la sezione Washington viene omessa, la numerazione continua.
 
@@ -203,35 +203,35 @@ Un’altra modifica rilevante è che la numerazione della sezione successiva, Us
 
 Per verificare se il modello funziona correttamente quando il cliente si trova nello stato di Washington anziché in California, modificare i dati di esempio per il modello:
 
-1. Ingresso *Document Generation Tagger*, seleziona **[!UICONTROL Modificare i dati di input]**.
+1. In *Document Generation Tagger*, seleziona **[!UICONTROL Modifica dati di input]**.
 
    ![Schermata di Document Generation Tagger](assets/automatelegal_20.png)
 
 1. Seleziona **[!UICONTROL Modifica]**.
 
-1. Nei dati JSON, modifica *CA* a *WA*.
+1. Nei dati JSON, modifica *CA* in *WA*.
 
    ![Schermata dei dati JSON](assets/automatelegal_21.png)
 
-1. Seleziona **[!UICONTROL Genera tag]**.
-1. Seleziona **[!UICONTROL Genera documento]** per rigenerare il documento.
+1. Selezionare **[!UICONTROL Genera tag]**.
+1. Selezionare **[!UICONTROL Genera documento]** per rigenerare il documento.
 
 Notate che il documento include solo la sezione Stato di Washington.
 
-![Schermata del documento che include solo la sezione Stato di Washington](assets/automatelegal_22.png)
+![Schermata del documento che include solo la sezione relativa allo stato di Washington](assets/automatelegal_22.png)
 
 ## Aggiunta di una frase condizionale
 
 Come le sezioni condizionali, potete anche avere frasi specifiche che vengono incluse quando vengono soddisfatte determinate condizioni. In questo esempio, la politica di restituzione è diversa tra California e Washington.
 
 1. Nella sezione 3.1, selezionare la prima frase &quot;Quando si acquista nello stato di Washington, uno deve essere restituito via MAIL entro 30 giorni dalla transazione originale per un rimborso completo.&quot;.
-1. Ingresso *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Avanzate]**.
-1. Espandi **[!UICONTROL Contenuto condizionale]**.
-1. Sotto *[!UICONTROL Tipo di contenuto]*, seleziona **[!UICONTROL Frase]**.
-1. Ingresso *[!UICONTROL Seleziona record]* campo, cerca e seleziona **[!UICONTROL customer.state]**.
-1. Ingresso *[!UICONTROL Seleziona operatore]* , seleziona **=**.
-1. Ingresso *[!UICONTROL Valore]* campo, tipo *CA*.
-1. Seleziona **[!UICONTROL Inserisci condizione]**.
+1. In *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Advanced]**.
+1. Espandere **[!UICONTROL Contenuto condizionale]**.
+1. In *[!UICONTROL Tipo di contenuto]*, selezionare **[!UICONTROL Frase]**.
+1. Nel campo *[!UICONTROL Seleziona record]*, cerca e seleziona **[!UICONTROL customer.state]**.
+1. Nel campo *[!UICONTROL Seleziona operatore]*, selezionare **=**.
+1. Nel campo *[!UICONTROL Valore]*, digitare *CA*.
+1. Selezionare **[!UICONTROL Inserisci condizione]**.
 
 Anche se il nome del tag è lo stesso, la differenza principale tra Frase e Sezione è che una frase ha la sezione che non include nuove righe. Il tag di sezione della condizione e il tag di sezione finale devono trovarsi nello stesso paragrafo.
 
@@ -246,17 +246,17 @@ Acrobat Sign consente di inviare accordi da firmare o incorporarli nell’esperi
 
    ![Schermata da dove deve arrivare la firma](assets/automatelegal_24.png)
 
-1. Ingresso *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Adobe Sign]**.
-1. Ingresso *[!UICONTROL Specifica il numero di destinatari]* , imposta il numero di destinatari (in questo esempio viene utilizzato 2).
-1. Ingresso *[!UICONTROL Destinatari]* , seleziona **[!UICONTROL Signer-1]**.
-1. Ingresso *[!UICONTROL Campo]* testo, seleziona **[!UICONTROL Firma]**.
-1. Seleziona **[!UICONTROL Inserisci tag di testo di Adobe Sign]**.
+1. In *[!UICONTROL Document Generation Tagger]*, seleziona **[!UICONTROL Adobe Sign]**.
+1. Nel campo *[!UICONTROL Specificare il numero di destinatari]*, impostare il numero di destinatari (in questo esempio viene utilizzato 2).
+1. Nel campo *[!UICONTROL Destinatari]*, seleziona **[!UICONTROL Firmatario-1]**.
+1. Nel tipo *[!UICONTROL Campo]*, selezionare **[!UICONTROL Firma]**.
+1. Seleziona **[!UICONTROL Inserisci tag di testo Adobe Sign]**.
 
-   ![Schermata per l’inserimento di un tag di testo Adobe Sign in Document Generation Tagger](assets/automatelegal_25.png)
+   ![Schermata di Inserimento del tag di testo Adobe Sign in Document Generation Tagger](assets/automatelegal_25.png)
 
 >[!NOTE]
 >
->Se il **Inserisci tag di testo di Adobe Sign** il pulsante sembra essere mancante, scorri verso il basso.
+>Se il pulsante **Inserisci tag di testo Adobe Sign** risulta mancante, scorri verso il basso.
 
 In questo modo viene inserito un campo firma che deve essere firmato dal primo firmatario.
 
@@ -269,11 +269,11 @@ Quindi, inserisci un campo dati per il firmatario che verrà compilato automatic
    ![Schermata indicante la posizione della data](assets/automatelegal_27.png)
 
 1. Imposta Tipo campo su Data.
-1. Seleziona **[!UICONTROL Inserisci tag di testo di Adobe Sign]**.
+1. Seleziona **[!UICONTROL Inserisci tag di testo Adobe Sign]**.
 
-Il tag Data posizionato è piuttosto lungo: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. Il tag di testo di Acrobat Sign deve rimanere sulla stessa riga, il che è diverso dai tag di Document Generation. La `:format()` e `font()` i parametri sono facoltativi, pertanto per questo scenario è possibile ridurre il tag a `{{Date 3_es_:signer1:date}}`.
+Il tag Date posizionato è piuttosto lungo: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. Il tag di testo di Acrobat Sign deve rimanere sulla stessa riga, il che è diverso dai tag di Document Generation. I parametri `:format()` e `font()` sono facoltativi, pertanto per questo scenario è possibile ridurre il tag a `{{Date 3_es_:signer1:date}}`.
 
-Ripetere i passaggi sopra *Firma dell’azienda* sezione. In questo caso, devi impostare il campo Destinatari su **Signer-2**, altrimenti tutti i campi firma vengono assegnati alla stessa persona.
+Ripeti i passaggi precedenti la sezione *Firma aziendale*. In questo caso, è necessario modificare il campo Destinatari in **Firmatario-2**, altrimenti tutti i campi firma vengono assegnati alla stessa persona.
 
 ## Generare l’accordo
 
@@ -281,10 +281,10 @@ Ora hai aggiunto i tag al documento e sei pronto per iniziare. In questa sezione
 
 Aprire il file master pdfservices-node-sdk-samples scaricato durante la registrazione delle credenziali. Questi file includono i file pdfservices-api-credentials.json e private.key.
 
-1. Apri il **[!UICONTROL Terminale]** per installare le dipendenze utilizzando `npm install`.
-1. Copiare il campione *data.json* nella *risorse* cartella.
-1. Copia il modello Word creato in *risorse* cartella.
-1. Crea un nuovo file nella directory principale della cartella samples denominata *generate-salesOrder.js*.
+1. Apri il **[!UICONTROL Terminale]** per installare le dipendenze con `npm install`.
+1. Copia il file *data.json* di esempio nella cartella *resources*.
+1. Copiare il modello Word creato nella cartella *resources*.
+1. Creare un nuovo file nella directory principale della cartella samples denominata *generate-salesOrder.js*.
 
    ```
    const PDFServicesSdk = require('@adobe/pdfservices-node-sdk').
@@ -334,7 +334,7 @@ Aprire il file master pdfservices-node-sdk-samples scaricato durante la registra
    ```
 
 1. Sostituisci `<JSON FILE>` con il nome del file JSON in /resources.
-1. Sostituisci `<INSERT DOCX>` con il nome del file DOCX.
+1. Sostituire `<INSERT DOCX>` con il nome del file DOCX.
 1. Per eseguire, utilizzare **[!UICONTROL Terminale]** per eseguire il nodo `generate-salesOrder.js`.
 
 Il file di output si trova nella cartella /output con il documento generato correttamente.
@@ -348,7 +348,7 @@ options = new documentMergeOptions.DocumentMergeOptions(jsonDataForMerge,
 documentMergeOptions.OutputFormat.PDF);
 ```
 
-Word:
+Parola:
 
 ```
 options = new documentMergeOptions.DocumentMergeOptions(jsonDataForMerge, documentMergeOptions.OutputFormat.DOCX);
@@ -362,13 +362,13 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Inviare un accordo per la firma
 
-[Adobe Acrobat Sign](https://www.adobe.com/it/sign.html) consente di inviare accordi a uno o più destinatari affinché possano visualizzarli e firmarli. Oltre a un’esperienza utente di facile utilizzo per inviare un documento per la firma, sono disponibili API REST che consentono di accettare Word, PDF, HTML e altri formati e di inviarli per la firma.
+[Adobe Acrobat Sign](https://www.adobe.com/it/sign.html) consente di inviare gli accordi a uno o più destinatari che potranno così visualizzare e firmare i documenti. Oltre a un’esperienza utente di facile utilizzo per inviare un documento per la firma, sono disponibili API REST che consentono di accettare Word, PDF, HTML e altri formati e di inviarli per la firma.
 
 L’esempio seguente spiega come utilizzare la pagina della documentazione API REST per acquisire il documento generato in precedenza e inviarlo per la firma. Scopri innanzitutto come farlo tramite l’interfaccia web di Acrobat Sign e quindi come farlo con l’API REST.
 
 ## Ottieni un account Acrobat Sign
 
-Se non hai un account Acrobat Sign, registrati per un account sviluppatore e consulta la documentazione [qui](https://developer.adobe.com/adobesign-api/)e seleziona **Iscrizione account sviluppatore**. Ti verrà richiesto di compilare un modulo e di ricevere un’e-mail di verifica. Una volta effettuata questa operazione, verrai reindirizzato a un sito Web per impostare la password e l’account, da cui potrai quindi accedere ad Acrobat Sign.
+Se non disponi di un account Acrobat Sign, registrati per un account sviluppatore e consulta la documentazione [qui](https://developer.adobe.com/adobesign-api/), quindi seleziona **Registrazione account sviluppatore**. Ti verrà richiesto di compilare un modulo e di ricevere un’e-mail di verifica. Una volta effettuata questa operazione, verrai reindirizzato a un sito Web per impostare la password e l’account, da cui potrai quindi accedere ad Acrobat Sign.
 
 ## Inviare un accordo da un’interfaccia web
 
@@ -376,11 +376,11 @@ Se non hai un account Acrobat Sign, registrati per un account sviluppatore e con
 
    ![Schermata della scheda Invia in Acrobat Sign](assets/automatelegal_28.png)
 
-1. Ingresso *Destinatari* , specifica due indirizzi e-mail. È buona norma utilizzare un indirizzo e-mail non associato al tuo account Acrobat Sign.
+1. Nel campo *Destinatari*, specifica due indirizzi e-mail. È buona norma utilizzare un indirizzo e-mail non associato al tuo account Acrobat Sign.
 
    ![Schermata dei campi Destinatari](assets/automatelegal_29.png)
 
-1. Imposta un **[!UICONTROL Nome accordo]** e **[!UICONTROL Messaggio]**.
+1. Imposta un **[!UICONTROL Nome accordo]** e un **[!UICONTROL Messaggio]**.
 1. Seleziona **[!UICONTROL Aggiungi file]** e carica il file generato dal computer.
 1. Seleziona **[!UICONTROL Anteprima e aggiungi campi firma]**.
 1. Seleziona **[!UICONTROL Avanti]**.
@@ -391,28 +391,28 @@ Se non hai un account Acrobat Sign, registrati per un account sviluppatore e con
 1. Fai clic su **[!UICONTROL Invia]**.
 1. Nell’e-mail viene visualizzato un messaggio con un collegamento per visualizzare e firmare.
 
-   ![Schermata del messaggio e-mail](assets/automatelegal_31.png)
+   ![Schermata del messaggio di posta elettronica](assets/automatelegal_31.png)
 
 1. Seleziona **[!UICONTROL Rivedi e firma]**.
-1. Seleziona **[!UICONTROL Continua]** per accettare le condizioni d’uso.
-1. Seleziona **[!UICONTROL Inizia]** per passare al punto in cui è necessario firmare.
+1. Selezionare **[!UICONTROL Continua]** per accettare le condizioni d&#39;uso.
+1. Seleziona **[!UICONTROL Inizia]** per passare al punto in cui devi firmare.
 
    ![Schermata del tag di avvio](assets/automatelegal_32.png)
 
 1. Seleziona **[!UICONTROL Fai clic qui per firmare]**.
 
-   ![Schermata di Clicca qui per firmare](assets/automatelegal_33.png)
+   ![Schermata di clic qui per firmare](assets/automatelegal_33.png)
 
 1. Digita la firma.
 
    ![Schermata di digitazione della firma](assets/automatelegal_34.png)
 
-1. Seleziona **[!UICONTROL Applica]**.
+1. Selezionare **[!UICONTROL Applica]**.
 1. Seleziona **[!UICONTROL Fai clic per firmare]**.
 
 Viene inviato un messaggio e-mail al firmatario successivo. Ripeti i passaggi 9-16 per visualizzare e firmare per il secondo firmatario.
 
-Una volta completato l’accordo, una copia firmata dell’accordo viene inviata tramite e-mail a ciascuna delle parti. Inoltre, un accordo firmato può essere recuperato dall’interfaccia web di Acrobat Sign nella **Gestisci** pagina.
+Una volta completato l’accordo, una copia firmata dell’accordo viene inviata tramite e-mail a ciascuna delle parti. Inoltre, è possibile recuperare un accordo firmato dall’interfaccia Web di Acrobat Sign nella pagina **Gestisci**.
 
 ![Schermata della scheda Gestisci in Acrobat Sign](assets/automatelegal_35.png)
 
@@ -420,40 +420,40 @@ Scopri quindi come eseguire lo stesso scenario tramite la documentazione delle A
 
 ## Ottieni credenziali
 
-1. Passa a [Documentazione REST di Acrobat Sign](https://secure.na1.adobesign.com/public/docs/restapi/v6).
-1. Espandi *transientDocuments* e [POST /transientDocuments](https://benprojecteddemo.na1.adobesign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument).
+1. Passa alla [documentazione REST di Acrobat Sign](https://secure.na1.adobesign.com/public/docs/restapi/v6).
+1. Espandere *transientDocuments* e [POST /transientDocuments](https://benprojecteddemo.na1.adobesign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument).
 1. Seleziona **[!UICONTROL OAUTH ACCESS-TOKEN]**.
 
-   ![Schermata da dove selezionare OAUTH ACCESS-TOKEN](assets/automatelegal_36.png)
+   ![Schermata in cui selezionare OAUTH ACCESS-TOKEN](assets/automatelegal_36.png)
 
 1. Controlla le autorizzazioni OAUTH per *agreement_write*, *agreement_sign*, *widget_write* e *library_write*.
 1. Seleziona **[!UICONTROL Autorizza]**.
 1. Viene richiesto tramite un pop-up di accedere con il tuo account Acrobat Sign. Accedi utente il nome utente e la password dell&#39;amministratore.
 1. Viene richiesto di consentire l’accesso alla documentazione REST. Seleziona **[!UICONTROL Consenti accesso]**.
 
-Viene quindi aggiunto un token di connessione al **Autorizzazione** campo.
+Viene quindi aggiunto un token di connessione al campo **Autorizzazione**.
 
-Per ulteriori informazioni sulla creazione di un token di autorizzazione per Acrobat Sign, segui la procedura descritta [qui](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html).
+Per ulteriori informazioni sulla creazione di un token di autorizzazione per Acrobat Sign, segui il passaggio descritto [qui](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html).
 
 ## Caricare un documento transitorio
 
 Poiché il token di autorizzazione viene aggiunto dai passaggi precedenti, è necessario caricare un documento per effettuare la chiamata API:
 
-1. Ingresso *File* , carica il documento PDF generato nei passaggi precedenti.
+1. Nel campo *File*, carica il documento PDF generato nei passaggi precedenti.
 
-   ![Schermata da dove caricare PDF](assets/automatelegal_37.png)
+   ![Schermata del percorso di caricamento di PDF](assets/automatelegal_37.png)
 
-1. Seleziona **[!UICONTROL Provalo!]**.
-1. Ingresso **[!UICONTROL Corpo risposta]**, copia *transientDocumentId* valore.
+1. Seleziona **[!UICONTROL Prova!]**.
+1. In **[!UICONTROL corpo della risposta]**, copia il valore *transientDocumentId*.
 
-La *transientDocumentId* viene utilizzato per fare riferimento a un documento archiviato temporaneamente in Acrobat Sign in modo da potervi fare riferimento nelle chiamate API successive.
+*transientDocumentId* viene utilizzato per fare riferimento a un documento archiviato temporaneamente in Acrobat Sign in modo che possa essere utilizzato nelle chiamate API successive.
 
 ## Inviare per la firma
 
 Una volta caricato un documento, è necessario inviare l’accordo per la firma.
 
 1. Espandi la sezione dell’accordo e le sezioni dell’accordo POST.
-1. Nella *AgreementInfo* , compilalo con il seguente codice JSON:
+1. Nel campo *AgreementInfo*, inserisci il seguente codice JSON:
 
    ```
    {
@@ -488,18 +488,18 @@ Una volta caricato un documento, è necessario inviare l’accordo per la firma.
    }
    ```
 
-1. Seleziona **[!UICONTROL Provalo!]**.
+1. Seleziona **[!UICONTROL Prova!]**.
 
-**API per accordi POST** restituisce un ID per l’accordo. Per ottenere un modello per lo schema del modello JSON, seleziona **Schema modello minimo**. Un elenco completo dei parametri è disponibile nel **Modello schema completo** sezione.
+L’API **POST agreements** restituisce un ID per l’accordo. Per ottenere un modello per lo schema del modello JSON, selezionare **Schema modello minimo**. Nella sezione **Schema modello completo** è disponibile un elenco completo dei parametri.
 
 ## Verifica lo stato dell’accordo
 
 Una volta ottenuto l’ID di un accordo, puoi inviare lo stato dell’accordo.
 
-1. Espandi **[!UICONTROL GET /agreements/{agreementId}]**.
-1. Poiché potrebbe essere necessario un ulteriore ambito OAUTH, selezionare **[!UICONTROL OAUTH-ACCESS-TOKEN]** di nuovo.
+1. Espandere **[!UICONTROL GET /agreements/{agreementId}]**.
+1. Poiché potrebbe essere necessario un ambito OAUTH aggiuntivo, seleziona nuovamente **[!UICONTROL OAUTH-ACCESS-TOKEN]**.
 1. Copia l’agreementId dalla risposta alla chiamata API precedente nel campo agreementId.
-1. Seleziona **[!UICONTROL Provalo!]**.
+1. Seleziona **[!UICONTROL Prova!]**.
 
 Ora hai informazioni su quell’accordo.
 
@@ -552,19 +552,19 @@ Ora hai informazioni su quell’accordo.
   }
 ```
 
-Il metodo più efficiente per ricevere notifiche quando gli aggiornamenti vengono modificati è tramite i webhook, che è possibile consultare per saperne di più [qui](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html.
+Il metodo più efficiente per ricevere notifiche quando gli aggiornamenti vengono modificati è tramite i webhook, che puoi scoprire di più su [qui](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html.
 
 ## Memorizzare un documento firmato
 
 Una volta firmato, il documento può essere recuperato utilizzando il file GET /agreements/combinedDocument.
 
-1. Espandi **[!UICONTROL GET /agreements/{agreementId}/combinedDocument]**.
-1. Imposta **[!UICONTROL agreementId]** al *agreementId* forniti dalla chiamata API precedente.
-1. Seleziona **[!UICONTROL Provalo!]**.
+1. Espandere **[!UICONTROL GET /agreements/{agreementId}/combinedDocument]**.
+1. Imposta **[!UICONTROL agreementId]** su *agreementId* fornito dalla chiamata API precedente.
+1. Seleziona **[!UICONTROL Prova!]**.
 
 È possibile impostare parametri aggiuntivi per allegare un report di audit o documenti di supporto utilizzando i parametri attachSupportingDocuments e attachAuditReport.
 
-Nella **Corpo risposta**, può quindi essere scaricato sul computer e archiviato dove preferisci.
+Nel **corpo della risposta**, può quindi essere scaricato nel computer e archiviato dove preferisci.
 
 ## Altre opzioni
 
@@ -585,10 +585,10 @@ Inoltre, Acrobat Sign offre diverse funzioni aggiuntive, quali:
 
 ## Ulteriori informazioni
 
-Vuoi saperne di più? Scopri altri modi di utilizzare [!DNL Adobe Acrobat Services]:
+Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Services]:
 
-* Per saperne di più [documentazione](https://developer.adobe.com/document-services/docs/overview/)
+* Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [Blog sulla tecnologia dell&#39;Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
-* Abbonati a [Clip di carta (streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per ulteriori informazioni sull&#39;automazione mediante [!DNL Adobe Acrobat Services].
+* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].

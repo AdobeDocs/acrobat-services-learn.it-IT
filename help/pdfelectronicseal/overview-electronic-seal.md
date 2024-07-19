@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Tutorials API di sigillo elettronico di Adobe PDF
 
-L’API di sigillo elettronico di Adobe PDF applica un sigillo elettronico ai documenti su larga scala utilizzando un certificato rilasciato da determinati TSP (Trust Service Provider) su [Elenco di certificati attendibili approvati (AATL) di Adobe](https://helpx.adobe.com/it/acrobat/kb/approved-trust-list1.html). Il sigillo elettronico consente di verificare l’identità e l’integrità dei documenti. Questa opzione può essere utilizzata per apporre un sigillo elettronico ai documenti su larga scala ed è inclusa nell’API di PDF Services.
+L’API Adobe PDF per sigilli elettronici applica un sigillo elettronico ai documenti su larga scala utilizzando un certificato emesso da determinati TSP (Trust Service Provider) nell’elenco di certificati affidabili approvati (AATL) di [Adobe](https://helpx.adobe.com/it/acrobat/kb/approved-trust-list1.html). Il sigillo elettronico consente di verificare l’identità e l’integrità dei documenti. Questa opzione può essere utilizzata per apporre un sigillo elettronico ai documenti su larga scala ed è inclusa nell’API di PDF Services.
 
 <table style="table-layout:fixed">
 <tr>

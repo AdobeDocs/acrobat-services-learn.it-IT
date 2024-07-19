@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
-user-guide-description: Ulteriori informazioni su [!DNL Adobe Acrobat Services]
+user-guide-description: Ulteriori informazioni su  [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API, PDF Accessibility Auto-Tag API, PDF Electronic Seal API, PDF Extract API
@@ -16,10 +16,10 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Acrobat Services] TUTORIALS API {#tutorials}
+# [!DNL Adobe Acrobat Services] Tutorials API {#tutorials}
 
 + [Panoramica](overview.md)
-+ API di PDF Services {#pdfservices}
++ API di Servizi PDF {#pdfservices}
    + [Panoramica](pdfservices/overview-pdfservices.md)
    + [Recupero delle credenziali per Microsoft Power Automate](pdfservices/getting-credentials-power-automate.md)
    + [Crea il tuo primo flusso in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
@@ -31,7 +31,7 @@ ht-degree: 3%
 + API di Document Generation {#docgen}
    + [Panoramica](docgen/overview-docgen.md)
    + [Generazione automatica dei documenti](docgen/automate-doc-gen.md)
-   + Creazione di modelli {#docgentemplates}
+   + Creazione dei modelli {#docgentemplates}
       + [Panoramica dell’Adobe Document Generation Tagger](docgen/taggeroverview.md)
       + [Aggiunta di tag di testo](docgen/taggeraddtexttags.md)
       + [Aggiunta di tag immagine](docgen/taggeraddimagetags.md)
@@ -50,7 +50,7 @@ ht-degree: 3%
 + API PDF Embed {#pdfembed}
    + [Panoramica](pdfembed/overview-embed.md)
    + [Controlla la tua esperienza online di PDF e raccogli analisi](pdfembed/controlpdfexperience.md)
-+ API ACROBAT SIGN {#acrobatsign}
++ API Acrobat Sign {#acrobatsign}
    + [Panoramica](acrobatsign/overview-sign.md)
    + [Guida introduttiva all’API di Adobe Sign](acrobatsign/signapi.md)
    + Partner OEM/incorporato {#oem}

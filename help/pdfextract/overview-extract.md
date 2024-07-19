@@ -37,7 +37,7 @@ Sblocca la struttura e gli elementi di contenuto di qualsiasi PDF con un servizi
     <div>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Analisi di PDF: facile come lavorare con i dati JSON con l’API PDF Extract</strong></a>
     </div>
-    <em>Scopri in che modo il servizio PDF Extract nell’API dei servizi Adobe PDF può semplificare l’analisi di PDF quanto l’analisi di JSON</em>
+    <em>Scopri in che modo il servizio PDF Extract nell'API dei servizi Adobe PDF può semplificare l'analisi di PDF con la stessa facilità dell'analisi JSON</em>
     <br>
   </td>
   <td>

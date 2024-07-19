@@ -10,8 +10,8 @@ thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Utilizza le esercitazioni introduttive riportate di seguito per creare le creden
 
 ## Esegui l’esempio di OCR fornito nei file di esempio
 
-L’operazione OCR consente la lingua inglese per impostazione predefinita, ma supporta anche il tedesco, il francese, il danese e [altre lingue](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). L’impostazione predefinita è impostazioni internazionali en-us.
+Per impostazione predefinita, l’operazione OCR consente di utilizzare la lingua inglese, ma supporta anche il tedesco, il francese, il danese e [altre lingue](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). L’impostazione predefinita è impostazioni internazionali en-us.
 
 Quando si passano opzioni con operazioni OCR che includono impostazioni internazionali specifiche, il metodo accetta anche il parametro &#39;type&#39; che dispone di due opzioni:
 
@@ -47,13 +47,13 @@ Quando si passano opzioni con operazioni OCR che includono impostazioni internaz
 
 **Java**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
    Ad esempio, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples>.
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.ocrpdf.OcrPDF`
 
@@ -61,7 +61,7 @@ Il PDF verrà creato nella directory src/main/resources.
 
 **.Net**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
@@ -69,21 +69,21 @@ Il PDF verrà creato nella directory src/main/resources.
 
 1. Cambia nuovamente le directory nella directory OcrPDF.
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `dotnet run OcrPDF.csproj`
 
 Il tuo PDF verrà creato nella stessa directory.
 
-**Node.js**
+**Nodo.js**
 
-1. Aprite un prompt dei comandi.
+1. Aprire un prompt dei comandi.
 
 1. Cambia le directory nella directory del codice di esempio.
 
    Ad esempio, C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. Eseguite il comando seguente:
+1. Esegui il comando seguente:
 
    `node src/ocr/ocr-pdf.js`
 
@@ -95,14 +95,14 @@ Con questi semplici passaggi utilizzando i file di esempio, dovresti avere un es
 
 Da qui puoi semplicemente sostituire i file di input e output che si trovano nell&#39;esempio per utilizzare il tuo PDF per finalizzare il tuo proof of concept per il tuo caso d&#39;uso.
 
-![Proof of Concept](assets/OCR_poc.png)
+![Prova di concetto](assets/OCR_poc.png)
 
 ## Risorse e passaggi successivi
 
-* Per ulteriore assistenza e supporto, visita l&#39;Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) forum della community
+* Per ulteriore assistenza e supporto, visita il forum della community [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) di Adobe
 
-* API di PDF Services [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
+* API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [DOMANDE FREQUENTI](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per domande sulle API di PDF Services
+* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per le domande sull&#39;API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
