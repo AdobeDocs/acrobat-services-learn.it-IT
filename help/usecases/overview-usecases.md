@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -152,31 +152,31 @@ Scopri come le API di [!DNL Adobe Acrobat Services] possono cambiare l&#39;azien
 </tr>
 <tr>
   <td>
-    <a href="AgreementWorkflowsNodejs.md">
+    <a href="agreementworkflowsnodejs.md">
       <img alt="Flussi di lavoro degli accordi in Node.js" src="assets/AWNjs_thumb.png" />
     </a>
     <div>
-    <a href="AgreementWorkflowsNodejs.md"><strong>Flussi di lavoro degli accordi in Node.js</strong></a>
+    <a href="agreementworkflowsnodejs.md"><strong>Flussi di lavoro degli accordi in Node.js</strong></a>
     </div>
     Le API <em>[!DNL Adobe Acrobat Services] integrano facilmente le funzionalità PDF nelle applicazioni Web</em>
     <br>
   </td>
   <td>
-    <a href="HRAgreementWorkflowsJava.md">
+    <a href="hragreementworkflowsjava.md">
       <img alt="Flussi di lavoro per documenti HR in Java" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="HRAgreementWorkflowsJava.md"><strong>Flussi di lavoro per documenti HR in Java</strong></a>
+    <a href="hragreementworkflowsjava.md"><strong>Flussi di lavoro per documenti HR in Java</strong></a>
     </div>
     Le API <em>[!DNL Adobe Acrobat Services] integrano facilmente le funzionalità PDF nelle applicazioni Web HR</em>
     <br>
   </td>
   <td>
-    <a href="FinanceWorkflowsJava.md">
+    <a href="financeworkflowsjava.md">
       <img alt="Gestione dei flussi di lavoro dei documenti finanziari in Java" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="FinanceWorkflowsJava.md"><strong>Gestione dei flussi di lavoro dei documenti finanziari in Java</strong></a>
+    <a href="financeworkflowsjava.md"><strong>Gestione dei flussi di lavoro dei documenti finanziari in Java</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzionalità necessari per elaborare ed estrarre dati dai documenti finanziari PDF</em>
     <br>
