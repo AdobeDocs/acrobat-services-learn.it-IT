@@ -1,6 +1,6 @@
 ---
 title: Flussi di lavoro per accordi in Node.js
-description: "[!DNL Adobe Acrobat Services] Le API incorporano facilmente le funzionalità PDF nelle applicazioni Web"
+description: Le API [!DNL Adobe Acrobat Services] integrano facilmente le funzionalità PDF nelle applicazioni Web
 feature: Use Cases
 role: Developer
 level: Beginner
@@ -40,7 +40,7 @@ In questo tutorial pratico, scopri come aggiungere servizi PDF a un’applicazio
 
 Per iniziare, configurare le credenziali per l&#39;utilizzo di [!DNL Adobe Acrobat Services]. Registra un account e utilizza [Node.js Quickstart](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#node-js) per verificare il funzionamento delle credenziali prima di integrare la funzionalità in un&#39;applicazione di grandi dimensioni.
 
-Per prima cosa, ottieni un account sviluppatore di Adobe. Quindi, nella pagina [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK), seleziona l&#39;opzione *Introduzione* in Crea nuove credenziali. Puoi registrarti per la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzati in sei mesi.
+Per prima cosa, ottieni un account sviluppatore Adobe. Quindi, nella pagina [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK), seleziona l&#39;opzione *Introduzione* in Crea nuove credenziali. Puoi registrarti per la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzati in sei mesi.
 
 ![Immagine della creazione di nuove credenziali](assets/AWNjs_1.png)
 

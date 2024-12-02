@@ -1,6 +1,6 @@
 ---
 title: Gestione dei flussi di lavoro per documenti finanziari in Java
-description: "[!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzionalità necessari per elaborare ed estrarre dati dai documenti finanziari PDF"
+description: '[!DNL Adobe Acrobat Services] fornisce tutti gli strumenti, i servizi e le funzionalità necessari per elaborare ed estrarre dati dai documenti finanziari PDF'
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -25,7 +25,7 @@ Il formato PDF, tuttavia, può risultare difficile da elaborare e automatizzare,
 
 ## Cosa puoi imparare
 
-In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Services] per le applicazioni [!DNL Java Spring Boot]. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l&#39;Adobe [PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Services] per le applicazioni [!DNL Java Spring Boot]. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l&#39;API di incorporamento di Adobe [PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 ## API e risorse pertinenti
 
@@ -37,7 +37,7 @@ In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Se
 
 ## Configurazione
 
-[!DNL Adobe Acrobat Services] utilizza un sistema di autenticazione per controllare l&#39;accesso alle risorse. Per accedere ai servizi, è necessario richiedere una chiave API da Adobe per la tua organizzazione o applicazione. Se disponi di una chiave API, continua alla sezione successiva. Per creare una nuova chiave API, visita [Guida introduttiva](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) nel sito [!DNL Acrobat Services]. Puoi creare una chiave utilizzando la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzate per un massimo di sei mesi.
+[!DNL Adobe Acrobat Services] utilizza un sistema di autenticazione per controllare l&#39;accesso alle risorse. Per accedere ai servizi, è necessario richiedere una chiave API a Adobe per la tua organizzazione o applicazione. Se disponi di una chiave API, continua alla sezione successiva. Per creare una nuova chiave API, visita [Guida introduttiva](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) nel sito [!DNL Acrobat Services]. Puoi creare una chiave utilizzando la versione di prova gratuita che fornisce 1.000 transazioni di documenti che possono essere utilizzate per un massimo di sei mesi.
 
 Per seguire questo tutorial, sono necessari due set di chiavi API:
 

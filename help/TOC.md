@@ -1,6 +1,6 @@
 ---
-user-guide-title: "[!DNL Adobe Acrobat Services]"
-breadcrumb-title: "[!DNL Acrobat Services]"
+user-guide-title: '[!DNL Adobe Acrobat Services]'
+breadcrumb-title: '[!DNL Acrobat Services]'
 user-guide-description: Ulteriori informazioni su  [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
@@ -32,7 +32,7 @@ ht-degree: 3%
    + [Panoramica](docgen/overview-docgen.md)
    + [Generazione automatica dei documenti](docgen/automate-doc-gen.md)
    + Creazione dei modelli {#docgentemplates}
-      + [Panoramica dell’Adobe Document Generation Tagger](docgen/taggeroverview.md)
+      + [Panoramica di Adobe Document Generation Tagger](docgen/taggeroverview.md)
       + [Aggiunta di tag di testo](docgen/taggeraddtexttags.md)
       + [Aggiunta di tag immagine](docgen/taggeraddimagetags.md)
       + [Aggiunta di tabelle e tag di elenco](docgen/taggertables.md)
