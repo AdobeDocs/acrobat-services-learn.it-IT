@@ -8,9 +8,9 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 255a2425fcde4443d8502a92aa0274fac30f7279
+source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '341'
 ht-degree: 2%
 
 ---
@@ -28,49 +28,192 @@ ht-degree: 2%
 
 Le ultime due API e i relativi SDK sono inclusi in [!DNL Adobe PDF Services API] come parte di un&#39;offerta a pagamento. [!DNL PDF Embed API] è un&#39;offerta gratuita. Queste API automatizzano la generazione, la manipolazione e la trasformazione dei contenuti dei documenti tramite un set di moderni servizi Web basati su cloud. Consentono di offrire esperienze più semplici, veloci e con marchio, in modo da controllare l’interazione degli utenti con i documenti, semplificare i flussi di lavoro di PDF e promuovere l’utilizzo e la conservazione. Questi tutorial ti aiutano a creare esperienze con marchio più semplici e veloci con le API [!DNL Adobe Acrobat Services].
 
-<table style="table-layout:fixed">
-<tr>
- <td>
-   <a href="pdfservices/overview-pdfservices.md">
-      <img alt="API di PDF Services" src="assets/pdfservicescard.png" />
-   </a>
-  </td>
-  <td>
-   <a href="docgen/overview-docgen.md">
-      <img alt="API di Document Generation" src="assets/docgencard.png" />
-   </a>
-  </td>
-  <td>
-   <a href="pdfaccessibility/overview-accessibility.md">
-      <img alt="API per tag automatici accessibilità PDF" src="assets/PDFAccessibility.png" />
-   </a>
-  </td>
-  <td>
-   <a href="pdfextract/overview-extract.md">
-      <img alt="API PDF Extract" src="assets/pdfextractcard.png" />
-   </a>
-  </td>
-</tr>
-<tr>
-  <td>
-   <a href="pdfelectronicseal/overview-electronic-seal.md">
-      <img alt="API sigillo elettronico PDF" src="assets/PDFElectronicSeal.png" />
-   </a>
-  </td>
- <td>
-   <a href="pdfembed/overview-embed.md">
-      <img alt="Guida introduttiva a Adobe PDF Tools API e Java" src="assets/pdfembedcard.png" />
-   </a>
-  </td>
- <td>
-   <a href="acrobatsign/overview-sign.md">
-      <img alt="API di Acrobat Sign" src="assets/acrobatsigncard.png" />
-   </a>
-  </td>
- <td>
-   <a href="usecases/overview-usecases.md">
-      <img alt="[!DNL Adobe Acrobat Services] Casi di utilizzo delle API" src="assets/usecasescard.png" />
-   </a>
-  </td>
-</tr>
-</table>
+
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Services API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" title="API di PDF Services" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_102ca9e2c2f5213fdf7b873a65a3a91cf830eeef6.png?width=400&format=webply&optimize=medium" alt="API di PDF Services"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="API di PDF Services">API dei servizi PDF</a>
+                    </p>
+                    <p class="is-size-6">API PDF con SDK per node.js, .Net e Java per creare, convertire, PDF OCR e altro ancora</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Document Generation API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" title="API di Document Generation" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_18303c2093ffca150db01a9263e1f69e9a473fefb.png?width=400&format=webply&optimize=medium" alt="API di Document Generation"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" title="API di Document Generation">API di Document Generation</a>
+                    </p>
+                    <p class="is-size-6">Generare documenti PDF e Word da modelli Word e dati JSON</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Accessibility Auto-tag API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" title="API per tag automatici accessibilità PDF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1c7b90c86c3839ad63000ddeba9f4a8d7634bc636.png?width=400&format=webply&optimize=medium" alt="API per tag automatici accessibilità PDF"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" title="API per tag automatici accessibilità PDF">API per tag automatici accessibilità PDF</a>
+                    </p>
+                    <p class="is-size-6">Questa API basata sull'intelligenza artificiale applica automaticamente i tag ai documenti per semplificare la scalabilità dell'accessibilità PDF</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Extract API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" title="API PDF Extract" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1ab96ca88135bdc4696e4b9989a466e307eb51e16.png?width=400&format=webply&optimize=medium" alt="API PDF Extract"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" title="API PDF Extract">API PDF Extract</a>
+                    </p>
+                    <p class="is-size-6">Sblocca la struttura e gli elementi di contenuto di qualsiasi PDF con un servizio Web basato sull'apprendimento automatico di Adobe Sensi</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Electronic Seal API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" title="API sigillo elettronico PDF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1594422d61129727af314dc0a278d28f4a3fae668.png?width=400&format=webply&optimize=medium" alt="API sigillo elettronico PDF"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" title="API sigillo elettronico PDF">API PDF sigillo elettronico</a>
+                    </p>
+                    <p class="is-size-6">Scopri come applicare un sigillo elettronico a prova di manomissione ai PDF su larga scala</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Embed API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" title="API PDF Embed" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_19f55204de64437cfa879cab9680a4267254b76a6.png?width=400&format=webply&optimize=medium" alt="API PDF Embed"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="API PDF Embed">API di incorporamento PDF</a>
+                    </p>
+                    <p class="is-size-6">API Javascript gratuita per incorporare PDF ad alta fedeltà, abilitare la collaborazione e consultare analisi</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Acrobat Sign API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" title="API di Acrobat Sign" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_147c2a8bdff039762f0f8e30a71917775c154ffa0.png?width=400&format=webply&optimize=medium" alt="API di Acrobat Sign"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" title="API di Acrobat Sign">API Acrobat Sign</a>
+                    </p>
+                    <p class="is-size-6">Integrare le firme elettroniche nella piattaforma o nell’applicazione</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Acrobat Services API Use Cases">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" title="Casi di utilizzo dell’API di Acrobat Services" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/media_1c4ff4e0452d8e2f0c673f0978f66e41013818bee.png?width=400&format=webply&optimize=medium" alt="Casi di utilizzo dell’API di Acrobat Services"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" title="Casi di utilizzo dell’API di Acrobat Services">Casi di utilizzo dell'API di Acrobat Services</a>
+                    </p>
+                    <p class="is-size-6">Un’ampia gamma di casi d’uso per l’API di Acrobat Services</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Sfoglia esercitazioni</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
