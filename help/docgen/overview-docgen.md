@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
+source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -24,109 +24,180 @@ L’API Document Generation crea documenti PDF e Word da modelli Word e dati JSO
 >
 >L’API di Document Generation è inclusa nell’API di PDF Services.
 
-<table style="table-layout:fixed">
-<tr>
- <td>
-   <a href="automate-doc-gen.md">
-      <img alt="Generazione automatica dei documenti" src="assets/automate-doc-gen.png" />
-   </a>
-  </td>
-  <td>
-    <img alt="Spaziatore" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-   <td>
-    <img alt="Spaziatore" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-  </td>
-   <td>
-    <img alt="Spaziatore" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+## Generazione dei documenti
+
+
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Automate document generation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" title="Generazione automatica dei documenti" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_1ba1ac23538622ab48b7a2f84fbb5c56d310fba66.png?width=400&format=webply&optimize=medium" alt="Generazione automatica dei documenti"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" title="Generazione automatica dei documenti">Generazione automatica dei documenti</a>
+                    </p>
+                    <p class="is-size-6">Scoprite come generare automaticamente i documenti su larga scala</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 ## Creazione di modelli
 
 L’API di Document Generation accetta un modello di documento (con tag di modello) insieme ai dati di input per generare il documento finale. Il documento finale viene generato sostituendo tutti i tag di modello nel modello di documento con il contenuto dinamico basato sui valori effettivi corrispondenti all’input dei dati.
 
-<table style="table-layout:fixed">
-<tr>
- <td>
-   <a href="taggeroverview.md">
-      <img alt="Panoramica dell’Adobe Document Generation Tagger" src="assets/Taggeroverview_thumb.png" />
-   </a>
-    <div>
-   <a href="taggeroverview.md"><strong>Panoramica dell'Adobe Document Generation Tagger</strong></a>
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Overview of the Adobe Document Generation Tagger">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" title="Panoramica di Adobe Document Generation Tagger" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_17b19864efffdb1f8c54017812c7de662e17bf163.png?width=400&format=webply&optimize=medium" alt="Panoramica di Adobe Document Generation Tagger"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" title="Panoramica di Adobe Document Generation Tagger">Panoramica di Adobe Document Generation Tagger</a>
+                    </p>
+                    <p class="is-size-6">Panoramica di Adobe Document Generation Tagger progettato per l’utilizzo con l’API di Adobe Document Generation</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Panoramica dell'Adobe Document Generation Tagger progettato per l'utilizzo con l'API Document Generation di Adobe</em>
-    <br>
-  </td>
-  <td>
-   <a href="taggeraddtexttags.md">
-      <img alt="Aggiunta di tag di testo" src="assets/Taggertexttags_thumb.png" />
-   </a>
-    <div>
-   <a href="taggeraddtexttags.md"><strong>Aggiunta di tag di testo</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding text tags">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" title="Aggiunta di tag di testo" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_113bb0b6c3dfa1329810d3afbba3498af82c6c875.png?width=400&format=webply&optimize=medium" alt="Aggiunta di tag di testo"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" title="Aggiunta di tag di testo">Aggiunta di tag di testo</a>
+                    </p>
+                    <p class="is-size-6">Scopri come aggiungere tag di testo ai modelli Microsoft Word utilizzando Adobe Document Generation Tagger</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Scopri come aggiungere tag di testo ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe da utilizzare con l’API di Document Generation di Adobe</em>
-    <br>
-  </td>
-  <td>
-   <a href="taggeraddimagetags.md">
-      <img alt="Aggiunta di tag immagine" src="assets/Taggerimagetags_thumb.png" />
-   </a>
-    <div>
-   <a href="taggeraddimagetags.md"><strong>Aggiunta di tag immagine</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding image tags">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" title="Aggiunta di tag immagine" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_1095ed3adad9c9360bb3184dccc41a72a3da94edc.png?width=400&format=webply&optimize=medium" alt="Aggiunta di tag immagine"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" title="Aggiunta di tag immagine">Aggiunta di tag immagine</a>
+                    </p>
+                    <p class="is-size-6">Scopri come aggiungere tag di immagine ai modelli Microsoft Word utilizzando Adobe Document Generation Tagger per inviare dinamicamente le immagini nei documenti</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Scopri come aggiungere tag immagine ai modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per inviare dinamicamente immagini nei documenti utilizzando l’API di Document Generation</em> di Adobe
-    <br>
-  </td>
-  <td>
-   <a href="taggertables.md">
-      <img alt="Aggiunta di tabelle e tag di elenco" src="assets/Taggertables_thumb.png" />
-   </a>
-    <div>
-   <a href="taggertables.md"><strong>Aggiunta di tabelle e tag di elenco</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding tables and list tags">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" title="Aggiunta di tabelle e tag di elenco" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_1c2cc8e4bf3a85a977104a3d94073c37b93dcfdf9.png?width=400&format=webply&optimize=medium" alt="Aggiunta di tabelle e tag di elenco"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" title="Aggiunta di tabelle e tag di elenco">Aggiunta di tabelle e tag di elenco</a>
+                    </p>
+                    <p class="is-size-6">Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l'API di Document Generation di Adobe</em>
-    <br>
-  </td>
-</tr>
-<tr>
-  <td>
-   <a href="taggercalculations.md">
-      <img alt="Impostazione dei tag di calcolo numerico" src="assets/Taggercalculations_thumb.png" />
-   </a>
-    <div>
-   <a href="taggercalculations.md"><strong>Impostazione dei tag di calcolo numerici</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Setting numerical calculation tags">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" title="Impostazione dei tag di calcolo numerico" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_1a64d90689430bd8a1f7a272a66f006f0808ab6cf.png?width=400&format=webply&optimize=medium" alt="Impostazione dei tag di calcolo numerico"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" title="Impostazione dei tag di calcolo numerico">Impostazione dei tag di calcolo numerici</a>
+                    </p>
+                    <p class="is-size-6">Scopri come impostare i tag di calcolo numerico nei modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per calcolare le aggregazioni o l’aritmetica dei valori dei dati</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Informazioni sull'impostazione di tag di calcolo numerico nei modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per calcolare aggregazioni o aritmetica dei valori dei dati utilizzando l'API di Document Generation di Adobe</em>
-    <br>
-  </td>
-  <td>
-   <a href="taggerconditional.md">
-      <img alt="Impostazione del contenuto condizionale" src="assets/Taggerconditional_thumb.png" />
-   </a>
-    <div>
-   <a href="taggerconditional.md"><strong>Impostazione del contenuto condizionale</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Setting conditional content">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" title="Impostazione del contenuto condizionale" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/media_145cebc42cffee358ed1beffcd5015ecb595fc82a.png?width=400&format=webply&optimize=medium" alt="Impostazione del contenuto condizionale"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" title="Impostazione del contenuto condizionale">Impostazione del contenuto condizionale</a>
+                    </p>
+                    <p class="is-size-6">Scopri come impostare le sezioni nei modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per includere o escludere dinamicamente sezioni di un documento basate sui dati</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <em>Scopri come impostare le sezioni nei modelli di Microsoft Word utilizzando l'Adobe Document Generation Tagger per includere o escludere dinamicamente sezioni di un documento in base ai dati utilizzando l'API di Adobe Document Generation</em>
-    <br>
-  </td>
-  <td>
-    <img alt="Spaziatore" src="../assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-   <td>
-    <img alt="Spaziatore" src="../assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
