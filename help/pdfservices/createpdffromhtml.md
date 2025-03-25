@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6673
 thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Riceverai per il download un file .zip denominato PDFToolsSDK-Node.jsSamples.zip
 
 Se si sceglie l&#39;opzione &quot;Crea campione di codice personalizzato&quot;, non è necessario aggiungere manualmente l&#39;ID client ai file di esempio del codice e si può saltare il passaggio successivo per passare direttamente alla sezione Esempi di codice in esecuzione riportata di seguito.
 
-Se non hai scelto l’opzione per &quot;Crea campione di codice personalizzato&quot;, dovrai copiare l’ID client (chiave API) dalla console Adobe.io:
+Se non hai scelto l’opzione per &quot;Crea campione di codice personalizzato&quot;, dovrai copiare l’ID client (chiave API) dalla console di Adobe.io:
 
 ![Esempio di codice](assets/codesample.png)
 
@@ -106,11 +106,11 @@ Il PDF verrà creato nel percorso indicato nell&#39;output, che per impostazione
 
 API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [Domande frequenti](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) per le domande sull&#39;API di PDF Services
+* [Domande frequenti](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) per le domande sull&#39;API di PDF Services
 
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
 
 * Articoli correlati:
-  [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [Versione di luglio di [!DNL Adobe Acrobat Services]: PDF Embed e PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

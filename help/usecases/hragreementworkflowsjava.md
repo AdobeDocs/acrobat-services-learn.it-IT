@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ In questo tutorial pratico scopri come implementare un modulo HR basato su web c
 
 * [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
 * [Codice progetto](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ Per ottenere un token di autorizzazione, è necessario eseguire diversi passaggi
 
 Registra innanzitutto un [account sviluppatore](https://acrobat.adobe.com/it/it/sign/developer-form.html).
 
-Creare l&#39;applicazione CLIENT nel [portale Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Creare l&#39;applicazione CLIENT nel [portale Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Configura OAuth per l’applicazione come descritto [qui](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) e [qui](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Annota l&#39;identificatore client e il segreto client. Puoi quindi utilizzare `https://www.google.com` come URI di reindirizzamento e i seguenti ambiti:
+Configura OAuth per l’applicazione come descritto [qui](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) e [qui](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). Annota l&#39;identificatore client e il segreto client. Puoi quindi utilizzare `https://www.google.com` come URI di reindirizzamento e i seguenti ambiti:
 
 * user_login: self
 
@@ -602,4 +602,4 @@ Come puoi vedere, sfruttando i quickstart, puoi implementare un semplice modulo 
 
 Proseguendo nell’esempio, è possibile creare moduli che i destinatari possono firmare in remoto e in modo sicuro. Quando sono necessarie più firme, è anche possibile instradare automaticamente i moduli a una serie di persone in un flusso di lavoro. L&#39;inserimento dei tuoi dipendenti è stato migliorato e il reparto Risorse Umane ti amerà.
 
-Consulta [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) per aggiungere numerose funzionalità di PDF alle tue applicazioni.
+Consulta [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) per aggiungere numerose funzionalità di PDF alle tue applicazioni.

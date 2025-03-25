@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: In evidenza
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: f8a31b8f98d99bf1f3787e0f0f19cc9f26e24d8d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -32,7 +32,7 @@ In questo tutorial pratico, scopri come aggiungere servizi PDF a un’applicazio
 
 * [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
 * [Codice progetto](https://github.com/adobe/pdftools-node-sdk-samples)
 
@@ -294,7 +294,7 @@ Nella pagina che visualizza il PDF, aggiungi un elemento `<div />` per contenere
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-L’ultimo bit di codice necessario è una funzione che visualizza il documento una volta caricato l’API JavaScript di Adobe PDF Embed. Quando ricevete una notifica che avvisa che lo script è stato caricato tramite un evento adobe_dc_view\_sdk.ready, create un nuovo oggetto AdobeDC.View. Questo oggetto richiede l&#39;ID client e l&#39;ID dell&#39;elemento creato in precedenza. Trova il tuo ID client in [Adobe Developer Console](https://console.adobe.io/). Quando si visualizzano le impostazioni per l&#39;applicazione creata durante la generazione delle credenziali precedenti, viene visualizzato l&#39;ID client.
+L’ultimo bit di codice necessario è una funzione che visualizza il documento una volta caricato l’API JavaScript di Adobe PDF Embed. Quando ricevete una notifica che avvisa che lo script è stato caricato tramite un evento adobe_dc_view\_sdk.ready, create un nuovo oggetto AdobeDC.View. Questo oggetto richiede l&#39;ID client e l&#39;ID dell&#39;elemento creato in precedenza. Trova il tuo ID client in [Adobe Developer Console](https://developer.adobe.com/console/). Quando si visualizzano le impostazioni per l&#39;applicazione creata durante la generazione delle credenziali precedenti, viene visualizzato l&#39;ID client.
 
 ![Immagine della chiave del client API](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ Puoi attivare e disattivare varie opzioni e vedere immediatamente come vengono e
 
 Una volta che il documento è pronto, è possibile aggiungervi firme digitali per l’approvazione utilizzando Adobe Sign. Questa funzionalità funziona in modo leggermente diverso rispetto a quella utilizzata finora. Per le firme digitali, un’applicazione deve essere configurata per utilizzare OAuth per l’autenticazione dell’utente.
 
-Il primo passaggio della configurazione dell&#39;applicazione è [registrare l&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) per utilizzare OAuth per Adobe Sign. Una volta effettuato l&#39;accesso, accedi alla schermata per la creazione di applicazioni facendo clic su *Account*, quindi apri la sezione *API Adobe Sign* e fai clic su *Applicazioni API* per aprire l&#39;elenco delle applicazioni registrate.
+Il primo passaggio della configurazione dell&#39;applicazione è [registrare l&#39;applicazione](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md) per utilizzare OAuth per Adobe Sign. Una volta effettuato l&#39;accesso, accedi alla schermata per la creazione di applicazioni facendo clic su *Account*, quindi apri la sezione *API Adobe Sign* e fai clic su *Applicazioni API* per aprire l&#39;elenco delle applicazioni registrate.
 
 ![Immagine del primo passaggio della registrazione dell&#39;applicazione](assets/AWNjs_9.png)
 
@@ -519,4 +519,4 @@ Come si può vedere dalla procedura di avvio rapido e dal codice fornito, è fac
 
 Per individuare gli ambiti necessari per una chiamata o per vedere come viene compilata la chiamata, è possibile creare chiamate di esempio dalla [documentazione API REST](https://secure.na4.adobesign.com/public/docs/restapi/v6). In [Quickstart](https://github.com/adobe/pdftools-node-sdk-samples) sono inoltre disponibili altre funzionalità e formati di file per i processi delle API [!DNL Adobe Acrobat Services].
 
-Puoi aggiungere numerose funzionalità di PDF alle tue applicazioni, consentendo agli utenti di visualizzare e firmare in modo facile e veloce i documenti e molto altro ancora. Per iniziare, controlla [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) oggi.
+Puoi aggiungere numerose funzionalità di PDF alle tue applicazioni, consentendo agli utenti di visualizzare e firmare in modo facile e veloce i documenti e molto altro ancora. Per iniziare, controlla [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) oggi.

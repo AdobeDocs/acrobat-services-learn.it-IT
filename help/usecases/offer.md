@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseOfferHero.jpg)
 
-Le lettere di offerta dei dipendenti sono una delle prime esperienze che i dipendenti hanno con la tua organizzazione. Di conseguenza, desiderate assicurarvi che le lettere di offerta siano on-brand, ma non desiderate dover creare una lettera nel vostro elaboratore testi da zero ogni volta. Le API [!DNL Adobe Acrobat Services] offrono un modo rapido, semplice ed efficace per gestire le parti chiave della [generazione e consegna delle lettere di offerta ai nuovi dipendenti](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
+Le lettere di offerta dei dipendenti sono una delle prime esperienze che i dipendenti hanno con la tua organizzazione. Di conseguenza, desiderate assicurarvi che le lettere di offerta siano on-brand, ma non desiderate dover creare una lettera nel vostro elaboratore testi da zero ogni volta. Le API [!DNL Adobe Acrobat Services] offrono un modo rapido, semplice ed efficace per gestire le parti chiave della [generazione e consegna delle lettere di offerta ai nuovi dipendenti](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
 
 ## Cosa puoi imparare
 
@@ -29,21 +29,21 @@ Questa esercitazione pratica descrive la configurazione di un progetto Node Expr
 
 * [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe dell&#39;API di Document Generation](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
-* [Componente aggiuntivo di Word Tagger per Document Generation](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
+* [Componente aggiuntivo di Word Tagger per Document Generation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [Esempio di progetto](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)
+* [Esempio di progetto](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## Introduzione
 
 [Node.js](https://nodejs.org/) è la piattaforma di programmazione. Viene fornito con un enorme set di librerie, come il server Web Express. [Scarica Node.js](https://nodejs.org/en/download/) e segui i passaggi per installare questo fantastico ambiente di sviluppo open source.
 
-Per utilizzare l&#39;API di Document Generation di Adobe in Node.js, accedi al sito [Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) per accedere al tuo account o registrarti per crearne uno nuovo. Il tuo account è [gratuito per sei mesi, quindi paga in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli $ 0,05 per ogni transazione documento, in modo da poter provare senza rischi e pagare solo in base alla crescita dell&#39;azienda.
+Adobe Per utilizzare l’API di Document Generation in Node.js, accedi al sito [API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation) per accedere al tuo account o registrarti per crearne uno nuovo. Il tuo account è [gratuito per sei mesi, quindi paga in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da poter provare senza rischi e pagare solo in base alla crescita dell&#39;azienda.
 
-Dopo aver effettuato l&#39;accesso ad [Adobe Developer Console](https://console.adobe.io/), fai clic su **[!UICONTROL Crea nuovo progetto]**. Per impostazione predefinita, il progetto è denominato &quot;Progetto 1&quot;. Fai clic sul pulsante **[!UICONTROL Modifica progetto]** e modifica il nome in &quot;Generatore lettere di offerta&quot;. Al centro della schermata è presente la sezione **[!UICONTROL Introduzione al nuovo progetto]**. Per abilitare la protezione per il progetto, procedi come segue:
+Dopo aver effettuato l&#39;accesso ad [Adobe Developer Console](https://developer.adobe.com/console/), fai clic su **[!UICONTROL Crea nuovo progetto]**. Per impostazione predefinita, il progetto è denominato &quot;Progetto 1&quot;. Fai clic sul pulsante **[!UICONTROL Modifica progetto]** e modifica il nome in &quot;Generatore lettere di offerta&quot;. Al centro della schermata è presente la sezione **[!UICONTROL Introduzione al nuovo progetto]**. Per abilitare la protezione per il progetto, procedi come segue:
 
 Fai clic su **Aggiungi API**. Sono disponibili diverse API tra cui scegliere. Nella sezione **[!UICONTROL Filtra per prodotto]**, seleziona **[!UICONTROL Document Cloud]**, quindi fai clic su **[!UICONTROL Avanti]**.
 
@@ -75,7 +75,7 @@ npm init
 
 Vengono poste alcune domande sul progetto Nodo. Puoi ignorare la maggior parte di queste domande, ma assicurati che il nome del progetto sia &quot;letter-generator&quot; e che il punto di ingresso sia **index.js**. Selezionare **Sì** per completare l&#39;inizializzazione del progetto.
 
-Ora hai un file package.json. Nodo utilizza questo file per organizzare il progetto. Prima di creare index.js, è necessario aggiungere librerie di Adobi con le seguenti caratteristiche
+Ora hai un file package.json. Nodo utilizza questo file per organizzare il progetto. Prima di creare index.js, devi aggiungere le librerie di Adobe con le seguenti
 comando:
 
 ```
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-C&#39;è molto codice da disimballare lì. Per prima cosa, prendiamo la parte principale: `documentMergeOperation`. In questa sezione puoi prendere i tuoi dati JSON e unirli a un modello di documento Word. Puoi utilizzare l&#39;[esempio nel sito di Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) come riferimento, ma creiamo il tuo esempio semplice. Aprire Word e creare un nuovo documento vuoto. Puoi personalizzarlo a tuo piacimento, ma hai almeno qualcosa del genere:
+C&#39;è molto codice da disimballare lì. Per prima cosa, prendiamo la parte principale: `documentMergeOperation`. In questa sezione puoi prendere i tuoi dati JSON e unirli a un modello di documento Word. Puoi utilizzare l&#39;[esempio nell&#39;Adobe](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) come riferimento, ma creiamo il tuo esempio semplice. Aprire Word e creare un nuovo documento vuoto. Puoi personalizzarlo a tuo piacimento, ma hai almeno qualcosa del genere:
 
 Gentile X,
 
@@ -247,7 +247,7 @@ Siamo lieti di offrirti una posizione per $X all&#39;anno. La data di inizio sar
 
 Benvenuti
 
-Salvate il documento come &quot;OfferLetter-Template.docx&quot; in una cartella denominata &quot;resources&quot; nella cartella principale del progetto. Osservate le tre X nel documento. Quelle X sono segnaposto temporanei per le tue informazioni JSON. Sebbene sia possibile utilizzare una sintassi speciale per sostituire questi segnaposto, l&#39;Adobe fornisce un componente aggiuntivo di Word che semplifica questa attività. Per installare il componente aggiuntivo, visita il sito Adobe [Document Generation Tagger Word Add-in](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin).
+Salvate il documento come &quot;OfferLetter-Template.docx&quot; in una cartella denominata &quot;resources&quot; nella cartella principale del progetto. Osservate le tre X nel documento. Quelle X sono segnaposto temporanei per le tue informazioni JSON. Sebbene sia possibile utilizzare una sintassi speciale per sostituire questi segnaposto, Adobe fornisce un componente aggiuntivo di Word che semplifica questa attività. Adobe Per installare il componente aggiuntivo, visita il sito [Document Generation Tagger Word Add-in](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) (Componente aggiuntivo di Document Generation Tagger Word).
 
 Nel modello OfferLetter-Template, fate clic sul pulsante **Document Generation**. Viene aperto un pannello laterale. Fai clic su **Introduzione**. Viene fornita un’area di testo da incollare nei dati JSON di esempio. Copia il frammento &quot;offer-data&quot; di JSON dall’alto nell’area di testo. Dovrebbe essere simile alla seguente:
 
@@ -263,7 +263,7 @@ Benvenuti
 
 Ora il modello Word include markup che corrispondono al formato JSON. Ad esempio, ```{{`offer_letter`.`firstname`}}``` all&#39;inizio del documento Word viene sostituito dal valore nella sezione &quot;firstname&quot; dei dati JSON.
 
-Torna alla funzione `generateLetter`. Per proteggere la tua chiamata REST, crea un nuovo file denominato pdftools-api-credentials.json nella directory principale del progetto. Incolla i seguenti dati JSON e regolali con i dettagli dalla sezione Account del servizio (JWT) di [Developer Console](https://console.adobe.io/).
+Torna alla funzione `generateLetter`. Per proteggere la tua chiamata REST, crea un nuovo file denominato pdftools-api-credentials.json nella directory principale del progetto. Incolla i seguenti dati JSON e regolali con i dettagli dalla sezione Account del servizio (JWT) di [Developer Console](https://developer.adobe.com/console/).
 
 ```
 {
@@ -286,13 +286,13 @@ Torna alla funzione `generateLetter`. Per proteggere la tua chiamata REST, crea 
 * Copiate il file private.key generato in precedenza nel progetto e immettetene il nome nella sezione private_key_file del
 file pdftools-api-credentials.json. Se lo desideri, puoi inserire qui un percorso per il file della chiave privata. Ricordati di tenerlo al sicuro, poiché può essere utilizzato in modo improprio una volta fuori dal tuo controllo.
 
-Per generare un PDF con i dati JSON compilati, torna al modulo Web **[!UICONTROL Immetti dettagli candidato]** e pubblica alcuni dati. Il download del documento dall&#39;Adobe richiede un po&#39; di tempo, ma dovresti avere un file denominato OfferLetter.pdf in una nuova cartella denominata output.
+Per generare un PDF con i dati JSON compilati, torna al modulo Web **[!UICONTROL Immetti dettagli candidato]** e pubblica alcuni dati. Il download del documento da Adobe richiede un po&#39; di tempo, ma dovresti avere un file denominato OfferLetter.pdf in una nuova cartella denominata output.
 
 ## Fasi seguenti
 
-È tutto! Questo è solo l&#39;inizio. Se si studia la sezione Avanzate della scheda Document Generation del componente aggiuntivo di Word, si nota che non tutti i marcatori segnaposto provengono dai dati JSON associati. È inoltre possibile aggiungere tag di firma. Questi tag consentono di caricare il documento risultante in [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) per la consegna e la firma al nuovo dipendente. Per informazioni su come eseguire questa operazione, consulta la Guida introduttiva all’API di Adobe Sign. Questo processo è simile perché si utilizzano chiamate REST protette con un token JWT.
+È tutto! Questo è solo l&#39;inizio. Se si studia la sezione Avanzate della scheda Document Generation del componente aggiuntivo di Word, si nota che non tutti i marcatori segnaposto provengono dai dati JSON associati. È inoltre possibile aggiungere tag di firma. Questi tag consentono di caricare il documento risultante in [Adobe Sign](https://www.adobe.com/ca/sign.html) per la consegna e la firma al nuovo dipendente. Per informazioni su come eseguire questa operazione, consulta la Guida introduttiva all’API di Adobe Sign. Questo processo è simile perché si utilizzano chiamate REST protette con un token JWT.
 
-L&#39;esempio di documento singolo fornito sopra può essere utilizzato come base per un&#39;applicazione quando un&#39;organizzazione deve [aumentare le assunzioni stagionali](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) di dipendenti in più sedi. Come dimostrato, il flusso principale consiste nel raccogliere i dati dai candidati tramite un&#39;applicazione online. I dati vengono utilizzati per compilare i campi di una lettera di offerta e inviarla per la firma elettronica.
+L&#39;esempio di documento singolo fornito sopra può essere utilizzato come base per un&#39;applicazione quando un&#39;organizzazione deve [aumentare le assunzioni stagionali](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) di dipendenti in più sedi. Come dimostrato, il flusso principale consiste nel raccogliere i dati dai candidati tramite un&#39;applicazione online. I dati vengono utilizzati per compilare i campi di una lettera di offerta e inviarla per la firma elettronica.
 
-[!DNL Adobe Acrobat Services] può essere utilizzato gratuitamente per sei mesi, quindi [pagamento in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli $ 0,05 per ogni transazione di documento, in modo che sia possibile provare e ridimensionare il flusso di lavoro delle lettere di offerta in base alla crescita dell&#39;azienda. Per [iniziare](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-creazione di modelli personalizzati, [registrazione dell&#39;account sviluppatore](https://www.adobe.io/).
+[!DNL Adobe Acrobat Services] può essere utilizzato gratuitamente per sei mesi, quindi [pagamento in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione di documento, in modo che sia possibile provare e ridimensionare il flusso di lavoro delle lettere di offerta in base alla crescita dell&#39;azienda. Per [iniziare](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+creazione di modelli personalizzati, [registrazione dell&#39;account sviluppatore](https://developer.adobe.com/).

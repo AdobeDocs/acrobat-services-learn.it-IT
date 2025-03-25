@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Il formato PDF, tuttavia, può risultare difficile da elaborare e automatizzare,
 
 ## Cosa puoi imparare
 
-In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Services] per le applicazioni [!DNL Java Spring Boot]. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l&#39;API di incorporamento di Adobe [PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Services] per le applicazioni [!DNL Java Spring Boot]. Si crea un&#39;app MVC (Model-View-Controller) che estrae il contenuto dai documenti PDF, lo converte in altri formati di dati, ad esempio Excel, combina più PDF e protegge le risorse tramite password. Questo tutorial spiega come elaborare i documenti PDF e mostrarli sui tuoi siti Web utilizzando l&#39;API di incorporamento di Adobe [PDF](https://developer.adobe.com/document-services/apis/pdf-embed).
 
 ## API e risorse pertinenti
 
@@ -45,11 +45,11 @@ Per seguire questo tutorial, sono necessari due set di chiavi API:
 
 * API di Adobe PDF Embed
 
-Dopo aver creato le credenziali, copiare le credenziali API di PDF Services e la chiave privata nell&#39;applicazione [!DNL Spring Boot] all&#39;interno della sezione delle risorse. Ulteriori informazioni sulle [librerie e dipendenze Maven e Gradle](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) nel sito Web [!DNL Adobe Acrobat Services]. Prima di procedere, assicurati di configurare tutti i pacchetti e le librerie necessari.
+Dopo aver creato le credenziali, copiare le credenziali API di PDF Services e la chiave privata nell&#39;applicazione [!DNL Spring Boot] all&#39;interno della sezione delle risorse. Ulteriori informazioni sulle [librerie e dipendenze Maven e Gradle](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) nel sito Web [!DNL Adobe Acrobat Services]. Prima di procedere, assicurati di configurare tutti i pacchetti e le librerie necessari.
 
 ![Schermata del percorso della directory per le credenziali API di PDF Services](assets/FAWJ_1.png)
 
-Per configurare i servizi di registrazione, visitare la [documentazione di Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) e scorrere fino alla sezione Registrazione.
+Per configurare i servizi di registrazione, visitare la [documentazione di Adobe](https://developer.adobe.com/document-services/docs/overview/pdf-services-api) e scorrere fino alla sezione Registrazione.
 
 >[!NOTE]
 >
@@ -195,8 +195,8 @@ L’API PDF Embed fornisce tutti gli strumenti necessari per visualizzare in ant
 
 ## Fasi seguenti
 
-In questa esercitazione pratica sono state esplorate le API [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) e si è discusso su come utilizzare questi servizi per elaborare i dati PDF e generare report per le decisioni finanziarie. È stato illustrato come integrare le API nei sistemi utilizzando [!DNL Java Spring Boot] come framework di esempio, per dimostrare quanto sia facile elaborare rapidamente i documenti PDF.
+In questa esercitazione pratica sono state esplorate le API [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) e si è discusso su come utilizzare questi servizi per elaborare i dati PDF e generare report per le decisioni finanziarie. È stato illustrato come integrare le API nei sistemi utilizzando [!DNL Java Spring Boot] come framework di esempio, per dimostrare quanto sia facile elaborare rapidamente i documenti PDF.
 
-Esplora [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) e scopri cosa possono fare i servizi Adobe PDF per la tua azienda. Per ulteriori informazioni sulle altre funzionalità disponibili nell&#39;SDK, consulta il [repository GitHub](https://github.com/adobe/pdftools-java-sdk-samples) per gli esempi e scopri come l&#39;[API PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) può aiutarti a visualizzare rapidamente i PDF nelle tue applicazioni.
+Esplora [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) e scopri cosa possono fare i servizi Adobe PDF per la tua azienda. Per ulteriori informazioni sulle altre funzionalità disponibili nell&#39;SDK, consulta il [repository GitHub](https://github.com/adobe/pdftools-java-sdk-samples) per gli esempi e scopri come l&#39;[API PDF Embed](https://developer.adobe.com/document-services/apis/pdf-embed) può aiutarti a visualizzare rapidamente i PDF nelle tue applicazioni.
 
-Per combinare e manipolare facilmente i documenti, creando utili report PDF per i clienti finanziari, iniziate subito registrandovi per il vostro [account sviluppatore Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/) gratuito.
+Per combinare e manipolare facilmente i documenti, creando utili report PDF per i clienti finanziari, iniziate subito registrandovi per il vostro [account sviluppatore Adobe](https://developer.adobe.com/document-services/homepage/) gratuito.

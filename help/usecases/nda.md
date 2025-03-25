@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Questo tutorial pratico spiega come creare un modello NDA Microsoft Word special
 
 ## API e risorse pertinenti
 
-Con [!DNL Adobe Acrobat Services], puoi generare documenti PDF al volo utilizzando i dati dinamici. [!DNL Acrobat Services] offre una suite di strumenti di PDF, tra cui l&#39;API di Document Generation di Adobe per automatizzare la [creazione NDA](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+Con [!DNL Adobe Acrobat Services], puoi generare documenti PDF al volo utilizzando i dati dinamici. [!DNL Acrobat Services] offre una suite di strumenti di PDF, tra cui l&#39;API di Adobe Document Generation per automatizzare la [creazione NDA](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation).
 
-* [Adobe dell&#39;API di Document Generation](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
-* [Adobe del tagger di generazione del documento](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Adobe Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 * [Codice progetto](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
 
@@ -77,7 +77,7 @@ Creare il modello NDA in un documento di Microsoft Word. L’API Adobe PDF Servi
 
 Puoi installare il componente aggiuntivo gratuito [Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) in Microsoft Word. Se fai parte di un&#39;organizzazione, puoi richiedere all&#39;amministratore di Microsoft Office di installare il componente aggiuntivo gratuito per tutti.
 
-Una volta installato il componente aggiuntivo, puoi trovarlo nella scheda Home nella categoria Adobe. Per aprire la scheda, seleziona **Document Generation**:
+Una volta installato il componente aggiuntivo, puoi trovarlo nella scheda Home sotto la categoria Adobe. Per aprire la scheda, seleziona **Document Generation**:
 
 ![Schermata del componente aggiuntivo Document Generation in Word](assets/nda_1.png)
 
@@ -93,7 +93,7 @@ Queste sono le funzionalità del campo `authorizedSigner`. Gli altri campi vengo
 
 ## Creazione dei tag
 
-Puoi creare un modello o importare un [modello esistente](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) in Microsoft Word. Dopo aver configurato il documento, aggiungi tag a ciascun campo facendo clic sui token corrispondenti nel componente aggiuntivo.
+Puoi creare un modello o importare un [modello esistente](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) in Microsoft Word. Dopo aver configurato il documento, aggiungi tag a ciascun campo facendo clic sui token corrispondenti nel componente aggiuntivo.
 
 Il seguente modello in un file di Microsoft Word:
 
@@ -173,7 +173,7 @@ res.status(500).render("crash", { error: error });
 
 Puoi visualizzare [il codice di esempio completo](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) su GitHub.
 
-Questo codice utilizza un documento JSON e il modello Microsoft Word nella chiamata API all&#39;SDK [!DNL Adobe Acrobat Services]. Nella risposta, riceverai l&#39;output e lo salverai nel file system dell&#39;app. Puoi inoltrare il documento generato ai tuoi clienti tramite e-mail o mostrare loro un&#39;anteprima all&#39;interno del browser utilizzando la [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) gratuita.
+Questo codice utilizza un documento JSON e il modello Microsoft Word nella chiamata API all&#39;SDK [!DNL Adobe Acrobat Services]. Nella risposta, riceverai l&#39;output e lo salverai nel file system dell&#39;app. Puoi inoltrare il documento generato ai tuoi clienti tramite e-mail o mostrare loro un&#39;anteprima all&#39;interno del browser utilizzando la [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed) gratuita.
 
 Questa chiamata crea il seguente documento NDA:
 
@@ -181,13 +181,13 @@ Questa chiamata crea il seguente documento NDA:
 
 Le API [!DNL Adobe Acrobat Services] inseriscono contenuto per creare un documento PDF. Senza questi strumenti, potrebbe essere necessario scrivere il codice per elaborare i documenti di Office e lavorare con i formati di file raw PDF. Con l&#39;aiuto dei Servizi Adobe PDF, puoi eseguire tutti questi passaggi con una singola chiamata API.
 
-Ora utilizza [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html) per richiedere le firme nei moduli NDA e consegnare il documento finale firmato a tutte le parti. Adobe Sign invia una notifica [utilizzando un webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Ascoltando questo webhook, puoi recuperare lo stato dell’accordo di riservatezza.
+Ora utilizza [Adobe Sign API](https://developer.adobe.com/adobesign-api/) per richiedere le firme nei moduli NDA e consegnare il documento finale firmato a tutte le parti. Adobe Sign invia una notifica [utilizzando un webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md). Ascoltando questo webhook, puoi recuperare lo stato dell’accordo di riservatezza.
 
-Per una spiegazione più dettagliata del processo di Adobe Sign, [consultate la documentazione](https://www.adobe.io/apis/documentcloud/sign/docs.html) o leggete questo articolo di blog dettagliato.
+Per una spiegazione più dettagliata del processo di Adobe Sign, [consultate la documentazione](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) o leggete questo articolo di blog dettagliato.
 
 ## Fasi seguenti
 
-In questo tutorial pratico, l’Adobe Document Generation Tagger è stato utilizzato per generare dinamicamente documenti PDF utilizzando modelli di Microsoft Word e file di dati JSON. Il componente aggiuntivo ha contribuito a [creare automaticamente accordi di riservatezza](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) personalizzati per ciascuna parte, quindi raccogliere le firme tramite l’API di Sign.
+In questo tutorial pratico, Adobe Document Generation Tagger è stato utilizzato per generare dinamicamente documenti PDF utilizzando modelli di Microsoft Word e file di dati JSON. Il componente aggiuntivo ha contribuito a [creare automaticamente accordi di riservatezza](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) personalizzati per ciascuna parte, quindi raccogliere le firme tramite l’API di Sign.
 
-Puoi utilizzare queste tecniche per creare dinamicamente i tuoi accordi di riservatezza o altri documenti, lasciando al tuo team il tempo di concentrarsi sul lavoro produttivo. Esplora [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) per trovare le API e gli SDK per la lingua e il runtime di tua scelta, in modo da poter aggiungere le funzioni PDF direttamente alle tue applicazioni per la creazione rapida di documenti PDF. [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) con una versione di prova gratuita di sei mesi
-[pagamento in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli $ 0,05 per ogni transazione di documento.
+Puoi utilizzare queste tecniche per creare dinamicamente i tuoi accordi di riservatezza o altri documenti, lasciando al tuo team il tempo di concentrarsi sul lavoro produttivo. Esplora [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services) per trovare le API e gli SDK per la lingua e il runtime di tua scelta, in modo da poter aggiungere le funzioni PDF direttamente alle tue applicazioni per la creazione rapida di documenti PDF. [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) con una versione di prova gratuita di sei mesi
+[pagamento in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione di documento.

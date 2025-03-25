@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 Gli istituti di istruzione utilizzano i documenti PDF per condividere il materiale didattico con gli studenti. I PDF forniscono ai docenti un formato di documento intercambiabile.
 
-L&#39;integrazione di [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) e [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) in un&#39;app offre a docenti e studenti un&#39;unica piattaforma su cui insegnare e apprendere. Ad esempio, l’app può consentire agli studenti di porre domande sui propri compiti e di creare report sui propri biglietti e di collaborare alle assegnazioni di gruppo.
+L&#39;integrazione di [Adobe PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services) e [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed) in un&#39;app offre a docenti e studenti un&#39;unica piattaforma su cui insegnare e apprendere. Ad esempio, l’app può consentire agli studenti di porre domande sui propri compiti e di creare report sui propri biglietti e di collaborare alle assegnazioni di gruppo.
 
 Esiste un SDK ufficiale per le applicazioni Node.js per accedere all&#39;API di PDF Services. Ciò consente di convertire documenti come Microsoft Word o Microsoft Excel in
-PDF. Inoltre, puoi eseguire operazioni più avanzate, come la combinazione di più report, la ridisposizione delle pagine e la protezione dei PDF. Per ulteriori dettagli, consulta la [documentazione del prodotto](https://www.adobe.io/apis/documentcloud/dcsdk/).
+PDF. Inoltre, puoi eseguire operazioni più avanzate, come la combinazione di più report, la ridisposizione delle pagine e la protezione dei PDF. Per ulteriori dettagli, consulta la [documentazione del prodotto](https://developer.adobe.com/document-services/homepage/).
 
 ## Cosa puoi imparare
 
-In questa esercitazione pratica impara a creare una piattaforma di apprendimento online che [consente a docenti e studenti di condividere facilmente le risorse](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html) in PDF. Questa esercitazione utilizza un [portale di apprendimento](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) creato utilizzando Node.js JavaScript runtime (Node.js) e PDF Services.
+In questa esercitazione pratica impara a creare una piattaforma di apprendimento online che [consente a docenti e studenti di condividere facilmente le risorse](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration) in PDF. Questa esercitazione utilizza un [portale di apprendimento](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) creato utilizzando Node.js JavaScript runtime (Node.js) e PDF Services.
 
 Il portale di apprendimento presenta le seguenti funzionalità:
 
@@ -67,7 +67,7 @@ Per scoprire come l&#39;applicazione carica i file, consulta il [codice progetto
 Gli studenti possono convertire uno o più documenti di qualsiasi tipo in PDF, come Microsoft Word, Excel e PowerPoint, così come altri tipi di file di testo e immagini popolari. Il portale di apprendimento utilizza PDF Services per eseguire la conversione dei file in PDF.
 
 Per creare il tuo portale di apprendimento, devi prima creare le tue credenziali. [Registrati](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) a
-utilizza gratuitamente API di PDF Services per sei mesi e fino a 1.000 transazioni di documenti. Dopodiché, [paga in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) a soli \$0,05 per transazione documento mentre la classe aumenta le proprie assegnazioni.
+utilizza gratuitamente API di PDF Services per sei mesi e fino a 1.000 transazioni di documenti. Dopodiché, [paga in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli \$0,05 per transazione documento mentre la classe aumenta le proprie assegnazioni.
 
 Quando uno studente seleziona un documento dal dashboard, viene visualizzato quanto segue:
 
@@ -171,9 +171,9 @@ Gli studenti possono utilizzare le annotazioni per porre domande o condividere i
 
 È importante che i docenti e le scuole vedano come gli studenti utilizzano le piattaforme online. Questo aiuta i docenti a supportare gli studenti con risorse che li aiutano a svolgere meglio i loro compiti. L’API PDF Embed si integra con le analisi che puoi utilizzare per misurare tutti gli eventi in corso, ad esempio quando gli utenti aprono, leggono e chiudono documenti. Con l&#39;API di PDF Services, i docenti possono anche disabilitare la stampa, il download e la modifica dei file per mantenere l&#39;integrità accademica.
 
-Se disponi di una licenza di [Adobe Analytics](https://www.adobe.io/apis/experiencecloud/analytics.html), puoi utilizzare la relativa [integrazione predefinita](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#adobe-analytics). In caso contrario, utilizza i callback per integrare i Servizi PDF con altri provider di analisi, ad esempio [Google](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#google-analytics).
+Se disponi di una licenza di [Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/), puoi utilizzare la relativa [integrazione predefinita](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics). In caso contrario, utilizza i callback per integrare i Servizi PDF con altri provider di analisi, ad esempio [Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics).
 
-Per attivare la misurazione degli eventi del documento, collegare i gestori eventi utilizzando il metodo `registerCallback` con l&#39;istanza View DC di Adobe. Sulla console è possibile visualizzare le metriche di base, ad esempio l&#39;apertura di un documento o la lettura di una pagina. È inoltre possibile salvare le metriche in un registro o pubblicarle in altri archivi di analisi.
+Per attivare la misurazione degli eventi del documento, collegare i gestori eventi utilizzando il metodo `registerCallback` con l&#39;istanza Vista Adobe DC. Sulla console è possibile visualizzare le metriche di base, ad esempio l&#39;apertura di un documento o la lettura di una pagina. È inoltre possibile salvare le metriche in un registro o pubblicarle in altri archivi di analisi.
 
 Di seguito è riportato il codice di esempio per allegare i gestori eventi:
 
@@ -197,7 +197,7 @@ Ecco un&#39;immagine della console del browser Web:
 
 Questa schermata mostra che lo studente ha aperto il file di assegnazione, ha letto la prima pagina - o non ha fatto scorrere le pagine aggiuntive o il documento aveva una sola pagina - poi ha scaricato il file. Puoi raccogliere queste metriche per eseguire analisi e studiare il comportamento degli studenti.
 
-Inoltre, [Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html) è integrato con PDF Embed API. Pertanto, se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare le metriche nel tuo abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l’ID suite al costruttore PDF Embed API. (Si noti che è necessario utilizzare le credenziali API di PDF Embed e non le credenziali API di PDF Services).
+Inoltre, [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) è integrato con PDF Embed API. Pertanto, se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare le metriche nel tuo abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l’ID suite al costruttore PDF Embed API. (Si noti che è necessario utilizzare le credenziali API di PDF Embed e non le credenziali API di PDF Services).
 
 Di seguito è riportato un codice di esempio che mostra come passare l&#39;ID suite al costruttore API PDF Embed:
 
@@ -211,8 +211,8 @@ var adobeDCView = new AdobeDC.View({
 
 ## Fasi seguenti
 
-In questa esercitazione pratica è stato esaminato come utilizzare l&#39;API di PDF Services e l&#39;API di PDF Embed per creare un portale di apprendimento, in modo da facilitare un&#39;efficace [collaborazione tra studenti e docenti](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html). Utilizzando questo portale, i docenti possono caricare materiale didattico in qualsiasi formato e convertirlo in PDF utilizzando l’API di PDF Services. Gli studenti possono quindi visualizzare in anteprima questi PDF utilizzando l’API PDF Embed.
+In questa esercitazione pratica è stato esaminato come utilizzare l&#39;API di PDF Services e l&#39;API di PDF Embed per creare un portale di apprendimento, in modo da facilitare un&#39;efficace [collaborazione tra studenti e docenti](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration). Utilizzando questo portale, i docenti possono caricare materiale didattico in qualsiasi formato e convertirlo in PDF utilizzando l’API di PDF Services. Gli studenti possono quindi visualizzare in anteprima questi PDF utilizzando l’API PDF Embed.
 
 Ora che sai come annotare i report PDF, archiviare le annotazioni e tenere traccia dell’utilizzo dei report PDF, puoi iniziare ad implementare queste soluzioni nei tuoi progetti.
 
-Puoi utilizzare le API [!DNL Adobe Acrobat Services] per creare esperienze di PDF interattive e di facile utilizzo sul tuo sito Web. Prova gratis l&#39;API di Adobe PDF Services per sei mesi e poi a soli [pagare in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) (tramite AWS o un contratto diretto) per soli \$0,05 per transazione documento. Utilizza Adobe PDF Embed gratis senza limiti di tempo. Crea un account gratuito per [iniziare](https://www.adobe.com/go/dcsdks_credentials) oggi stesso.
+Puoi utilizzare le API [!DNL Adobe Acrobat Services] per creare esperienze di PDF interattive e di facile utilizzo sul tuo sito Web. Prova gratis l&#39;API di Adobe PDF Services per sei mesi e poi a soli [pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) (tramite AWS o un contratto diretto) per soli \$0,05 per transazione documento. Utilizza Adobe PDF Embed gratis senza limiti di tempo. Crea un account gratuito per [iniziare](https://www.adobe.com/go/dcsdks_credentials) oggi stesso.

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -19,29 +19,29 @@ ht-degree: 0%
 
 ![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseLegalHero.jpg)
 
-Con la digitalizzazione, le sfide sono tutte. Oggi, la maggior parte delle organizzazioni dispone di molti tipi di [contratti legali](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) che devono creare, modificare, approvare e far firmare da parti diverse. Questi contratti legali spesso richiedono personalizzazioni e branding esclusivi. Una volta firmato, le organizzazioni potrebbero anche dover salvare in un formato protetto per proteggerle. Per svolgere tutte queste attività, è necessario disporre di una solida soluzione di gestione e generazione dei documenti.
+Con la digitalizzazione, le sfide sono tutte. Oggi, la maggior parte delle organizzazioni dispone di molti tipi di [contratti legali](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) che devono creare, modificare, approvare e far firmare da parti diverse. Questi contratti legali spesso richiedono personalizzazioni e branding esclusivi. Una volta firmato, le organizzazioni potrebbero anche dover salvare in un formato protetto per proteggerle. Per svolgere tutte queste attività, è necessario disporre di una solida soluzione di gestione e generazione dei documenti.
 
 Molte soluzioni offrono la generazione di documenti, ma non consentono di personalizzare l&#39;input dei dati e la logica condizionale, ad esempio clausole applicabili solo a scenari specifici. L&#39;aggiornamento manuale dei modelli legali di un&#39;azienda è complesso e soggetto a errori, poiché questi documenti sono sempre più completi. La necessità di automatizzare questi processi è notevole.
 
 ## Cosa puoi imparare
 
-In questo tutorial pratico esplora le funzionalità delle [[!DNL Adobe Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) nella generazione di campi di input personalizzati nei documenti. Inoltre, scoprite come convertire facilmente questi documenti generati in un formato di documento portatile protetto (PDF) per evitare la manipolazione dei dati.
+In questo tutorial pratico esplora le funzionalità delle [[!DNL Adobe Acrobat Services] API](https://developer.adobe.com/document-services/apis/doc-generation) nella generazione di campi di input personalizzati nei documenti. Inoltre, scoprite come convertire facilmente questi documenti generati in un formato di documento portatile protetto (PDF) per evitare la manipolazione dei dati.
 
 Questo tutorial richiede un po&#39; di programmazione quando si esplora la conversione dei contratti in PDF. Per seguirmi in modo efficace, è necessario che [Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) e [Node.js](https://nodejs.org/) siano installati nel PC. Si consiglia inoltre di comprendere la sintassi di Node.js e [ES6](https://www.w3schools.com/js/js_es6.asp).
 
 ## API e risorse pertinenti
 
-* [Adobe dell&#39;API di Document Generation](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign.html)
+* [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
 * [Codice progetto](https://github.com/agavitalis/adobe_legal_contracts.git)
 
 ## Creazione di un documento modello
 
-È possibile creare documenti legali utilizzando l&#39;applicazione Microsoft Word o scaricando [modelli di Word di Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade). Tuttavia, non è facile personalizzare gli input e firmare digitalmente questi documenti senza utilizzare alcuni strumenti di supporto, come il [componente aggiuntivo Adobe Document Generation Tagger](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) per Microsoft Word.
+Puoi creare documenti legali utilizzando l’applicazione Microsoft Word o scaricando i [modelli Word di esempio](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) di Adobe. Tuttavia, non è facile personalizzare gli input e firmare digitalmente questi documenti senza utilizzare alcuni strumenti di supporto come il [componente aggiuntivo Adobe Document Generation Tagger](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) per Microsoft Word.
 
 Document Generation Tagger è un componente aggiuntivo di Microsoft Word, creato per semplificare la personalizzazione dei documenti tramite i tag. Consente la creazione di campi dinamici nei modelli di documento che si riempiono dinamicamente utilizzando i dati JSON.
 
@@ -49,7 +49,7 @@ Document Generation Tagger è un componente aggiuntivo di Microsoft Word, creato
 
 Per illustrare l’utilizzo di Document Generation Tagger, installa questo componente aggiuntivo e quindi crea un modello di dati JSON, che viene utilizzato per l’assegnazione di tag a un semplice documento di contratto legale.
 
-Installa Document Generation Tagger in Word facendo clic sulla scheda **Inserisci**, quindi nel gruppo Componenti aggiuntivi fai clic su **I miei componenti aggiuntivi**. Nel menu Componenti aggiuntivi di Office, cerca &quot;Generazione documento di Adobe&quot;, quindi fai clic su **Aggiungi** e segui la procedura. È possibile visualizzare questi passaggi nell&#39;immagine precedente.
+Installa Document Generation Tagger in Word facendo clic sulla scheda **Inserisci**, quindi nel gruppo Componenti aggiuntivi fai clic su **I miei componenti aggiuntivi**. Nel menu Componenti aggiuntivi di Office, cerca &quot;Adobe Document Generation&quot;, quindi fai clic su **Aggiungi** e segui la procedura. È possibile visualizzare questi passaggi nell&#39;immagine precedente.
 
 Dopo aver installato il componente aggiuntivo Document Generation Tagger per Word, crea un semplice modello di dati JSON per assegnare tag al documento legale.
 
@@ -73,7 +73,7 @@ Per procedere, apri un editor di tua scelta, crea un file denominato Agreement.j
 
 Dopo aver salvato il documento JSON, importalo nel componente aggiuntivo Document Generation Tagger. Importa il documento facendo clic su **Document Generation** nell&#39;Adobe in alto a destra della schermata di Word, come illustrato nell&#39;immagine seguente.
 
-![Schermata del componente aggiuntivo Document Generation Tagger di Adobe in Word](assets/legal_2.png)
+![Schermata del componente aggiuntivo Adobe Document Generation Tagger in Word](assets/legal_2.png)
 
 In questo modo viene visualizzato un video che ti guida. Puoi guardarlo o passare direttamente al campo dei tag facendo clic su **Introduzione**. Dopo aver fatto clic su **Introduzione**, viene visualizzato un modulo di caricamento. Fai clic su **Carica file JSON** e seleziona il file JSON appena creato. Al termine dell&#39;importazione, fare clic su **Genera tag** per generare i tag.
 
@@ -83,7 +83,7 @@ Dopo aver importato e generato i tag, potete aggiungere questi tag al documento.
 
 Oltre ai tag di base creati utilizzando il modello di dati JSON importato, puoi anche utilizzare le funzioni avanzate per ulteriori opzioni, come immagini, logica condizionale, calcoli, elementi ripetuti e frasi condizionali. Per accedere a queste funzioni, fai clic su **Avanzate** nel pannello Tagger Document Generation. Lo puoi vedere nell’acquisizione dello schermo qui sotto.
 
-![Schermata della scheda Avanzate di Document Generation Tagger Adobe](assets/legal_4.png)
+![Schermata della scheda Avanzate di Adobe Document Generation Tagger](assets/legal_4.png)
 
 Queste funzioni avanzate non sono diverse dai tag di base. Per includere la logica condizionale, selezionate la parte del documento da riempire. Configurare quindi la regola che determina l&#39;inserimento del tag.
 
@@ -175,7 +175,7 @@ Dopo aver installato i pacchetti, assicurati che il contenuto del file package.j
 
 In questi frammenti di codice sono state installate le dipendenze dell&#39;applicazione, incluso il motore di creazione dei modelli Handlebars per la visualizzazione.
 
-In questo tutorial l&#39;attenzione principale è sull&#39;utilizzo di [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/) per convertire i documenti in PDF. Di conseguenza, non esiste un processo passo-passo per la creazione di questa applicazione Node.js. Tuttavia, puoi recuperare il codice completo dell&#39;applicazione Node.js funzionante in [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
+In questo tutorial l&#39;attenzione principale è sull&#39;utilizzo di [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/) per convertire i documenti in PDF. Di conseguenza, non esiste un processo passo-passo per la creazione di questa applicazione Node.js. Tuttavia, puoi recuperare il codice completo dell&#39;applicazione Node.js funzionante in [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
 
 ## Integrazione delle API [!DNL Adobe Acrobat Services] in un&#39;applicazione Node.js
 
@@ -185,9 +185,9 @@ Le API [!DNL Adobe Acrobat Services] sono servizi affidabili basati sul cloud pr
 
 * API di Adobe PDF Embed
 
-* Adobe dell’API di Document Generation
+* API di Adobe Document Generation
 
-Per utilizzare le API di [!DNL Acrobat Services] sono necessarie credenziali diverse da quelle di PDF Embed API. Se non disponi di credenziali valide, [registra](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) e completa il flusso di lavoro come illustrato nell&#39;immagine seguente. Prova gratis per [sei mesi, poi paga in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), a soli $ 0,05 per ogni transazione di documento.
+Per utilizzare le API di [!DNL Acrobat Services] sono necessarie credenziali diverse da quelle di PDF Embed API. Se non disponi di credenziali valide, [registra](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) e completa il flusso di lavoro come illustrato nell&#39;immagine seguente. Prova gratis per [sei mesi, poi paga in base al consumo](https://developer.adobe.com/document-services/pricing/main), a soli $ 0,05 per ogni transazione di documento.
 
 ![Schermata della creazione di nuove credenziali](assets/legal_6.png)
 
@@ -424,8 +424,8 @@ Nel file del controller precedente, sono disponibili tre funzioni: listFiles, pr
 In questo tutorial pratico, hai aggiunto i tag a un documento utilizzando il componente aggiuntivo Document Generation Tagger Microsoft Word. Quindi, ha integrato [!DNL Acrobat Services] API in un&#39;applicazione Node.js e
 avete convertito un documento con tag in un formato PDF scaricabile, anche se potreste aver creato il contratto legale direttamente in PDF. Infine, hai utilizzato Adobe PDF Embed API per visualizzare in anteprima le PDF generate per la verifica e la firma.
 
-L&#39;applicazione completata semplifica notevolmente l&#39;aggiunta di tag a [modelli di contratto legali](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) con campi dinamici, la loro conversione in PDF, la loro anteprima e la loro firma utilizzando le API di [!DNL Acrobat Services]. Anziché dedicare tempo alla creazione di un contratto univoco, il team può inviare automaticamente il contratto corretto a ciascun cliente, quindi dedicare più tempo alla crescita dell&#39;azienda.
+L&#39;applicazione completata semplifica notevolmente l&#39;aggiunta di tag a [modelli di contratto legali](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) con campi dinamici, la loro conversione in PDF, la loro anteprima e la loro firma utilizzando le API di [!DNL Acrobat Services]. Anziché dedicare tempo alla creazione di un contratto univoco, il team può inviare automaticamente il contratto corretto a ciascun cliente, quindi dedicare più tempo alla crescita dell&#39;azienda.
 
-Le organizzazioni utilizzano le API [!DNL Adobe Acrobat Services] per completezza e facilità d&#39;uso. Puoi usufruire di una [prova gratuita di sei mesi e poi pagare in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html). Paghi solo per quello che usi. Inoltre, l’API PDF Embed è sempre gratuita.
+Le organizzazioni utilizzano le API [!DNL Adobe Acrobat Services] per completezza e facilità d&#39;uso. Puoi usufruire di una [prova gratuita di sei mesi e poi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main). Paghi solo per quello che usi. Inoltre, l’API PDF Embed è sempre gratuita.
 
 Pronto a incrementare la produttività migliorando il flusso dei documenti? [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) oggi.

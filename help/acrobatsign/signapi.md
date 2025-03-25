@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 0%
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # Guida introduttiva all’API di Adobe Sign
 
-[L’API Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign.html) è un ottimo modo per migliorare il modo in cui gestisci gli accordi firmati. Gli sviluppatori possono integrare facilmente i propri sistemi con l’API Sign, che offre un modo semplice e affidabile per caricare i documenti, inviarli per la firma, inviare promemoria e raccogliere le firme elettroniche.
+[L’API Acrobat Sign](https://developer.adobe.com/adobesign-api/) è un ottimo modo per migliorare il modo in cui gestisci gli accordi firmati. Gli sviluppatori possono integrare facilmente i propri sistemi con l’API Sign, che offre un modo semplice e affidabile per caricare i documenti, inviarli per la firma, inviare promemoria e raccogliere le firme elettroniche.
 
 ## Cosa puoi imparare
 
-Questa esercitazione pratica spiega come gli sviluppatori possono utilizzare l&#39;API Sign per migliorare le applicazioni e i flussi di lavoro creati con [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] include [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk) (gratuita) e [Adobe Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+Questa esercitazione pratica spiega come gli sviluppatori possono utilizzare l&#39;API Sign per migliorare le applicazioni e i flussi di lavoro creati con [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] include [Adobe PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services), [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/) (gratuita) e [Adobe Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation).
 
-Più specificamente, scopri come includere l’API di Acrobat Sign nell’applicazione per raccogliere firme e altre informazioni, ad esempio informazioni sui dipendenti in un modulo di assicurazione. Vengono utilizzati passaggi generici con richieste e risposte HTTP semplificate. Puoi implementare queste richieste nella tua lingua preferita. Puoi creare un PDF utilizzando una combinazione di [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/), caricarlo nell’API di Sign come documento [transitorio](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) e richiedere le firme dell’utente finale utilizzando l’accordo o il flusso di lavoro [widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md).
+Più specificamente, scopri come includere l’API di Acrobat Sign nell’applicazione per raccogliere firme e altre informazioni, ad esempio informazioni sui dipendenti in un modulo di assicurazione. Vengono utilizzati passaggi generici con richieste e risposte HTTP semplificate. Puoi implementare queste richieste nella tua lingua preferita. Puoi creare un PDF utilizzando una combinazione di [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/), caricarlo nell’API di Sign come documento [transitorio](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md) e richiedere le firme dell’utente finale utilizzando l’accordo o il flusso di lavoro [widget](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/overview/terminology.md).
 
 ## Creazione di un documento PDF
 
-Per iniziare, crea un modello di Microsoft Word e salvalo come PDF. In alternativa, puoi automatizzare la pipeline utilizzando l’API di Document Generation per caricare un modello creato in Word e quindi generare un documento PDF. L&#39;API di Document Generation fa parte di [!DNL Acrobat Services], [gratis per sei mesi, quindi paga in base al consumo a soli o 0,05 dollari per transazione documento](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+Per iniziare, crea un modello di Microsoft Word e salvalo come PDF. In alternativa, puoi automatizzare la pipeline utilizzando l’API di Document Generation per caricare un modello creato in Word e quindi generare un documento PDF. L&#39;API di Document Generation fa parte di [!DNL Acrobat Services], [gratis per sei mesi, quindi paga in base al consumo a soli o 0,05 dollari per transazione documento](https://developer.adobe.com/document-services/pricing/main).
 
 In questo esempio, il modello è solo un semplice documento con alcuni campi firmatario da compilare. Assegna un nome ai campi per ora, quindi inserisci successivamente i campi effettivi in questo tutorial.
 
@@ -206,13 +206,13 @@ L’editor consente di trascinare campi di testo e firma. Dopo aver aggiunto tut
 
 Una volta completato il modulo Web, è necessario inviarlo per consentire agli utenti di compilarlo e firmarlo. Una volta salvato il modulo, puoi visualizzare e copiare l’URL e il codice incorporato.
 
-**Copia URL modulo Web**: utilizza questo URL per inviare gli utenti a una versione ospitata di questo accordo per la revisione e la firma. Esempio:
+**Copia URL modulo Web**: utilizza questo URL per inviare gli utenti a una versione ospitata di questo accordo per la revisione e la firma. Ad esempio:
 
 [https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
 **Copia codice di incorporamento modulo Web**: aggiungi l’accordo al tuo sito Web copiando questo codice e incollandolo nel tuo HTML.
 
-Esempio:
+Ad esempio:
 
 ```
 <iframe
@@ -238,7 +238,7 @@ Successivamente, l’utente firma il documento con una firma archiviata in prece
 
 ![Schermata della firma](assets/GSASAPI_10.png)
 
-Quando l&#39;utente fa clic su **Applica**, nell&#39;Adobe viene richiesto di aprire l&#39;e-mail e confermare la firma. La firma rimane in sospeso fino all’arrivo della conferma.
+Quando l&#39;utente fa clic su **Applica**, in Adobe viene richiesto di aprire l&#39;e-mail e confermare la firma. La firma rimane in sospeso fino all’arrivo della conferma.
 
 ![Schermata di un solo passaggio in più](assets/GSASAPI_11.png)
 
@@ -276,7 +276,7 @@ In alternativa ai moduli Web, puoi creare gli accordi. Nelle sezioni seguenti ve
 
 Quando si invia un documento a destinatari specificati per la firma o l’approvazione, viene creato un accordo. Puoi tenere traccia dello stato e del completamento di un accordo utilizzando le API.
 
-Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
+Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -434,10 +434,10 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 L’API Acrobat Sign consente di gestire documenti, moduli Web e accordi. I flussi di lavoro semplificati ma completi creati utilizzando moduli e accordi Web vengono eseguiti in modo generico che consente agli sviluppatori di implementarli utilizzando qualsiasi lingua.
 
-Per una panoramica sul funzionamento dell’API di Sign, consulta alcuni esempi nella [Guida per sviluppatori sull’utilizzo delle API](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). Questa documentazione contiene brevi articoli su molti dei passaggi seguiti in tutto l&#39;articolo e altri argomenti correlati.
+Per una panoramica sul funzionamento dell’API di Sign, consulta alcuni esempi nella [Guida per sviluppatori sull’utilizzo delle API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/api_usage.md). Questa documentazione contiene brevi articoli su molti dei passaggi seguiti in tutto l&#39;articolo e altri argomenti correlati.
 
-L’API di Acrobat Sign è disponibile per diversi livelli di [piani di firma elettronica per utenti singoli e multiutente](https://acrobat.adobe.com/it/it/sign/pricing/plans.html), per cui puoi scegliere il modello di prezzo più adatto alle tue esigenze. Ora che sai quanto è facile incorporare l’API di Sign nelle tue app, potresti essere interessato ad altre funzionalità come [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), un modello di programmazione basato su push. Anziché richiedere all’app di eseguire controlli frequenti negli eventi Acrobat Sign, i webhook consentono di registrare un URL HTTP per il quale l’API di Sign esegue una richiesta di richiamata POST ogni volta che si verifica un evento. I webhook consentono una programmazione affidabile alimentando l’applicazione con aggiornamenti in tempo reale e istantanei.
+L’API di Acrobat Sign è disponibile per diversi livelli di [piani di firma elettronica per utenti singoli e multiutente](https://acrobat.adobe.com/it/it/sign/pricing/plans.html), per cui puoi scegliere il modello di prezzo più adatto alle tue esigenze. Ora che sai quanto è facile incorporare l’API di Sign nelle tue app, potresti essere interessato ad altre funzionalità come [Acrobat Sign Webhooks](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md), un modello di programmazione basato su push. Anziché richiedere all’app di eseguire controlli frequenti negli eventi Acrobat Sign, i webhook consentono di registrare un URL HTTP per il quale l’API di Sign esegue una richiesta di richiamata POST ogni volta che si verifica un evento. I webhook consentono una programmazione affidabile alimentando l’applicazione con aggiornamenti in tempo reale e istantanei.
 
-Consulta il [prezzo in base al consumo](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), per sapere quando termina la versione di prova gratuita di Adobe PDF Services API per sei mesi e quando termina l&#39;API gratuita di Adobe PDF Embed.
+Consulta il [prezzo in base al consumo](https://developer.adobe.com/document-services/pricing/main), per sapere quando termina la versione di prova gratuita di Adobe PDF Services API per sei mesi e quando termina l&#39;API gratuita di Adobe PDF Embed.
 
 Per aggiungere all&#39;app funzionalità straordinarie, come la creazione automatica di documenti e la firma di documenti, inizia con [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).

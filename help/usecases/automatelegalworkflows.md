@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -239,7 +239,7 @@ Anche se il nome del tag è lo stesso, la differenza principale tra Frase e Sezi
 
 ## Aggiungere tag per Acrobat Sign
 
-Acrobat Sign consente di inviare accordi da firmare o incorporarli nell’esperienza web in modo che altri utenti possano visualizzarli e firmarli facilmente. Adobe di Document Generation Tagger in Microsoft Word consente di applicare facilmente i pre-tag ai documenti prima che vengano inviati con Acrobat Sign, in modo da posizionare sempre le firme nella posizione corretta. In questo scenario, due firmatari devono disporre di un luogo in cui firmare e datare il documento.
+Acrobat Sign consente di inviare accordi da firmare o incorporarli nell’esperienza web in modo che altri utenti possano visualizzarli e firmarli facilmente. Adobe Document Generation Tagger in Microsoft Word consente di applicare facilmente i pre-tag ai documenti prima che vengano inviati con Acrobat Sign, in modo da posizionare sempre le firme nella posizione corretta. In questo scenario, due firmatari devono disporre di un luogo in cui firmare e datare il documento.
 
 1. Seleziona il punto che il cliente deve firmare.
 1. Posiziona il cursore nel punto in cui la firma deve andare.
@@ -362,7 +362,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Inviare un accordo per la firma
 
-[Adobe Acrobat Sign](https://www.adobe.com/it/sign.html) consente di inviare gli accordi a uno o più destinatari che potranno così visualizzare e firmare i documenti. Oltre a un’esperienza utente di facile utilizzo per inviare un documento per la firma, sono disponibili API REST che consentono di accettare Word, PDF, HTML e altri formati e di inviarli per la firma.
+[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) consente di inviare gli accordi a uno o più destinatari che potranno così visualizzare e firmare i documenti. Oltre a un’esperienza utente di facile utilizzo per inviare un documento per la firma, sono disponibili API REST che consentono di accettare Word, PDF, HTML e altri formati e di inviarli per la firma.
 
 L’esempio seguente spiega come utilizzare la pagina della documentazione API REST per acquisire il documento generato in precedenza e inviarlo per la firma. Scopri innanzitutto come farlo tramite l’interfaccia web di Acrobat Sign e quindi come farlo con l’API REST.
 
@@ -590,5 +590,5 @@ Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Servi
 * Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].

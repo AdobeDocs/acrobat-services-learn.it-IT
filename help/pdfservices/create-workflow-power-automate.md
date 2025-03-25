@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -31,7 +31,7 @@ In questo tutorial pratico scopri come:
 ### Cosa serve
 
 * **Credenziali di prova o produzione per i servizi Adobe PDF**
-Ulteriori informazioni su come ottenere e configurare le credenziali in Microsoft Power Automate [qui](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/getting-credentials-power-automate.html).
+Ulteriori informazioni su come ottenere e configurare le credenziali in Microsoft Power Automate [qui](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate con connettori Premium**
 Scopri come controllare il livello di licenza per Power Automate [qui](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Sono presenti due [file di esempio](assets/sample-assets.zip) che devi decomprim
 
 ### Recupero delle credenziali
 
-Per completare questa esercitazione, è necessario che le credenziali siano già configurate in Microsoft Power Automate per i servizi Adobe PDF. Se non hai completato questo passaggio, consulta le [istruzioni qui](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/getting-credentials-power-automate.html).
+Per completare questa esercitazione, è necessario che le credenziali siano già configurate in Microsoft Power Automate per i servizi Adobe PDF. Se non hai completato questo passaggio, consulta le [istruzioni qui](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Parte 1: Creare un nuovo flusso e convertire Word in PDF
 
@@ -192,11 +192,11 @@ Copia i dati JSON seguenti nel campo **Dati unione**:
 
 >[!TIP]
 >
->L&#39;azione *Genera documento da modello Word* utilizza l&#39;API di generazione del documento di Adobe. Per ulteriori informazioni sulla creazione dei modelli, di seguito sono riportate alcune risorse:
+>L&#39;azione *Genera documento da modello Word* utilizza l&#39;API di Adobe Document Generation. Per ulteriori informazioni sulla creazione dei modelli, di seguito sono riportate alcune risorse:
 >
 >* [Ulteriori informazioni sulla generazione di documenti di Adobe](https://developer.adobe.com/document-services/apis/doc-generation/)
->* [Adobe di Tagger Document Generation per Microsoft Word](https://appsource.microsoft.com/en-US/product/office/WA200002654)
->* [Adobe della documentazione dell’API di Document Generation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)
+>* [Adobe Document Generation Tagger per Microsoft Word](https://appsource.microsoft.com/en-US/product/office/WA200002654)
+>* [Documentazione dell’API di Adobe Document Generation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)
 
 ### Salva il file in OneDrive
 
@@ -313,5 +313,5 @@ Nella cartella OneDrive, viene visualizzato il PDF combinato che ora richiede di
 In questo tutorial, è stato convertito un documento Word in PDF, è stato generato un documento basato su dati, sono stati uniti documenti e protetto con una password. Per ulteriori informazioni, esplora alcune delle altre azioni disponibili nel connettore Adobe PDF Services in Microsoft Power Automate:
 
 * Visualizza i modelli predefiniti disponibili in Microsoft Power Automate.
-* Impara dagli [articoli](https://medium.com/adobetech/tagged/microsoft-power-automate) nel blog tecnico Adobe.
-* Consulta la [documentazione](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) per l&#39;API di Document Generation di Adobe.
+* Impara dagli [articoli](https://medium.com/adobetech/tagged/microsoft-power-automate) nel blog di Adobe Tech.
+* Consulta la [documentazione](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) per l’API di generazione del documento di Adobe.
