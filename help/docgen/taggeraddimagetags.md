@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Scopri come aggiungere tag di immagine ai modelli Microsoft Word utilizzando l’Adobe Document Generation Tagger per inviare dinamicamente le immagini nei documenti utilizzando l’API di Adobe Document Generation.
 
->[!VIDEO](https://video.tv.adobe.com/v/332114?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411732?hidetitle=true&captions=ita)

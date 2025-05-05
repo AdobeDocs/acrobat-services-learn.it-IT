@@ -23,4 +23,4 @@ Scopri come registrarti per un Account Sviluppatore per Acrobat Sign, completame
 >
 >Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3445926?hidetitle=true&captions=ita)

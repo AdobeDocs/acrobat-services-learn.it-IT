@@ -22,4 +22,4 @@ Scopri come creare un documento transitorio da utilizzare con l’API di Acrobat
 >
 >Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/347351?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444778?hidetitle=true&captions=ita)

@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Scopri come aggiungere tabelle ed elenchi di tag ai modelli di Microsoft Word utilizzando Document Generation Tagger di Adobe per aggiungere dinamicamente righe di tabelle o elenchi in base ai dati utilizzando l’API di Document Generation di Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411726?hidetitle=true&captions=ita)

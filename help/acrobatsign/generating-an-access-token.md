@@ -23,4 +23,4 @@ Scopri come generare un token di accesso che può essere utilizzato con l’API 
 >
 >Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/347350?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444197?hidetitle=true&captions=ita)

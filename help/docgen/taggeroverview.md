@@ -19,4 +19,4 @@ ht-degree: 2%
 
 Ottieni una panoramica dell’Adobe Document Generation Tagger progettato per essere utilizzato con l’API di Document Generation di Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/332120?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411720?hidetitle=true&captions=ita)

@@ -23,4 +23,4 @@ Scopri come creare un’applicazione in Acrobat Sign.
 >
 >Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/347348?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444586?hidetitle=true&captions=ita)

@@ -17,4 +17,4 @@ ht-degree: 0%
 
 Scopri come impostare i tag di calcolo numerico nei modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per calcolare le aggregazioni o l’aritmetica dei valori dei dati utilizzando l’API di Adobe Document Generation.
 
->[!VIDEO](https://video.tv.adobe.com/v/332118?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411745?hidetitle=true&captions=ita)

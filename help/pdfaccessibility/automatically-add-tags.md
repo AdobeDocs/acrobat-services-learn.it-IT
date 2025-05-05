@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Scopri come applicare automaticamente i tag per l’accessibilità su larga scala utilizzando l’IA. L&#39;assegnazione automatica dei tag riduce i tempi e i costi necessari per raggiungere la conformità.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446267?hidetitle=true&captions=ita)
