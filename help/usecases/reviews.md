@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -136,7 +136,7 @@ const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-Ora aggiungi un endpoint `/upload ` e salva il file caricato all&#39;interno della cartella delle bozze utilizzando lo stesso nome di file. Quindi, chiamate la funzione che avete scritto in precedenza per creare un file PDF dello stesso documento, se non è già in formato PDF. Potete generare un nome file per il nuovo file PDF in base al nome del documento caricato originale:
+Ora aggiungi un endpoint `/upload` e salva il file caricato all&#39;interno della cartella delle bozze utilizzando lo stesso nome di file. Quindi, chiamate la funzione che avete scritto in precedenza per creare un file PDF dello stesso documento, se non è già in formato PDF. Potete generare un nome file per il nuovo file PDF in base al nome del documento caricato originale:
 
 ```
 // Create a PDF file from an uploaded file

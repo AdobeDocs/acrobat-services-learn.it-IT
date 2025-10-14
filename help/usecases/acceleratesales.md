@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Da white paper a contratti e accordi, sono necessari numerosi documenti per tutt
 
 I contratti di vendita, i contratti e altri documenti possono variare notevolmente in base a criteri specifici. Ad esempio, un contratto di vendita può includere solo alcuni termini in base a criteri specifici, come l&#39;appartenenza a un determinato paese o stato o l&#39;inclusione di determinati prodotti come parte del contratto. La creazione manuale di questi documenti o la gestione di diverse varianti di modelli può aumentare notevolmente i costi legali associati alla revisione manuale delle modifiche.
 
-[L&#39;API per la generazione di documenti di Adobe](https://developer.adobe.com/document-services/apis/doc-generation/) consente di acquisire dati dal sistema CRM o da altri sistemi di dati per generare dinamicamente documenti di vendita basati su tali dati.
+[L&#39;API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation/) di Adobe consente di prelevare dati dal sistema CRM o da altri sistemi di dati per generare dinamicamente documenti di vendita basati su tali dati.
 
 ## Ottieni credenziali
 
@@ -130,7 +130,7 @@ Quindi, passate al pannello Tag di Document Generation per inserire i tag nel do
 
    ![Schermata di inserimento del tag](assets/accsales_5.png)
 
-   Questo processo inserisce un tag denominato {{company.name}} perché il tag si trova sotto il percorso nel JSON.
+   Questo processo inserisce un tag denominato `{{company.name}}` perché il tag si trova sotto il percorso nel JSON.
 
    ```
    {
@@ -189,7 +189,7 @@ I calcoli numerici consentono di calcolare somme e altri calcoli in base a una r
 1. In *[!UICONTROL Seleziona tipo di calcolo]*, scegli **[!UICONTROL Aggregazione]**.
 1. In *[!UICONTROL Seleziona tipo]*, scegli **[!UICONTROL Somma]**.
 1. In *[!UICONTROL Seleziona record]*, scegli **[!UICONTROL ReferencesOrder]**.
-1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]&#x200B;**, scegliere &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
+1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]**, scegliere **[!UICONTROL totalPaymentsDue.price]**.
 1. Selezionare **[!UICONTROL Inserisci calcolo]**.
 
 Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Esempio:
@@ -257,11 +257,11 @@ Questo processo sostituisce l&#39;immagine con un&#39;immagine che si trova nell
 
 ## Aggiungere tag per Acrobat Sign
 
-Adobe Acrobat Sign consente di acquisire firme elettroniche sui documenti. Acrobat Sign consente di trascinare facilmente i campi all’interno dell’interfaccia Web. Tuttavia, è possibile controllare la firma e l’inserimento di altri campi anche mediante un tag di testo. Con Adobe Document Generation Tagger, potete facilmente inserire questi campi per tag di testo.
+Adobe Acrobat Sign consente di acquisire firme elettroniche sui documenti. Acrobat Sign consente di trascinare facilmente i campi all’interno dell’interfaccia Web. Tuttavia, è possibile controllare la firma e l’inserimento di altri campi anche mediante un tag di testo. Con Adobe Document Generation Tagger potete facilmente inserire questi campi per tag di testo.
 
 1. Individua il punto in cui è richiesta una firma nel documento di esempio.
 1. Inserire il cursore dove è necessaria la firma.
-1. Nel pannello *[!UICONTROL Adobe di Document Generation Tagger]*, selezionate **[!UICONTROL Adobe Sign]**.
+1. Nel pannello *[!UICONTROL Adobe Document Generation Tagger]*, selezionate **[!UICONTROL Adobe Sign]**.
 1. Nel campo *[!UICONTROL Specificare il numero di destinatari]*, impostare il numero di destinatari (in questo esempio si tratta di uno).
 1. Nel campo *[!UICONTROL Destinatari]*, seleziona **[!UICONTROL Firmatario-1]**.
 1. Nel tipo *[!UICONTROL Campo]*, selezionare **[!UICONTROL Firma]**.
@@ -272,6 +272,7 @@ Nel documento viene inserito un tag.
 ![Schermata del tag di firma nel documento](assets/accsales_15.png)
 
 In Acrobat Sign sono disponibili diversi altri tipi di campi, ad esempio i campi data.
+
 1. Nel tipo *Campo*, selezionare **[!UICONTROL Data]**.
 1. Sposta il cursore sopra la posizione della data nel documento.
 1. Seleziona **[!UICONTROL Inserisci tag di testo Adobe Sign]**.
@@ -367,11 +368,11 @@ Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Servi
 * Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].
 =======
 * Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
-* Segui [il blog tecnico Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
+* Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services]
