@@ -26,7 +26,7 @@ per fornire il contesto per le app e i servizi. Il commerciante del sito vuole c
 
 ## Cosa puoi imparare
 
-In questo tutorial pratico, scoprite come visualizzare i documenti PDF incorporati nelle pagine Web utilizzando [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed), che è gratuito e facile da usare. In questi esempi vengono utilizzati alcuni JavaScript, Node.js, Express.js, HTML e CSS. Puoi visualizzare il codice completo del progetto in [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
+In questo tutorial pratico, scoprite come visualizzare i documenti PDF incorporati nelle pagine Web utilizzando [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed), che è gratuito e facile da usare. In questi esempi vengono utilizzati alcuni JavaScript, Node.js, Express.js, HTML e CSS. Puoi visualizzare il codice completo del progetto in [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
 
 ## API e risorse pertinenti
 
@@ -34,7 +34,7 @@ In questo tutorial pratico, scoprite come visualizzare i documenti PDF incorpora
 
 * [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Codice progetto](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [Codice progetto](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## Creazione di un&#39;app Web nodo
 
@@ -347,7 +347,7 @@ Eseguire ora l&#39;applicazione con il comando npm start e aprire il sito Web in
 
 Infine, scegli un white paper e fai clic su **Visualizza documento** per aprire una nuova pagina con il PDF incorporato in linea:
 
-![Schermata del white paper PDF ](assets/ddp_11.png)
+![Schermata del white paper PDF &#x200B;](assets/ddp_11.png)
 
 Osservate come sono ora presenti le opzioni Scarica PDF e Stampa PDF.
 
