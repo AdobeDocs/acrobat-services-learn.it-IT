@@ -8,19 +8,19 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: 3dda76423509e444defc962c12a26c835d63cafa
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 3%
+source-wordcount: '239'
+ht-degree: 5%
 
 ---
 
 
 # [!DNL Adobe Acrobat Services] Tutorials API {#tutorials}
 
-+ [Panoramica](overview.md)
-+ API di Servizi PDF {#pdfservices}
-   + [Panoramica](pdfservices/overview-pdfservices.md)
++ [Overview](overview.md)
++ API di PDF Services {#pdfservices}
+   + [Overview](pdfservices/overview-pdfservices.md)
    + [Recupero delle credenziali per Microsoft Power Automate](pdfservices/getting-credentials-power-automate.md)
    + [Crea il tuo primo flusso in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
    + [Crea PDF da HTML](pdfservices/createpdffromhtml.md)
@@ -29,9 +29,9 @@ ht-degree: 3%
    + [Guida introduttiva all&#39;API di Adobe PDF Services e a .Net](pdfservices/gettingstartednet.md)
    + [Utilizzo dell’API di Adobe PDF Services per i file OCR PDF](pdfservices/ocr.md)
 + API di Document Generation {#docgen}
-   + [Panoramica](docgen/overview-docgen.md)
+   + [Overview](docgen/overview-docgen.md)
    + [Generazione automatica dei documenti](docgen/automate-doc-gen.md)
-   + Creazione dei modelli {#docgentemplates}
+   + Creazione di modelli {#docgentemplates}
       + [Panoramica di Adobe Document Generation Tagger](docgen/taggeroverview.md)
       + [Aggiunta di tag di testo](docgen/taggeraddtexttags.md)
       + [Aggiunta di tag immagine](docgen/taggeraddimagetags.md)
@@ -39,19 +39,19 @@ ht-degree: 3%
       + [Impostazione dei tag di calcolo numerico](docgen/taggercalculations.md)
       + [Impostazione del contenuto condizionale](docgen/taggerconditional.md)
 + API per tag automatici accessibilità PDF {#pdfaccessibility}
-   + [Panoramica](pdfaccessibility/overview-accessibility.md)
+   + [Overview](pdfaccessibility/overview-accessibility.md)
    + [Applicare automaticamente i tag ai documenti per l’accessibilità](pdfaccessibility/automatically-add-tags.md)
 + API PDF Extract {#pdfextract}
-   + [Panoramica](pdfextract/overview-extract.md)
+   + [Overview](pdfextract/overview-extract.md)
    + [Automatizzare l&#39;estrazione dei contenuti](pdfextract/automate-content-extraction.md)
 + API sigillo elettronico PDF {#eseal}
-   + [Panoramica](pdfelectronicseal/overview-electronic-seal.md)
+   + [Overview](pdfelectronicseal/overview-electronic-seal.md)
    + [Applica automaticamente il sigillo elettronico](pdfelectronicseal/automatically-apply-electronic-seal.md)
 + API PDF Embed {#pdfembed}
-   + [Panoramica](pdfembed/overview-embed.md)
+   + [Overview](pdfembed/overview-embed.md)
    + [Controlla la tua esperienza online di PDF e raccogli analisi](pdfembed/controlpdfexperience.md)
-+ API Acrobat Sign {#acrobatsign}
-   + [Panoramica](acrobatsign/overview-sign.md)
++ API di Acrobat Sign {#acrobatsign}
+   + [Overview](acrobatsign/overview-sign.md)
    + [Guida introduttiva all’API di Adobe Sign](acrobatsign/signapi.md)
    + Partner OEM/incorporato {#oem}
       + [Iscrizione a un account sviluppatore](acrobatsign/sign-up-developer-account.md)
@@ -60,7 +60,7 @@ ht-degree: 3%
       + [Generazione di un token di accesso](acrobatsign/generating-an-access-token.md)
       + [Creazione di un documento transitorio](acrobatsign/creating-a-transient-document.md)
 + Casi di utilizzo {#usecases}
-   + [Panoramica](usecases/overview-usecases.md)
+   + [Overview](usecases/overview-usecases.md)
    + [Automatizzare i flussi di lavoro legali](usecases/automatelegalworkflows.md)
    + [Modernizzazione dell&#39;inserimento dei dipendenti](usecases/employeeonboarding.md)
    + [Velocizzare il processo di vendita](usecases/acceleratesales.md)
@@ -78,4 +78,4 @@ ht-degree: 3%
    + [Gestione dei flussi di lavoro dei documenti finanziari in Java](usecases/financeworkflowsjava.md)
    + [Gestione delle fatture](usecases/invoices.md)
    + [Pubblicazione di documenti digitali](usecases/ddppdfembedapi.md)
-
++ [File nascosto per il test](hidden-file.md)
