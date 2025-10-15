@@ -1,10 +1,10 @@
 ---
-source-git-commit: 345d62fbdbe12f2c369ea073ce8e6e942bdad9c9
+source-git-commit: e3d558d753cfc578a4ebcc6b261ab47dcc5f3a54
 workflow-type: tm+mt
-source-wordcount: '14'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-# Document Services
+# ARCHIVIATO
 
-Home per i documenti DC SDK Document Services, ad esempio domande frequenti, esercitazioni e così via.
+Migrazione a GitHub Cloud: <https://github.com/Adobe-Enterprise-Docs/acrobat-services-learn.en>
