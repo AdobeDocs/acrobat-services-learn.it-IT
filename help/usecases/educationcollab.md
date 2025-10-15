@@ -197,7 +197,7 @@ Ecco un&#39;immagine della console del browser Web:
 
 Questa schermata mostra che lo studente ha aperto il file di assegnazione, ha letto la prima pagina - o non ha fatto scorrere le pagine aggiuntive o il documento aveva una sola pagina - poi ha scaricato il file. Puoi raccogliere queste metriche per eseguire analisi e studiare il comportamento degli studenti.
 
-Inoltre, [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) è integrato con PDF Embed API. Pertanto, se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare le metriche nel tuo abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l’ID suite al costruttore PDF Embed API. (Si noti che è necessario utilizzare le credenziali API di PDF Embed e non le credenziali API di PDF Services).
+Inoltre, [Adobe Analytics](https://business.adobe.com/it/products/adobe-analytics.html) è integrato con PDF Embed API. Pertanto, se disponi di un abbonamento alla suite Adobe Analytics, puoi pubblicare le metriche nel tuo abbonamento. Per pubblicare le metriche in Adobe Analytics, è sufficiente passare l’ID suite al costruttore PDF Embed API. (Si noti che è necessario utilizzare le credenziali API di PDF Embed e non le credenziali API di PDF Services).
 
 Di seguito è riportato un codice di esempio che mostra come passare l&#39;ID suite al costruttore API PDF Embed:
 
