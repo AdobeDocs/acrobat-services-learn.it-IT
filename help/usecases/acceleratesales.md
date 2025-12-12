@@ -189,7 +189,7 @@ I calcoli numerici consentono di calcolare somme e altri calcoli in base a una r
 1. In *[!UICONTROL Seleziona tipo di calcolo]*, scegli **[!UICONTROL Aggregazione]**.
 1. In *[!UICONTROL Seleziona tipo]*, scegli **[!UICONTROL Somma]**.
 1. In *[!UICONTROL Seleziona record]*, scegli **[!UICONTROL ReferencesOrder]**.
-1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]**, scegliere **[!UICONTROL totalPaymentsDue.price]**.
+1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]&#x200B;**, scegliere &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
 1. Selezionare **[!UICONTROL Inserisci calcolo]**.
 
 Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Esempio:

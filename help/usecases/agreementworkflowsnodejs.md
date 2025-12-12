@@ -302,7 +302,7 @@ L’ultimo bit di codice necessario è una funzione che visualizza il documento 
 
 La demo [API Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ti consente di visualizzare in anteprima le varie altre opzioni per incorporare i documenti PDF.
 
-![Immagine delle opzioni di incorporamento di PDF ](assets/AWNjs_7.png)
+![Immagine delle opzioni di incorporamento di PDF &#x200B;](assets/AWNjs_7.png)
 
 Puoi attivare e disattivare varie opzioni e vedere immediatamente come vengono eseguite. Quando trovi una combinazione che ti piace, fai clic sul pulsante *\&lt;/\> Genera codice* per generare il codice HTML effettivo utilizzando tali opzioni.
 

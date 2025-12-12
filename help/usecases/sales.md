@@ -79,7 +79,7 @@ Dopo aver generato i tag, potete inserirli nel documento. I tag vengono aggiunti
 
 ## Utilizzo delle API
 
-Vai alla [!DNL Acrobat Services]home page[ delle API ](https://developer.adobe.com/document-services/apis/doc-generation). Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
+Vai alla [!DNL Acrobat Services]home page[&#x200B; delle API &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation). Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
 
 Seleziona **API dei servizi PDF** come servizio preferito e compila gli altri dettagli come illustrato di seguito.
 
