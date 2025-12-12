@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -429,3 +429,4 @@ L&#39;applicazione completata semplifica notevolmente l&#39;aggiunta di tag a [m
 Le organizzazioni utilizzano le API [!DNL Adobe Acrobat Services] per completezza e facilità d&#39;uso. Puoi usufruire di una [prova gratuita di sei mesi e poi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main). Paghi solo per quello che usi. Inoltre, l’API PDF Embed è sempre gratuita.
 
 Pronto a incrementare la produttività migliorando il flusso dei documenti? [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) oggi.
+

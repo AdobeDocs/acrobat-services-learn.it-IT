@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2824'
 ht-degree: 0%
 
 ---
@@ -592,3 +592,4 @@ Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Servi
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
 * Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].
+

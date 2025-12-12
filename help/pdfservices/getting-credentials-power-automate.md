@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
@@ -116,7 +116,7 @@ Come descritto all’inizio di questa esercitazione, crea un nuovo flusso, aggiu
 
 Come mostrato nella schermata precedente, puoi passare a un account aziendale o configurare un nuovo account dell&#39;organizzazione. Una volta completata l’operazione, potrai aggiungere l’azione Servizi Adobe PDF.
 
-Per ulteriori informazioni sulla creazione del primo flusso di lavoro di Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Creazione del primo flusso di lavoro in Microsoft Power Automate](https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
+Per ulteriori informazioni sulla creazione del primo flusso di lavoro di Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Creazione del primo flusso di lavoro in Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
 
 ## Risorse aggiuntive
 
@@ -127,3 +127,4 @@ Per ulteriori informazioni, consulta un elenco di risorse aggiuntive:
 * Il nostro contenuto video live, [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), contiene anche video che illustrano l’utilizzo di Power Automate.
 * Nel [blog Adobe Tech](https://medium.com/adobetech/tagged/microsoft-power-automate) sono disponibili numerosi articoli su come utilizzare Power Automate.
 * Infine, assicurati di consultare anche la documentazione di base di [PDF Services](https://developer.adobe.com/document-services/docs/overview/).
+

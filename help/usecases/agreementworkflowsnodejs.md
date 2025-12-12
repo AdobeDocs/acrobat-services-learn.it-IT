@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: In evidenza
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -302,7 +302,7 @@ L’ultimo bit di codice necessario è una funzione che visualizza il documento 
 
 La demo [API Adobe PDF Embed](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ti consente di visualizzare in anteprima le varie altre opzioni per incorporare i documenti PDF.
 
-![Immagine delle opzioni di incorporamento di PDF &#x200B;](assets/AWNjs_7.png)
+![Immagine delle opzioni di incorporamento di PDF ](assets/AWNjs_7.png)
 
 Puoi attivare e disattivare varie opzioni e vedere immediatamente come vengono eseguite. Quando trovi una combinazione che ti piace, fai clic sul pulsante *\&lt;/\> Genera codice* per generare il codice HTML effettivo utilizzando tali opzioni.
 
@@ -351,7 +351,7 @@ All’utente viene richiesto di accedere al proprio ID per Adobe Sign. Dopo aver
 
 Se l&#39;utente fa clic su *Consenti accesso* nell&#39;URL di reindirizzamento, un parametro di query denominato codice passa il codice di autorizzazione:
 
-https://YourServer.com/?code=**\&lt;codice_autorizzazione\>**\&amp;api_access_point=https://api.adobesign.com&amp;web_access_point=https://secure.adobesign.com
+https://YourServer.com/?code=**\<codice_autorizzazione\>**\&api_access_point=https://api.adobesign.com&web_access_point=https://secure.adobesign.com
 
 La pubblicazione di questo codice sul server Adobe Sign insieme all’ID client e al segreto client fornisce un token di accesso per accedere al servizio. Salvare i valori nei parametri `api_access_point` e `web_access_point`. Questi valori vengono utilizzati per ulteriori richieste.
 
@@ -520,3 +520,5 @@ Come si può vedere dalla procedura di avvio rapido e dal codice fornito, è fac
 Per individuare gli ambiti necessari per una chiamata o per vedere come viene compilata la chiamata, è possibile creare chiamate di esempio dalla [documentazione API REST](https://secure.na4.adobesign.com/public/docs/restapi/v6). In [Quickstart](https://github.com/adobe/pdftools-node-sdk-samples) sono inoltre disponibili altre funzionalità e formati di file per i processi delle API [!DNL Adobe Acrobat Services].
 
 Puoi aggiungere numerose funzionalità di PDF alle tue applicazioni, consentendo agli utenti di visualizzare e firmare in modo facile e veloce i documenti e molto altro ancora. Per iniziare, controlla [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) oggi.
+
+

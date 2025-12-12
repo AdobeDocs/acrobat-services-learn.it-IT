@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 0%
@@ -327,3 +327,4 @@ Ora puoi visualizzare la demo.
 ## Risorse aggiuntive
 
 Ulteriori risorse sono disponibili [qui](https://developer.adobe.com/document-services/docs/overview).
+
