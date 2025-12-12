@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Scopri come impostare le sezioni nei modelli di Microsoft Word utilizzando Adobe Document Generation Tagger per includere o escludere dinamicamente sezioni di un documento basate sui dati utilizzando l’API di Adobe Document Generation.
 
->[!VIDEO](https://video.tv.adobe.com/v/332117?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411739?captions=ita&hidetitle=true)
 
