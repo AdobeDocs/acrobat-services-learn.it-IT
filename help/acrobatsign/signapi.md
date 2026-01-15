@@ -276,7 +276,7 @@ In alternativa ai moduli Web, puoi creare gli accordi. Nelle sezioni seguenti ve
 
 Quando si invia un documento a destinatari specificati per la firma o l’approvazione, viene creato un accordo. Puoi tenere traccia dello stato e del completamento di un accordo utilizzando le API.
 
-Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
+Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/it/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1

@@ -21,11 +21,11 @@ L’API per sigilli elettronici di Adobe PDF applica un sigillo elettronico ai d
 <!-- Comment -->
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
+* https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
   {target = _self}
   {title = Automatically apply an electronic seal}
   {description = Learn how to apply a tamper-evident electronic seal to PDFs at scale}
-  {image = https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium}
+  {image = https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium}
   {cta = Watch}
 
 -->
@@ -37,8 +37,8 @@ L’API per sigilli elettronici di Adobe PDF applica un sigillo elettronico ai d
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" title="Applica automaticamente un sigillo elettronico" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium" alt="Applica automaticamente un sigillo elettronico"
+                    <a href="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" title="Applica automaticamente un sigillo elettronico" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/media_1c3d300ec38133fdf7b4f8eb7c16d560e8a776e5c.png?width=400&format=webply&optimize=medium" alt="Applica automaticamente un sigillo elettronico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -46,11 +46,11 @@ L’API per sigilli elettronici di Adobe PDF applica un sigillo elettronico ai d
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" title="Applica automaticamente un sigillo elettronico">Applica automaticamente un sigillo elettronico</a>
+                        <a href="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" title="Applica automaticamente un sigillo elettronico">Applica automaticamente un sigillo elettronico</a>
                     </p>
                     <p class="is-size-6">Scopri come applicare un sigillo elettronico a prova di manomissione ai PDF su larga scala</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
