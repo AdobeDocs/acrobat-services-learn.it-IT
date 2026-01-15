@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
@@ -276,7 +276,7 @@ In alternativa ai moduli Web, puoi creare gli accordi. Nelle sezioni seguenti ve
 
 Quando si invia un documento a destinatari specificati per la firma o l’approvazione, viene creato un accordo. Puoi tenere traccia dello stato e del completamento di un accordo utilizzando le API.
 
-Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/it/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
+Puoi creare un accordo utilizzando un [documento transitorio](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), un [documento libreria](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) o un URL. In questo esempio, l’accordo si basa su `transientDocumentId`, proprio come il modulo Web creato in precedenza.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -441,4 +441,3 @@ L’API di Acrobat Sign è disponibile per diversi livelli di [piani di firma el
 Consulta il [prezzo in base al consumo](https://developer.adobe.com/document-services/pricing/main), per sapere quando termina la versione di prova gratuita di Adobe PDF Services API per sei mesi e quando termina l&#39;API gratuita di Adobe PDF Embed.
 
 Per aggiungere all&#39;app funzionalità straordinarie, come la creazione automatica di documenti e la firma di documenti, inizia con [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).
-

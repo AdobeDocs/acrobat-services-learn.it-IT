@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Dopo aver generato i tag, potete inserirli nel documento. I tag vengono aggiunti
 
 ## Utilizzo delle API
 
-Vai alla [!DNL Acrobat Services]home page[&#x200B; delle API &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation). Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
+Vai alla [!DNL Acrobat Services]home page[ delle API ](https://developer.adobe.com/document-services/apis/doc-generation). Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
 
 Seleziona **API dei servizi PDF** come servizio preferito e compila gli altri dettagli come illustrato di seguito.
 
@@ -146,4 +146,3 @@ Hai iniziato con un processo inefficiente e noioso che richiedeva automazione. S
 Con Microsoft Forms, i clienti ottengono dati critici che andranno nelle loro proposte uniche. È stato creato un modello di proposta di vendita in Microsoft Word per fornire il testo statico che non si desidera ricreare ogni volta. Hai quindi utilizzato [!DNL Acrobat Services] API per unire i dati del modulo e del modello per creare un PDF delle proposte di vendita per i tuoi clienti in modo più efficiente.
 
 Questo tutorial pratico offre solo un’idea di ciò che è possibile fare con queste API. Per scoprire altre soluzioni, visita la pagina delle API [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Usa tutti questi strumenti gratuitamente per sei mesi. Quindi, paga solo $0,05 per transazione documento sul piano [pay-as-you-go](https://developer.adobe.com/document-services/pricing/main), in modo da pagare solo quando il tuo team aggiunge più prospettive alla tua pipeline delle vendite.
-

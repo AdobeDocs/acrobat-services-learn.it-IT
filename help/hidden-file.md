@@ -3,13 +3,13 @@ title: File nascosto
 description: File nascosto a scopo di test
 hide: true
 hidefromtoc: true
-source-git-commit: 3dda76423509e444defc962c12a26c835d63cafa
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '10'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 # File nascosto
 
-15 ottobre 2025
+venerdì 15 gennaio 2026

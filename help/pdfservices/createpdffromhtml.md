@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6673
 thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -107,11 +107,8 @@ Il PDF verrà creato nel percorso indicato nell&#39;output, che per impostazione
 API dei servizi PDF [Documentazione](https://www.adobe.com/go/pdftoolsapi_doc)
 
 * [Domande frequenti](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) per le domande sull&#39;API di PDF Services
-
 * [Contattaci](https://www.adobe.com/go/pdftoolsapi_requestform) per domande su licenze e prezzi
-
 * Articoli correlati:
-  [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Versione di luglio di [!DNL Adobe Acrobat Services]: PDF Embed e PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
-
+   * [La nuova API di PDF Services offre ancora più funzionalità per i flussi di lavoro dei documenti](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+   * [Versione di luglio di [!DNL Adobe Acrobat Services]: PDF Embed e PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

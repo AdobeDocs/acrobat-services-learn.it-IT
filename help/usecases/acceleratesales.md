@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -189,7 +189,7 @@ I calcoli numerici consentono di calcolare somme e altri calcoli in base a una r
 1. In *[!UICONTROL Seleziona tipo di calcolo]*, scegli **[!UICONTROL Aggregazione]**.
 1. In *[!UICONTROL Seleziona tipo]*, scegli **[!UICONTROL Somma]**.
 1. In *[!UICONTROL Seleziona record]*, scegli **[!UICONTROL ReferencesOrder]**.
-1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]&#x200B;**, scegliere &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
+1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]**, scegliere **[!UICONTROL totalPaymentsDue.price]**.
 1. Selezionare **[!UICONTROL Inserisci calcolo]**.
 
 Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Esempio:
@@ -370,10 +370,11 @@ Vuoi saperne di più? Scopri altri modi per utilizzare [!DNL Adobe Acrobat Servi
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
 * Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services].
+
 =======
+
 * Ulteriori informazioni dalla [documentazione](https://developer.adobe.com/document-services/docs/overview/)
 * Vedi altre esercitazioni su Adobe Experience League
 * Utilizza gli script di esempio nella cartella /src per scoprire come utilizzare PDF
 * Segui [Blog Adobe](https://medium.com/adobetech/tagged/adobe-document-cloud) per suggerimenti e trucchi più recenti
 * Abbonati a [Paper Clips (lo streaming dal vivo mensile)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) per informazioni sull&#39;automazione tramite [!DNL Adobe Acrobat Services]
-
