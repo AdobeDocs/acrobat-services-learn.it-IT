@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 1%
@@ -127,4 +127,3 @@ Per ulteriori informazioni, consulta un elenco di risorse aggiuntive:
 * Il nostro contenuto video live, [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), contiene anche video che illustrano l’utilizzo di Power Automate.
 * Nel [blog Adobe Tech](https://medium.com/adobetech/tagged/microsoft-power-automate) sono disponibili numerosi articoli su come utilizzare Power Automate.
 * Infine, assicurati di consultare anche la documentazione di base di [PDF Services](https://developer.adobe.com/document-services/docs/overview/).
-
