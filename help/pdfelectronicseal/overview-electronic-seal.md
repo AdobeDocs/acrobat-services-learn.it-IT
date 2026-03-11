@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 L’API per sigilli elettronici di Adobe PDF applica un sigillo elettronico ai documenti su larga scala utilizzando un certificato emesso da determinati TSP (Trust Service Provider) in [Adobe Approved Trust List (AATL)](https://helpx.adobe.com/it/acrobat/kb/approved-trust-list1.html). Il sigillo elettronico consente di verificare l’identità e l’integrità dei documenti. Questa opzione può essere utilizzata per apporre un sigillo elettronico ai documenti su larga scala ed è inclusa nell’API di PDF Services.
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
   {target = _self}
