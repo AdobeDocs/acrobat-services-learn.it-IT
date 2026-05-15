@@ -8,9 +8,15 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cRSC1vIKbwdoQhwz8HkU-L6sO7ENukJhOqgw2C1O-6Y
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: 1487
 ht-degree: 0%
 
 ---
@@ -35,9 +41,9 @@ Il codice completo per questo progetto è [disponibile su GitHub](https://github
 
 ## API e risorse pertinenti
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
+* [API di Adobe Document Generation](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 

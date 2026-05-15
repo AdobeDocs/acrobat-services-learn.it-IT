@@ -8,9 +8,15 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xZ2TGxtFDXGq33Zcr1BvJ2V0v7goacfO8Z62mGINeTk
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: 1789
 ht-degree: 0%
 
 ---
@@ -189,10 +195,10 @@ I calcoli numerici consentono di calcolare somme e altri calcoli in base a una r
 1. In *[!UICONTROL Seleziona tipo di calcolo]*, scegli **[!UICONTROL Aggregazione]**.
 1. In *[!UICONTROL Seleziona tipo]*, scegli **[!UICONTROL Somma]**.
 1. In *[!UICONTROL Seleziona record]*, scegli **[!UICONTROL ReferencesOrder]**.
-1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]&#x200B;**, scegliere &#x200B;** [!UICONTROL totalPaymentsDue.price]**.
+1. In *[!UICONTROL Selezionare l&#39;elemento da aggregare]**, scegliere **[!UICONTROL totalPaymentsDue.price]**.
 1. Selezionare **[!UICONTROL Inserisci calcolo]**.
 
-Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Esempio:
+Questo processo inserisce un tag di calcolo che fornisce la somma dei valori. È possibile eseguire calcoli più avanzati utilizzando i calcoli JSONata. Ad esempio:
 
 * Subtotale: `${{expr($sum(referencesOrder.totalPaymentDue.price))}}`
 Calcola la somma di referencesOrder.totalPaymentDue.price.

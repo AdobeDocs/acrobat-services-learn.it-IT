@@ -8,9 +8,15 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/3XG9hVuP8EXiHP19m-werP4yFx8ae-VIPuS7N0V2jpQ
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: 1960
 ht-degree: 0%
 
 ---
@@ -27,7 +33,7 @@ In questo tutorial pratico scopri come implementare un modulo HR basato su web c
 
 ## API e risorse pertinenti
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
@@ -35,7 +41,7 @@ In questo tutorial pratico scopri come implementare un modulo HR basato su web c
 
 ## Generazione delle credenziali API
 
-Registrati per iniziare alla versione di prova gratuita delle API di Adobe PDF Services. Visitate il [sito Web](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) dell&#39;Adobe[&#x200B; e fate clic sul pulsante &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK)Introduzione *in* Crea nuove credenziali *.* La versione di prova gratuita fornisce 1.000 transazioni di documenti che possono essere utilizzati nell&#39;arco di sei mesi. Nella pagina successiva (vedi di seguito), scegli il servizio (API di PDF Services), imposta il nome delle credenziali (ad esempio, HRDocumentWFCredentials) e immetti una descrizione.
+Registrati per iniziare alla versione di prova gratuita delle API di Adobe PDF Services. Visitate il [sito Web[ dell&#39;Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) e fate clic sul pulsante *Introduzione* in *Crea nuove credenziali*. ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK)La versione di prova gratuita fornisce 1.000 transazioni di documenti che possono essere utilizzati nell&#39;arco di sei mesi. Nella pagina successiva (vedi di seguito), scegli il servizio (API di PDF Services), imposta il nome delle credenziali (ad esempio, HRDocumentWFCredentials) e immetti una descrizione.
 
 Selezionare il linguaggio (Java per questo esempio) e controllare *Creare esempi di codice personalizzati*. L’ultimo passaggio garantisce che gli esempi di codice contengano già il file precompilato pdftools-api-credentials.json che utilizzi, insieme alla chiave privata per autenticare l’app all’interno dell’API.
 
@@ -422,7 +428,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 Prendi nota dei valori forniti per \&lt;YOUR_CODE\> e api_access_point.
 
-Per inviare una richiesta HTTP POST che fornisce il token di accesso, utilizzare i valori ID client, \&lt;CODICE_UTENTE\> e api_access_point. Puoi utilizzare [Postman](https://helpx.adobe.com/it/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
+Per inviare una richiesta HTTP POST che fornisce il token di accesso, utilizzare i valori ID client, \&lt;CODICE_UTENTE\> e api_access_point. Puoi utilizzare [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) o cURL:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"

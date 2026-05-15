@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Jj-xhGUcWVWOMooS2fOPcYmELcH70cG1eRRaPPy66Yk
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: 1442
 ht-degree: 0%
 
 ---
@@ -31,13 +38,13 @@ In questo tutorial pratico, scopri come implementare flussi di lavoro e dati din
 
 * [Microsoft Word](https://www.office.com/)
 
-* [Nodo.js](https://nodejs.org/en/)
+* [Node.js](https://nodejs.org/en/)
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] API](https://developer.adobe.com/document-services/homepage/)
+* [API [!DNL Acrobat Services]](https://developer.adobe.com/document-services/homepage/)
 
-* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
+* [API di Adobe Document Generation](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
@@ -79,7 +86,7 @@ Dopo aver generato i tag, potete inserirli nel documento. I tag vengono aggiunti
 
 ## Utilizzo delle API
 
-Vai alla [!DNL Acrobat Services]home page[&#x200B; delle API &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation). Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
+Vai alla [home page](https://developer.adobe.com/document-services/apis/doc-generation) delle API [!DNL Acrobat Services]. Per iniziare a utilizzare le API [!DNL Acrobat Services], sono necessarie le credenziali per l&#39;applicazione. Scorri fino in fondo e seleziona **Avvia prova gratuita** per creare le credenziali. Puoi utilizzare questi servizi [gratis per sei mesi, quindi pagare in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da pagare solo ciò di cui hai bisogno.
 
 Seleziona **API dei servizi PDF** come servizio preferito e compila gli altri dettagli come illustrato di seguito.
 
@@ -87,9 +94,9 @@ Seleziona **API dei servizi PDF** come servizio preferito e compila gli altri de
 
 Una volta create le credenziali, vengono forniti alcuni esempi di codice. Seleziona la lingua preferita (questo tutorial utilizza Node.js). Le credenziali API sono in un file zip. Estrai i file in PDFToolsSDK-Node.jsSamples.
 
-Per iniziare, crea una cartella vuota denominata doc automatico\*\*.\*\* Nella cartella, eseguire il comando seguente per inizializzare un progetto Node.js: `npm init`. Assegna un nome al progetto &quot;documento automatico&quot;*.*
+Per iniziare, crea una cartella vuota denominata doc automatico\*\*.\*\* Nella cartella, esegui il comando seguente per inizializzare un progetto Node.js: `npm init`. Assegna un nome al progetto &quot;documento automatico&quot;*.*
 
-Nella cartella ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples, c&#39;è un file chiamato pdftools-api-credentials.json. Spostalo insieme a private.key nella cartella del documento automatico. Contiene le tue credenziali API. Inoltre, nella cartella del documento automatico, crea una sottocartella denominata &quot;resources&quot;. Contiene i dati formattati JSON ricevuti dai clienti ogni volta che generi una proposta di vendita. Nella stessa cartella, salva il modello di proposta di vendita da Microsoft Word.
+Nella cartella ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples è presente un file denominato pdftools-api-credentials.json. Spostalo insieme a private.key nella cartella del documento automatico. Contiene le tue credenziali API. Inoltre, nella cartella del documento automatico, crea una sottocartella denominata &quot;resources&quot;. Contiene i dati formattati JSON ricevuti dai clienti ogni volta che generi una proposta di vendita. Nella stessa cartella, salva il modello di proposta di vendita da Microsoft Word.
 
 Ora sei pronto a fare un po&#39; di magia! Poiché si utilizza Node.js in questo tutorial, è necessario installare Node.js [!DNL Acrobat Services] SDK. A tale scopo, nella cartella auto-doc, eseguire yarn add @adobe/documentservices-pdftools-node-sdk.
 
@@ -135,7 +142,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Questo codice ottiene il file JSON dal modulo Microsoft con l&#39;aiuto dei tag creati con [!DNL Acrobat Services]. Unisce quindi i dati con il modello di proposta di vendita creato in Microsoft Word per generare un nuovo PDF. Il PDF viene salvato nel file appena creato./output.
+Questo codice ottiene il file JSON dal modulo Microsoft con l&#39;aiuto dei tag creati con [!DNL Acrobat Services]. Unisce quindi i dati con il modello di proposta di vendita creato in Microsoft Word per generare un nuovo PDF. Il PDF viene salvato nella cartella ./output appena creata.
 
 Inoltre, il codice utilizza [Adobe Sign API](https://developer.adobe.com/adobesign-api/) per richiedere a entrambe le società di firmare la proposta di vendita generata. Per una spiegazione dettagliata di questa API, leggi questo post del blog.
 

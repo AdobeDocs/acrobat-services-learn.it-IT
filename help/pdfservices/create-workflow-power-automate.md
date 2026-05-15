@@ -8,13 +8,17 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: 2046
 ht-degree: 1%
 
 ---
-
 
 # Crea il tuo primo flusso in Microsoft Power Automate
 
@@ -31,7 +35,7 @@ In questo tutorial pratico scopri come:
 ### Cosa serve
 
 * **Credenziali di prova o produzione per i servizi Adobe PDF**
-Ulteriori informazioni su come ottenere e configurare le credenziali in Microsoft Power Automate [qui](https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Ulteriori informazioni su come ottenere e configurare le credenziali in Microsoft Power Automate [qui](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate con connettori Premium**
 Scopri come controllare il livello di licenza per Power Automate [qui](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +50,7 @@ Sono presenti due [file di esempio](assets/sample-assets.zip) che devi decomprim
 
 ### Recupero delle credenziali
 
-Per completare questa esercitazione, è necessario che le credenziali siano già configurate in Microsoft Power Automate per i servizi Adobe PDF. Se non hai completato questo passaggio, consulta le [istruzioni qui](https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Per completare questa esercitazione, è necessario che le credenziali siano già configurate in Microsoft Power Automate per i servizi Adobe PDF. Se non hai completato questo passaggio, consulta le [istruzioni qui](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Parte 1: Creare un nuovo flusso e convertire Word in PDF
 
@@ -112,7 +116,7 @@ Una volta generato il documento, salva nuovamente il file in OneDrive.
 ### Prova flusso
 
 1. In alto a sinistra, seleziona **[!UICONTROL Senza titolo]** per rinominare il flusso.
-1. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Savel]** (Salva).
 1. Seleziona **[!UICONTROL Test]**.
 1. Selezionare **[!UICONTROL Manualmente]**, quindi **[!UICONTROL Salva e verifica]**.
 1. Seleziona **[!UICONTROL Continua]**.
@@ -215,7 +219,7 @@ Una volta generato il documento, puoi salvare nuovamente il file in OneDrive.
 
 ![Eseguire la schermata di flusso in Microsoft Power Automate per richiedere gli input](assets/runFlowParameters.png)
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Savel]** (Salva).
 1. Seleziona **[!UICONTROL Test]**.
 1. Selezionare **[!UICONTROL Manualmente]**, quindi **[!UICONTROL Salva e verifica]**.
 1. Seleziona **[!UICONTROL Continua]**.
@@ -263,7 +267,7 @@ Una volta combinato il documento, è possibile salvarlo nuovamente in OneDrive.
 
 ### Prova flusso
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Savel]** (Salva).
 1. Seleziona **[!UICONTROL Test]**.
 1. Selezionare **[!UICONTROL Manualmente]**, quindi **[!UICONTROL Salva e verifica]**.
 1. Seleziona **[!UICONTROL Continua]**.
@@ -299,7 +303,7 @@ Una volta protetto il documento, puoi salvare di nuovo il file in OneDrive. In q
 
 ### Prova flusso
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Savel]** (Salva).
 1. Seleziona **[!UICONTROL Test]**.
 1. Selezionare **[!UICONTROL Manualmente]**, quindi **[!UICONTROL Salva e verifica]**.
 1. Seleziona **[!UICONTROL Continua]**.

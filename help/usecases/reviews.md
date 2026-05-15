@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Y9rEEmFRErrNRz8lwG2ertPmm95ScYCigzepibfBoB0
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: 1654
 ht-degree: 0%
 
 ---
@@ -21,7 +28,7 @@ ht-degree: 0%
 
 La collaborazione remota tra team è diventata necessaria per molte aziende durante la pandemia COVID-19, [la condivisione e la revisione dei documenti digitali](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval) presenta una serie di sfide per i team e le risorse interfunzionali.
 
-Queste sfide includono la condivisione di documenti in diversi formati di file, la revisione e la creazione di commenti efficaci per il contenuto e la sincronizzazione con le modifiche più recenti. Le API [!DNL Adobe Acrobat Services] sono progettate per consentire agli sviluppatori di applicazioni di risolvere questi problemi per gli utenti.
+Queste sfide includono la condivisione di documenti in diversi formati di file, la revisione e la creazione di commenti efficaci per il contenuto e la sincronizzazione con le modifiche più recenti. [!DNL Adobe Acrobat Services] Le API sono progettate per consentire agli sviluppatori di applicazioni di risolvere questi problemi per gli utenti.
 
 ## Cosa puoi imparare
 
@@ -43,7 +50,7 @@ L&#39;applicazione dispone delle seguenti funzionalità:
 
 ## API e risorse pertinenti
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 

@@ -8,10 +8,17 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ZfvtA3o-CQ28V-HdyzMR2TWgw-DpddXoh3zMOAUAqhY
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 0%
+source-wordcount: 1851
+ht-degree: 1%
 
 ---
 
@@ -19,7 +26,7 @@ ht-degree: 0%
 
 ![Banner dell&#39;eroe del caso di utilizzo](assets/UseCaseOfferHero.jpg)
 
-Le lettere di offerta dei dipendenti sono una delle prime esperienze che i dipendenti hanno con la tua organizzazione. Di conseguenza, desiderate assicurarvi che le lettere di offerta siano on-brand, ma non desiderate dover creare una lettera nel vostro elaboratore testi da zero ogni volta. Le API [!DNL Adobe Acrobat Services] offrono un modo rapido, semplice ed efficace per gestire le parti chiave della [generazione e consegna delle lettere di offerta ai nuovi dipendenti](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
+Le lettere di offerta dei dipendenti sono una delle prime esperienze che i dipendenti hanno con la tua organizzazione. Di conseguenza, desiderate assicurarvi che le lettere di offerta siano on-brand, ma non desiderate dover creare una lettera nel vostro elaboratore testi da zero ogni volta. [!DNL Adobe Acrobat Services] Le API offrono un modo rapido, semplice ed efficace per gestire le parti chiave della [generazione e consegna di lettere di offerta ai nuovi dipendenti](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
 
 ## Cosa puoi imparare
 
@@ -27,13 +34,13 @@ Questa esercitazione pratica descrive la configurazione di un progetto Node Expr
 
 ## API e risorse pertinenti
 
-* [API dei servizi PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
+* [API di Adobe Document Generation](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
-* [Componente aggiuntivo di Word Tagger per Document Generation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
+* [Componente aggiuntivo di Word per Tagger Document Generation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
 * [Esempio di progetto](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
@@ -41,7 +48,7 @@ Questa esercitazione pratica descrive la configurazione di un progetto Node Expr
 
 [Node.js](https://nodejs.org/) è la piattaforma di programmazione. Viene fornito con un enorme set di librerie, come il server Web Express. [Scarica Node.js](https://nodejs.org/en/download/) e segui i passaggi per installare questo fantastico ambiente di sviluppo open source.
 
-Adobe Per utilizzare l’API di Document Generation in Node.js, accedi al sito [API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation) per accedere al tuo account o registrarti per crearne uno nuovo. Il tuo account è [gratuito per sei mesi, quindi paga in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da poter provare senza rischi e pagare solo in base alla crescita dell&#39;azienda.
+Per utilizzare l’API di Document Generation in Node.js, accedi al sito [API di Document Generation](https://developer.adobe.com/document-services/apis/doc-generation) per accedere al tuo account o registrarti per crearne uno nuovo. Il tuo account è [gratuito per sei mesi, quindi paga in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento, in modo da poter provare senza rischi e pagare solo in base alla crescita dell&#39;azienda.
 
 Dopo aver effettuato l&#39;accesso ad [Adobe Developer Console](https://developer.adobe.com/console/), fai clic su **[!UICONTROL Crea nuovo progetto]**. Per impostazione predefinita, il progetto è denominato &quot;Progetto 1&quot;. Fai clic sul pulsante **[!UICONTROL Modifica progetto]** e modifica il nome in &quot;Generatore lettere di offerta&quot;. Al centro della schermata è presente la sezione **[!UICONTROL Introduzione al nuovo progetto]**. Per abilitare la protezione per il progetto, procedi come segue:
 
@@ -247,9 +254,9 @@ Siamo lieti di offrirti una posizione per $X all&#39;anno. La data di inizio sar
 
 Benvenuti
 
-Salvate il documento come &quot;OfferLetter-Template.docx&quot; in una cartella denominata &quot;resources&quot; nella cartella principale del progetto. Osservate le tre X nel documento. Quelle X sono segnaposto temporanei per le tue informazioni JSON. Sebbene sia possibile utilizzare una sintassi speciale per sostituire questi segnaposto, Adobe fornisce un componente aggiuntivo di Word che semplifica questa attività. Adobe Per installare il componente aggiuntivo, visita il sito [Document Generation Tagger Word Add-in](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) (Componente aggiuntivo di Document Generation Tagger Word).
+Salvate il documento come &quot;OfferLetter-Template.docx&quot; in una cartella denominata &quot;resources&quot; nella cartella principale del progetto. Osservate le tre X nel documento. Quelle X sono segnaposto temporanei per le tue informazioni JSON. Sebbene sia possibile utilizzare una sintassi speciale per sostituire questi segnaposto, Adobe fornisce un componente aggiuntivo di Word che semplifica questa attività. Per installare il componente aggiuntivo, visita il sito [Document Generation Tagger Word Add-in](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) (Componente aggiuntivo di Document Generation Tagger Word).
 
-Nel modello OfferLetter-Template, fate clic sul pulsante **Document Generation**. Viene aperto un pannello laterale. Fai clic su **Introduzione**. Viene fornita un’area di testo da incollare nei dati JSON di esempio. Copia il frammento &quot;offer-data&quot; di JSON dall’alto nell’area di testo. Dovrebbe essere simile alla seguente:
+Nel modello OfferLetter-Template, fate clic sul pulsante **Document Generation**. Viene aperto un pannello laterale. Fai clic su **Guida introduttiva**. Viene fornita un’area di testo da incollare nei dati JSON di esempio. Copia il frammento &quot;offer-data&quot; di JSON dall’alto nell’area di testo. Dovrebbe essere simile alla seguente:
 
 ![Schermata della lettera e del codice](assets/offer_3.png)
 
