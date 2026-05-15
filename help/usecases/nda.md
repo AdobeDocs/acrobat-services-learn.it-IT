@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/TrET5NQJUcvJYGDJgfTJ6fSfQxjz-l2rFj-D5zQygw0
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: 1220
 ht-degree: 0%
 
 ---
@@ -31,7 +47,7 @@ Questo tutorial pratico spiega come creare un modello NDA Microsoft Word special
 
 Con [!DNL Adobe Acrobat Services], puoi generare documenti PDF al volo utilizzando i dati dinamici. [!DNL Acrobat Services] offre una suite di strumenti di PDF, tra cui l&#39;API di Adobe Document Generation per automatizzare la [creazione NDA](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation).
 
-* [API di generazione del documento di Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
+* [API di Adobe Document Generation](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
@@ -190,4 +206,4 @@ Per una spiegazione più dettagliata del processo di Adobe Sign, [consultate la 
 In questo tutorial pratico, Adobe Document Generation Tagger è stato utilizzato per generare dinamicamente documenti PDF utilizzando modelli di Microsoft Word e file di dati JSON. Il componente aggiuntivo ha contribuito a [creare automaticamente accordi di riservatezza](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) personalizzati per ciascuna parte, quindi raccogliere le firme tramite l’API di Sign.
 
 Puoi utilizzare queste tecniche per creare dinamicamente i tuoi accordi di riservatezza o altri documenti, lasciando al tuo team il tempo di concentrarsi sul lavoro produttivo. Esplora [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services) per trovare le API e gli SDK per la lingua e il runtime di tua scelta, in modo da poter aggiungere le funzioni PDF direttamente alle tue applicazioni per la creazione rapida di documenti PDF. [Introduzione](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) con una versione di prova gratuita di sei mesi
-[pagamento in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione di documento.
+[pagamento in base al consumo](https://developer.adobe.com/document-services/pricing/main) a soli $ 0,05 per ogni transazione documento.

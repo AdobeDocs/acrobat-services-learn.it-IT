@@ -8,10 +8,23 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cyfUGCD0CzmV6M4TiC9ZpYBrOpqHGgmwK8ByVYqSDbE
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: 1564
+ht-degree: 1%
 
 ---
 
@@ -206,6 +219,6 @@ Il modello può essere caricato nel dashboard di Acrobat Sign e quindi utilizzat
 
 ## Sperimentalo da solo
 
-Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [!DNL Adobe Acrobat Services]versione di prova gratuita[&#x200B; dell&#39;API &#x200B;](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) offre attualmente 1.000 richieste gratuite in un periodo di sei mesi. La [versione di prova gratuita](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) di Acrobat Sign consente di inviare accordi con filigrana a scopo di test.
+Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [versione di prova gratuita](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) dell&#39;API [!DNL Adobe Acrobat Services] offre attualmente 1.000 richieste gratuite in un periodo di sei mesi. La [versione di prova gratuita](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) di Acrobat Sign consente di inviare accordi con filigrana a scopo di test.
 
 Domande? Il [forum di supporto](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) viene monitorato quotidianamente dagli sviluppatori e dal personale di supporto di Adobe. Infine, per trovare l&#39;ispirazione, assicuratevi di prendere il prossimo episodio di [ritagli di carta](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Incontri regolari e in diretta con notizie, demo e colloqui con i clienti.
