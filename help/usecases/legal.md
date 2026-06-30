@@ -9,23 +9,13 @@ jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
 TQID: https://experienceleague.adobe.com/Gd7B7jUfhZPSRujwKVp7hRzb2Nj9-VJFKLYxqwO-GFM
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: a02d17d88a2fb822f7715556b097767cb7f49ad5
 workflow-type: tm+mt
 source-wordcount: 2045
 ht-degree: 0%
@@ -120,7 +110,7 @@ Innanzitutto, è necessario impostare la struttura di cartelle per l&#39;applica
 
 ### Struttura della directory
 
-Crea una cartella denominata AdobeLegalContractAPI e aprila in un editor di tua scelta. Crea un&#39;applicazione Node.js di base con il comando ```npm init``` utilizzando la struttura di cartelle seguente:
+Crea una cartella denominata AdobeLegalContractAPI e aprila in un editor di tua scelta. Crea un&#39;applicazione Node.js di base con il comando `npm init` utilizzando la struttura di cartelle seguente:
 
 ```
 ###Directory Structure
@@ -210,7 +200,7 @@ Per utilizzare le API di [!DNL Acrobat Services] sono necessarie credenziali div
 
 Una volta completato il processo di registrazione, viene scaricato automaticamente un codice di esempio nel PC per aiutarti a iniziare. È possibile estrarre questo esempio di codice e seguire le istruzioni. Non dimenticare di copiare i file pdftools-api-credentials.json e private.key dall&#39;esempio di codice estratto nella directory principale del progetto Node.js. Le credenziali sono necessarie prima di poter accedere a [!DNL Acrobat Services] endpoint API. Puoi anche scaricare gli esempi SDK con le tue credenziali personalizzate, in modo da non dover aggiornare la chiave nel codice di esempio.
 
-Installare Adobe PDF Services Node SDK eseguendo il comando ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` utilizzando il terminale nella directory principale dell&#39;applicazione. Una volta completata l&#39;installazione, puoi utilizzare le API [!DNL Acrobat Services] per modificare i documenti nell&#39;applicazione.
+Installare Adobe PDF Services Node SDK eseguendo il comando `npm install \--save @adobe/documentservices-pdftools-node-sdk` utilizzando il terminale nella directory principale dell&#39;applicazione. Una volta completata l&#39;installazione, puoi utilizzare le API [!DNL Acrobat Services] per modificare i documenti nell&#39;applicazione.
 
 ## Creazione di un documento PDF
 
