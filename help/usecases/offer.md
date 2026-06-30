@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -269,15 +269,15 @@ Nel modello OfferLetter-Template, fate clic sul pulsante **Document Generation**
 
 ![Schermata della lettera e del codice](assets/offer_3.png)
 
-Fare clic sul pulsante **Genera tag**. Viene visualizzato un menu a discesa con i tag da inserire nei punti appropriati del documento. Evidenzia la prima X nel documento e seleziona **[!UICONTROL nome]**. Fare clic su **[!UICONTROL Inserisci testo]** e &quot;Gentile X&quot; verrà modificato in &quot;Gentile ```{{`offer_letter`.firstname}}```&quot;. Il formato del tag è corretto per `documentMergeOperation`. Procedi e aggiungi i tre tag rimanenti alla X appropriata. Non dimenticare di salvare OfferLetter-template.docx. Il formato dovrebbe essere il seguente:
+Fare clic sul pulsante **Genera tag**. Viene visualizzato un menu a discesa con i tag da inserire nei punti appropriati del documento. Evidenzia la prima X nel documento e seleziona **[!UICONTROL nome]**. Fare clic su **[!UICONTROL Inserisci testo]** e &quot;Gentile X&quot; verrà modificato in &quot;Gentile ``{{`offer_letter`.firstname}}``&quot;. Il formato del tag è corretto per `documentMergeOperation`. Procedi e aggiungi i tre tag rimanenti alla X appropriata. Non dimenticare di salvare OfferLetter-template.docx. Il formato dovrebbe essere il seguente:
 
-Gentile ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```,
+Gentile ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``,
 
-Siamo lieti di offrirti un posto per $ ```{{`offer_letter`.salary}}``` all&#39;anno. La data di inizio sarà ```{{`offer_letter`.startdate}}```.
+Siamo lieti di offrirti un posto per $ ``{{`offer_letter`.salary}}`` all&#39;anno. La data di inizio sarà ``{{`offer_letter`.startdate}}``.
 
 Benvenuti
 
-Ora il modello Word include markup che corrispondono al formato JSON. Ad esempio, ```{{`offer_letter`.`firstname`}}``` all&#39;inizio del documento Word viene sostituito dal valore nella sezione &quot;firstname&quot; dei dati JSON.
+Ora il modello Word include markup che corrispondono al formato JSON. Ad esempio, ``{{`offer_letter`.`firstname`}}`` all&#39;inizio del documento Word viene sostituito dal valore nella sezione &quot;firstname&quot; dei dati JSON.
 
 Torna alla funzione `generateLetter`. Per proteggere la tua chiamata REST, crea un nuovo file denominato pdftools-api-credentials.json nella directory principale del progetto. Incolla i seguenti dati JSON e regolali con i dettagli dalla sezione Account del servizio (JWT) di [Developer Console](https://developer.adobe.com/console/).
 
