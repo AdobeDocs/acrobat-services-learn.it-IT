@@ -37,4 +37,4 @@ Scopri come creare un collegamento di incorporamento per OAuth, il metodo che l�
 >
 >Questo tutorial è stato progettato specificamente per i partner OEM che creano e incorporano un processo di firma all’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445416?captions=ita&hidetitle=true){transcript=true}
