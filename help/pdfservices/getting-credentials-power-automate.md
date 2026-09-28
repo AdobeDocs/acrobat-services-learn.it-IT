@@ -8,20 +8,27 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+TQID: 'https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 2%
-
 ---
-
 # Recupero delle credenziali per Microsoft Power Automate
 
 [Microsoft Power Automate](https://powerautomate.microsoft.com/it-it/) offre ai cittadini e agli sviluppatori un modo efficace per creare potenti processi automatizzati per migliorare le proprie attività senza scrivere codice. Il connettore [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/), come parte di [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services), consente agli utenti di eseguire qualsiasi azione disponibile nell&#39;API dei servizi Adobe PDF all&#39;interno di Microsoft Power Automate.
@@ -55,7 +62,7 @@ Queste credenziali coprono cinque valori diversi:
 
 ![Nuove credenziali](assets/credentials_3.png)
 
-Viene scaricato automaticamente nel sistema anche un file JSON contenente tutti questi valori. Questo file è denominato `pdfservices-api-pa-credentials.json` e ha un aspetto simile al seguente:
+Viene scaricato automaticamente nel File JSON anche un sistema contenente tutti questi valori. Questo file è denominato `pdfservices-api-pa-credentials.json` e ha un aspetto simile al seguente:
 
 ```json
 {
@@ -105,7 +112,7 @@ Non puoi scaricare la chiave privata precedente, ma puoi utilizzare il pulsante 
 
 ## Utilizzo delle credenziali esistenti di Adobe PDF Services
 
-Se disponi di credenziali API di Adobe PDF Services esistenti generate dal sito Web [!DNL Adobe Acrobat Services], puoi utilizzarle con Microsoft Power Automate. Se hai scaricato un SDK durante la registrazione, le credenziali esistenti sono state fornite sotto forma di un file JSON denominato `pdfservices-api-credentials.json`. Il file JSON contiene le cinque chiavi necessarie per creare le credenziali di connessione. Copia ogni valore dal file JSON nel campo di connessione corrispondente.
+Se disponi di credenziali API di Adobe PDF Services esistenti generate dal sito Web [!DNL Adobe Acrobat Services], puoi utilizzarle con Microsoft Power Automate. Se durante la registrazione è stato scaricato un SDK, le credenziali esistenti sono state fornite sotto forma di un File JSON denominato `pdfservices-api-credentials.json`. Il File JSON contiene le cinque chiavi necessarie per la creazione delle credenziali di connessione. Copia ogni valore dal File JSON nel campo di connessione corrispondente.
 
 Il valore della chiave privata proviene da un secondo file denominato `private.key`.
 
@@ -123,7 +130,7 @@ Come descritto all’inizio di questa esercitazione, crea un nuovo flusso, aggiu
 
 Come mostrato nella schermata precedente, puoi passare a un account aziendale o configurare un nuovo account dell&#39;organizzazione. Una volta completata l’operazione, potrai aggiungere l’azione Servizi Adobe PDF.
 
-Per ulteriori informazioni sulla creazione del primo flusso di lavoro di Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Creazione del primo flusso di lavoro in Microsoft Power Automate](https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
+Per ulteriori informazioni sulla creazione del primo flusso di lavoro di Microsoft Power Automate con [!DNL Adobe Acrobat Services], consulta [Creazione del primo flusso di lavoro in Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
 
 ## Risorse aggiuntive
 
