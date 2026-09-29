@@ -7,21 +7,31 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-TQID: https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ
+TQID: 'https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+    internal-label: PDF Electronic Seal API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 159
-ht-degree: 5%
-
+source-wordcount: '199'
+ht-degree: 4%
 ---
-
 # Tutorials API di sigillo elettronico di Adobe PDF
 
 L’API per sigilli elettronici di Adobe PDF applica un sigillo elettronico ai documenti su larga scala utilizzando un certificato emesso da determinati TSP (Trust Service Provider) in [Adobe Approved Trust List (AATL)](https://helpx.adobe.com/it/acrobat/kb/approved-trust-list1.html). Il sigillo elettronico consente di verificare l’identità e l’integrità dei documenti. Questa opzione può essere utilizzata per apporre un sigillo elettronico ai documenti su larga scala ed è inclusa nell’API di PDF Services.
