@@ -127,7 +127,7 @@ Scopri come iniziare a incorporare la versione OEM di Acrobat Sign nell&#39;appl
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" title="Creazione di un collegamento di incorporamento" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ead781b06d12087120b0fa080969ebf8f81b3f2a.png?width=400&format=webply&optimize=medium" alt="Creazione di un collegamento di incorporamento"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/docs/acrobat-services-learn/tutorials/acrobatsign/media_1ead781b06d12087120b0fa080969ebf8f81b3f2a.png?width=400&format=webply&optimize=medium" alt="Creazione di un collegamento di incorporamento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
