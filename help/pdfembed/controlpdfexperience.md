@@ -292,7 +292,7 @@ Se desideri aggiungere il supporto di Adobe Analytics al tuo visualizzatore, puo
 >
 >È necessario che Adobe Analytics sia già caricato nella pagina Web nell’intestazione.
 
-Passa alla [documentazione Adobe Analytics](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) e verifica se Adobe Analytics è già abilitato nella tua pagina Web. Seguire le istruzioni per configurare una ReportSuite.
+Passa alla [documentazione Adobe Analytics](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) e verifica se Adobe Analytics è già abilitato nella tua pagina Web. Seguire le istruzioni per configurare una ReportSuite.
 
 ### Google Analytics
 

@@ -61,7 +61,7 @@ L&#39;applicazione dispone delle seguenti funzionalità:
 
 * [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Codice progetto](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
@@ -399,7 +399,7 @@ Registra una richiamata della vista PDF per l’API SAVE che carica il contenuto
   );
 ```
 
-Commenti e annotazioni sui documenti bozza ora vengono salvati sul server. Puoi [leggere ulteriori informazioni su come le richiamate](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) si adattano al flusso di lavoro. Ad esempio, i [callback di stato](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) consentono di gestire i conflitti dei file se più persone desiderano rivedere e commentare contemporaneamente lo stesso documento.
+Commenti e annotazioni sui documenti bozza ora vengono salvati sul server. Puoi [leggere ulteriori informazioni su come le richiamate](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) si adattano al flusso di lavoro. Ad esempio, i [callback di stato](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) consentono di gestire i conflitti dei file se più persone desiderano rivedere e commentare contemporaneamente lo stesso documento.
 
 Nel passaggio finale, combini tutti i documenti modificati in un unico file PDF utilizzando l’API di PDF Services.
 

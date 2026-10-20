@@ -46,7 +46,7 @@ In questo tutorial pratico, scoprite come visualizzare i documenti PDF incorpora
 
 ## API e risorse pertinenti
 
-* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API PDF Embed](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
