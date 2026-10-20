@@ -47,7 +47,7 @@ In questo tutorial pratico, scopri come utilizzare le API [!DNL Adobe Acrobat Se
 
 * [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Esempi di progetto](https://github.com/adobe/pdftools-java-sdk-samples)
 

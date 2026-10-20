@@ -62,7 +62,7 @@ Scopri come [!DNL Adobe Acrobat Services] offre agli studenti un&#39;esperienza 
 
 ## API e risorse pertinenti
 
-* [API PDF Embed](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API PDF Embed](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API di PDF Services](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 

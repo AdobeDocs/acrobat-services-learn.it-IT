@@ -48,9 +48,9 @@ Sebbene non si tratti di un&#39;API, gli sviluppatori possono anche utilizzare l
 
 ## Che cos’è Acrobat Sign?
 
-[Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) è il leader mondiale nei servizi di firma elettronica. È possibile inviare documenti da firmare utilizzando diversi flussi di lavoro, incluse più firme. Acrobat Sign supporta anche i flussi di lavoro che richiedono firme e informazioni aggiuntive. Tutte queste funzionalità sono supportate da un dashboard potente con un sistema di authoring flessibile.
+[Acrobat Sign](https://www.adobe.com/it/acrobat/business/sign.html) è il leader mondiale nei servizi di firma elettronica. È possibile inviare documenti da firmare utilizzando diversi flussi di lavoro, incluse più firme. Acrobat Sign supporta anche i flussi di lavoro che richiedono firme e informazioni aggiuntive. Tutte queste funzionalità sono supportate da un dashboard potente con un sistema di authoring flessibile.
 
-Come per [!DNL Acrobat Services], Acrobat Sign dispone di una [versione di prova gratuita](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) che consente agli sviluppatori di testare il processo di firma sia tramite il dashboard che con un&#39;API basata su REST di facile utilizzo.
+Come per [!DNL Acrobat Services], Acrobat Sign dispone di una [versione di prova gratuita](https://www.adobe.com/it/acrobat/business/sign.html#sign_free_trial) che consente agli sviluppatori di testare il processo di firma sia tramite il dashboard che con un&#39;API basata su REST di facile utilizzo.
 
 ## Uno scenario di onboarding
 
@@ -205,7 +205,7 @@ Questo codice prende i due PDF, li unisce e salva il risultato in un nuovo PDF. 
 
 ## Il processo di firma
 
-Nella fase finale del processo di inserimento, il dipendente deve firmare un accordo che attesti di aver letto e di accettare tutte le politiche definite in. [Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) supporta molti flussi di lavoro e integrazioni diversi, tra cui uno automatizzato tramite [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). In generale, la parte finale dello scenario può essere completata come segue:
+Nella fase finale del processo di inserimento, il dipendente deve firmare un accordo che attesti di aver letto e di accettare tutte le politiche definite in. [Acrobat Sign](https://www.adobe.com/it/acrobat/business/sign.html) supporta molti flussi di lavoro e integrazioni diversi, tra cui uno automatizzato tramite [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). In generale, la parte finale dello scenario può essere completata come segue:
 
 Innanzitutto, progetta il documento che include il modulo da firmare. Questa operazione può essere eseguita in diversi modi, incluso un elemento visivo progettato nel dashboard utente di Adobe Sign. Un’altra opzione è quella di utilizzare il componente aggiuntivo Document Generation Word per inserire automaticamente i tag. In questo esempio vengono richieste la firma e la data.
 
@@ -219,6 +219,6 @@ Il modello può essere caricato nel dashboard di Acrobat Sign e quindi utilizzat
 
 ## Sperimentalo da solo
 
-Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [versione di prova gratuita](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) dell&#39;API [!DNL Adobe Acrobat Services] offre attualmente 1.000 richieste gratuite in un periodo di sei mesi. La [versione di prova gratuita](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) di Acrobat Sign consente di inviare accordi con filigrana a scopo di test.
+Tutto ciò che viene descritto in questo articolo può essere testato in questo momento. La [versione di prova gratuita](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) dell&#39;API [!DNL Adobe Acrobat Services] offre attualmente 1.000 richieste gratuite in un periodo di sei mesi. La [versione di prova gratuita](https://www.adobe.com/it/acrobat/business/sign.html#sign_free_trial) di Acrobat Sign consente di inviare accordi con filigrana a scopo di test.
 
 Domande? Il [forum di supporto](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) viene monitorato quotidianamente dagli sviluppatori e dal personale di supporto di Adobe. Infine, per trovare l&#39;ispirazione, assicuratevi di prendere il prossimo episodio di [ritagli di carta](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF). Incontri regolari e in diretta con notizie, demo e colloqui con i clienti.

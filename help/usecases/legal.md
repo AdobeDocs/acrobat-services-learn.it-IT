@@ -50,7 +50,7 @@ Questo tutorial richiede un po&#39; di programmazione quando si esplora la conve
 
 * [API di Adobe Document Generation](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [API di incorporamento PDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [API di incorporamento PDF](https://www.adobe.com/it/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [API Adobe Sign](https://developer.adobe.com/adobesign-api/)
 
